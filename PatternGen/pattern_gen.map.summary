@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Sep 22 11:16:23 2011
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : pattern_gen
+Top-level Entity Name : pattern_gen
+Family : Cyclone II
+Total logic elements : 66
+    Total combinational functions : 66
+    Dedicated logic registers : 35
+Total registers : 35
+Total pins : 38
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

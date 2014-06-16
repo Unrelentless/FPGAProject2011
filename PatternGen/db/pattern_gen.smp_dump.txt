@@ -1,0 +1,6 @@
+
+State Machine - |pattern_gen|state
+Name state.stop_write state.start_gen state.idle 
+state.idle 0 0 0 
+state.start_gen 0 1 1 
+state.stop_write 1 0 1 

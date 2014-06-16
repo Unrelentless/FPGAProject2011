@@ -1,0 +1,13 @@
+
+State Machine - |sram_control|state
+Name state.write4 state.write3 state.write2 state.write1 state.read5 state.read4 state.read3 state.read2 state.read1 state.idle 
+state.idle 0 0 0 0 0 0 0 0 0 0 
+state.read1 0 0 0 0 0 0 0 0 1 1 
+state.read2 0 0 0 0 0 0 0 1 0 1 
+state.read3 0 0 0 0 0 0 1 0 0 1 
+state.read4 0 0 0 0 0 1 0 0 0 1 
+state.read5 0 0 0 0 1 0 0 0 0 1 
+state.write1 0 0 0 1 0 0 0 0 0 1 
+state.write2 0 0 1 0 0 0 0 0 0 1 
+state.write3 0 1 0 0 0 0 0 0 0 1 
+state.write4 1 0 0 0 0 0 0 0 0 1 

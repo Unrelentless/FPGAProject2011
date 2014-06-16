@@ -1,0 +1,131 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY pattern_gen IS
+PORT
+(	clock_50Mhz, reset, start_PB, start_inc_PB 		: IN STD_LOGIC;
+	write_data										: OUT STD_LOGIC;
+	sram_address 									: OUT STD_LOGIC_VECTOR(17 downto 0);
+	sram_data					 					: OUT STD_LOGIC_VECTOR(15 downto 0));	
+END pattern_gen;
+
+ARCHITECTURE behav OF pattern_gen IS
+
+TYPE STATE_TYPE IS (idle, start_gen, start_inc_gen, stop_write);
+SIGNAL state: STATE_TYPE;
+SIGNAL pattern, pattern_xor : std_logic_vector(15 downto 0);
+SIGNAL pattern_inc 			: std_logic_vector(15 downto 0);
+SIGNAL clock_count_500Khz	: std_logic_vector(7 downto 0);
+SIGNAL clock_count_1Hz		: std_logic_vector(27 downto 0);
+SIGNAL clock_500Khz			: std_logic;
+SIGNAL clock_1Hz			: std_logic;
+
+BEGIN
+
+PROCESS
+BEGIN
+	
+	WAIT UNTIL clock_50Mhz' EVENT AND clock_50Mhz = '1';
+	
+		IF 	reset = '0' THEN
+		clock_count_500Khz <= X"00";
+		clock_500Khz <= '0';  
+		ELSE
+		IF
+			clock_count_500Khz < 50 THEN
+			clock_count_500Khz <= clock_count_500Khz + 1;
+		ELSE
+			clock_count_500Khz <= X"00";
+			clock_500Khz <= NOT clock_500Khz;
+		END IF;
+		END IF;
+		END PROCESS;
+		
+--		IF 	(reset = '1') THEN
+--		clock_count_1Hz <= X"0000000";
+--		clock_1Hz <= '0';
+--		ELSE
+--		IF
+--		clock_count_1Hz < X"17D7840" THEN
+--		clock_count_1Hz <= clock_count_1Hz + 1;
+--		ELSE
+--		clock_count_1Hz <= X"0000000";
+--		clock_1Hz <= NOT clock_1Hz;
+--		END IF;
+--		END IF;
+--		END PROCESS;
+			
+PROCESS(clock_500Khz, reset)
+--PROCESS(clock_1Hz, reset)
+variable pattern_temp		: std_logic_vector(15 downto 0);
+variable pattern_inc_temp	: std_logic_vector(15 downto 0);
+variable address_temp		: std_logic_vector(17 downto 0);
+BEGIN
+IF 	(reset = '0') THEN
+	sram_address <= "000000000000000000";
+	sram_data <= X"0000";
+	address_temp := "000000000000000000";
+	state <= idle;
+	
+ELSIF clock_500Khz' EVENT AND clock_500Khz = '1' THEN
+--ELSIF clock_1Hz' EVENT AND clock_1Hz = '1' THEN
+CASE state IS
+WHEN idle =>
+	pattern <= "1010101010101010";
+	pattern_inc <= X"FFFF";
+	sram_address <= "000000000000000000";
+	sram_data <= X"0000";
+	address_temp := "000000000000000000";
+	
+	IF (start_PB='0') THEN
+	state <= start_gen;
+	ELSIF(start_inc_PB = '0') THEN
+	state <= start_inc_gen;
+	ELSE
+	state <= idle;
+	END IF;
+	
+WHEN start_gen =>
+	pattern_xor <= X"FFFF";
+	
+	write_data <= '1';
+	pattern_temp := pattern xor pattern_xor;
+	
+	address_temp := address_temp + 1;
+	sram_address <= address_temp;
+	
+	pattern <= pattern_temp;
+	sram_data <= pattern_temp;
+	
+	state <= start_gen;
+
+	IF(address_temp = X"3FFFF") THEN
+	state <= stop_write;
+	END IF;	
+	
+WHEN start_inc_gen =>
+
+	write_data <= '1';
+	pattern_inc_temp := pattern_inc - 1;
+	
+	address_temp := address_temp + 1;
+	sram_address <= address_temp;
+	
+	pattern_inc <= pattern_inc_temp;
+	sram_data <= pattern_inc_temp;
+	
+	state <= start_inc_gen;
+
+	IF(address_temp = X"3FFFF") THEN
+	state <= stop_write;
+	END IF;
+
+WHEN stop_write =>
+	write_data <= '0';
+	state <= idle;
+	
+END CASE;
+END IF;
+END PROCESS;
+END behav;

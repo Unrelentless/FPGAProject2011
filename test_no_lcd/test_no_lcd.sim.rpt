@@ -1,0 +1,970 @@
+Simulator report for test_no_lcd
+Thu Sep 22 11:50:35 2011
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 ms       ;
+; Simulation Netlist Size     ; 650 nodes    ;
+; Simulation Coverage         ;      72.97 % ;
+; Total Number of Transitions ; 824821       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                                     ; Setting         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Simulation mode                                                                            ; Functional      ; Timing        ;
+; Start time                                                                                 ; 0 ns            ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF            ;               ;
+; Vector input source                                                                        ; test_no_lcd.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
+; Check outputs                                                                              ; Off             ; Off           ;
+; Report simulation coverage                                                                 ; On              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
+; Display missing 1-value coverage report                                                    ; On              ; On            ;
+; Display missing 0-value coverage report                                                    ; On              ; On            ;
+; Detect setup and hold time violations                                                      ; Off             ; Off           ;
+; Detect glitches                                                                            ; Off             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
+; Generate Signal Activity File                                                              ; Off             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      72.97 % ;
+; Total nodes checked                                 ; 650          ;
+; Total output ports checked                          ; 666          ;
+; Total output ports with complete 1/0-value coverage ; 486          ;
+; Total output ports with no 1/0-value coverage       ; 138          ;
+; Total output ports with no 1-value coverage         ; 148          ;
+; Total output ports with no 0-value coverage         ; 170          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                  ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; Node Name                                           ; Output Port Name                                    ; Output Port Type ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; |test_no_lcd|WE                                     ; |test_no_lcd|WE                                     ; pin_out          ;
+; |test_no_lcd|50Mhz                                  ; |test_no_lcd|50Mhz                                  ; out              ;
+; |test_no_lcd|Start                                  ; |test_no_lcd|Start                                  ; out              ;
+; |test_no_lcd|Switches[17]                           ; |test_no_lcd|Switches[17]                           ; out              ;
+; |test_no_lcd|Switches[16]                           ; |test_no_lcd|Switches[16]                           ; out              ;
+; |test_no_lcd|Switches[15]                           ; |test_no_lcd|Switches[15]                           ; out              ;
+; |test_no_lcd|Switches[14]                           ; |test_no_lcd|Switches[14]                           ; out              ;
+; |test_no_lcd|Switches[13]                           ; |test_no_lcd|Switches[13]                           ; out              ;
+; |test_no_lcd|Switches[12]                           ; |test_no_lcd|Switches[12]                           ; out              ;
+; |test_no_lcd|Switches[11]                           ; |test_no_lcd|Switches[11]                           ; out              ;
+; |test_no_lcd|Switches[10]                           ; |test_no_lcd|Switches[10]                           ; out              ;
+; |test_no_lcd|Switches[9]                            ; |test_no_lcd|Switches[9]                            ; out              ;
+; |test_no_lcd|Switches[8]                            ; |test_no_lcd|Switches[8]                            ; out              ;
+; |test_no_lcd|Switches[7]                            ; |test_no_lcd|Switches[7]                            ; out              ;
+; |test_no_lcd|Switches[6]                            ; |test_no_lcd|Switches[6]                            ; out              ;
+; |test_no_lcd|Switches[5]                            ; |test_no_lcd|Switches[5]                            ; out              ;
+; |test_no_lcd|Switches[4]                            ; |test_no_lcd|Switches[4]                            ; out              ;
+; |test_no_lcd|Switches[3]                            ; |test_no_lcd|Switches[3]                            ; out              ;
+; |test_no_lcd|Switches[2]                            ; |test_no_lcd|Switches[2]                            ; out              ;
+; |test_no_lcd|Switches[1]                            ; |test_no_lcd|Switches[1]                            ; out              ;
+; |test_no_lcd|Switches[0]                            ; |test_no_lcd|Switches[0]                            ; out              ;
+; |test_no_lcd|Data_SRAM[15]                          ; |test_no_lcd|Data_SRAM[15]~result                   ; pin_out          ;
+; |test_no_lcd|Data_SRAM[14]                          ; |test_no_lcd|Data_SRAM[14]~result                   ; pin_out          ;
+; |test_no_lcd|Data_SRAM[13]                          ; |test_no_lcd|Data_SRAM[13]~result                   ; pin_out          ;
+; |test_no_lcd|Data_SRAM[12]                          ; |test_no_lcd|Data_SRAM[12]~result                   ; pin_out          ;
+; |test_no_lcd|Data_SRAM[11]                          ; |test_no_lcd|Data_SRAM[11]~result                   ; pin_out          ;
+; |test_no_lcd|Data_SRAM[10]                          ; |test_no_lcd|Data_SRAM[10]~result                   ; pin_out          ;
+; |test_no_lcd|Data_SRAM[9]                           ; |test_no_lcd|Data_SRAM[9]~result                    ; pin_out          ;
+; |test_no_lcd|Data_SRAM[8]                           ; |test_no_lcd|Data_SRAM[8]~result                    ; pin_out          ;
+; |test_no_lcd|Data_SRAM[7]                           ; |test_no_lcd|Data_SRAM[7]                           ; out              ;
+; |test_no_lcd|Data_SRAM[7]                           ; |test_no_lcd|Data_SRAM[7]~result                    ; pin_out          ;
+; |test_no_lcd|Data_SRAM[6]                           ; |test_no_lcd|Data_SRAM[6]                           ; out              ;
+; |test_no_lcd|Data_SRAM[6]                           ; |test_no_lcd|Data_SRAM[6]~result                    ; pin_out          ;
+; |test_no_lcd|Data_SRAM[5]                           ; |test_no_lcd|Data_SRAM[5]                           ; out              ;
+; |test_no_lcd|Data_SRAM[5]                           ; |test_no_lcd|Data_SRAM[5]~result                    ; pin_out          ;
+; |test_no_lcd|Data_SRAM[4]                           ; |test_no_lcd|Data_SRAM[4]                           ; out              ;
+; |test_no_lcd|Data_SRAM[4]                           ; |test_no_lcd|Data_SRAM[4]~result                    ; pin_out          ;
+; |test_no_lcd|Data_SRAM[3]                           ; |test_no_lcd|Data_SRAM[3]~result                    ; pin_out          ;
+; |test_no_lcd|Data_SRAM[2]                           ; |test_no_lcd|Data_SRAM[2]~result                    ; pin_out          ;
+; |test_no_lcd|Data_SRAM[1]                           ; |test_no_lcd|Data_SRAM[1]                           ; out              ;
+; |test_no_lcd|Data_SRAM[1]                           ; |test_no_lcd|Data_SRAM[1]~result                    ; pin_out          ;
+; |test_no_lcd|Data_SRAM[0]                           ; |test_no_lcd|Data_SRAM[0]                           ; out              ;
+; |test_no_lcd|Data_SRAM[0]                           ; |test_no_lcd|Data_SRAM[0]~result                    ; pin_out          ;
+; |test_no_lcd|Data_SRAM~0                            ; |test_no_lcd|Data_SRAM~0                            ; out0             ;
+; |test_no_lcd|Data_SRAM~1                            ; |test_no_lcd|Data_SRAM~1                            ; out0             ;
+; |test_no_lcd|Data_SRAM~2                            ; |test_no_lcd|Data_SRAM~2                            ; out0             ;
+; |test_no_lcd|Data_SRAM~3                            ; |test_no_lcd|Data_SRAM~3                            ; out0             ;
+; |test_no_lcd|Data_SRAM~4                            ; |test_no_lcd|Data_SRAM~4                            ; out0             ;
+; |test_no_lcd|Data_SRAM~5                            ; |test_no_lcd|Data_SRAM~5                            ; out0             ;
+; |test_no_lcd|Data_SRAM~6                            ; |test_no_lcd|Data_SRAM~6                            ; out0             ;
+; |test_no_lcd|Data_SRAM~7                            ; |test_no_lcd|Data_SRAM~7                            ; out0             ;
+; |test_no_lcd|Data_SRAM~8                            ; |test_no_lcd|Data_SRAM~8                            ; out0             ;
+; |test_no_lcd|Data_SRAM~9                            ; |test_no_lcd|Data_SRAM~9                            ; out0             ;
+; |test_no_lcd|Data_SRAM~10                           ; |test_no_lcd|Data_SRAM~10                           ; out0             ;
+; |test_no_lcd|Data_SRAM~11                           ; |test_no_lcd|Data_SRAM~11                           ; out0             ;
+; |test_no_lcd|Data_SRAM~12                           ; |test_no_lcd|Data_SRAM~12                           ; out0             ;
+; |test_no_lcd|Data_SRAM~13                           ; |test_no_lcd|Data_SRAM~13                           ; out0             ;
+; |test_no_lcd|Data_SRAM~14                           ; |test_no_lcd|Data_SRAM~14                           ; out0             ;
+; |test_no_lcd|Data_SRAM~15                           ; |test_no_lcd|Data_SRAM~15                           ; out0             ;
+; |test_no_lcd|OE                                     ; |test_no_lcd|OE                                     ; pin_out          ;
+; |test_no_lcd|CS                                     ; |test_no_lcd|CS                                     ; pin_out          ;
+; |test_no_lcd|Address_SRAM[17]                       ; |test_no_lcd|Address_SRAM[17]                       ; pin_out          ;
+; |test_no_lcd|Address_SRAM[16]                       ; |test_no_lcd|Address_SRAM[16]                       ; pin_out          ;
+; |test_no_lcd|Address_SRAM[15]                       ; |test_no_lcd|Address_SRAM[15]                       ; pin_out          ;
+; |test_no_lcd|Address_SRAM[14]                       ; |test_no_lcd|Address_SRAM[14]                       ; pin_out          ;
+; |test_no_lcd|Address_SRAM[13]                       ; |test_no_lcd|Address_SRAM[13]                       ; pin_out          ;
+; |test_no_lcd|Address_SRAM[12]                       ; |test_no_lcd|Address_SRAM[12]                       ; pin_out          ;
+; |test_no_lcd|Address_SRAM[11]                       ; |test_no_lcd|Address_SRAM[11]                       ; pin_out          ;
+; |test_no_lcd|Address_SRAM[10]                       ; |test_no_lcd|Address_SRAM[10]                       ; pin_out          ;
+; |test_no_lcd|Address_SRAM[9]                        ; |test_no_lcd|Address_SRAM[9]                        ; pin_out          ;
+; |test_no_lcd|Address_SRAM[8]                        ; |test_no_lcd|Address_SRAM[8]                        ; pin_out          ;
+; |test_no_lcd|Address_SRAM[7]                        ; |test_no_lcd|Address_SRAM[7]                        ; pin_out          ;
+; |test_no_lcd|Address_SRAM[6]                        ; |test_no_lcd|Address_SRAM[6]                        ; pin_out          ;
+; |test_no_lcd|Address_SRAM[5]                        ; |test_no_lcd|Address_SRAM[5]                        ; pin_out          ;
+; |test_no_lcd|Address_SRAM[4]                        ; |test_no_lcd|Address_SRAM[4]                        ; pin_out          ;
+; |test_no_lcd|Address_SRAM[3]                        ; |test_no_lcd|Address_SRAM[3]                        ; pin_out          ;
+; |test_no_lcd|Address_SRAM[2]                        ; |test_no_lcd|Address_SRAM[2]                        ; pin_out          ;
+; |test_no_lcd|Address_SRAM[1]                        ; |test_no_lcd|Address_SRAM[1]                        ; pin_out          ;
+; |test_no_lcd|Address_SRAM[0]                        ; |test_no_lcd|Address_SRAM[0]                        ; pin_out          ;
+; |test_no_lcd|LED[15]                                ; |test_no_lcd|LED[15]                                ; pin_out          ;
+; |test_no_lcd|LED[14]                                ; |test_no_lcd|LED[14]                                ; pin_out          ;
+; |test_no_lcd|LED[13]                                ; |test_no_lcd|LED[13]                                ; pin_out          ;
+; |test_no_lcd|LED[12]                                ; |test_no_lcd|LED[12]                                ; pin_out          ;
+; |test_no_lcd|LED[11]                                ; |test_no_lcd|LED[11]                                ; pin_out          ;
+; |test_no_lcd|LED[10]                                ; |test_no_lcd|LED[10]                                ; pin_out          ;
+; |test_no_lcd|LED[9]                                 ; |test_no_lcd|LED[9]                                 ; pin_out          ;
+; |test_no_lcd|LED[8]                                 ; |test_no_lcd|LED[8]                                 ; pin_out          ;
+; |test_no_lcd|LED[7]                                 ; |test_no_lcd|LED[7]                                 ; pin_out          ;
+; |test_no_lcd|LED[6]                                 ; |test_no_lcd|LED[6]                                 ; pin_out          ;
+; |test_no_lcd|LED[5]                                 ; |test_no_lcd|LED[5]                                 ; pin_out          ;
+; |test_no_lcd|LED[4]                                 ; |test_no_lcd|LED[4]                                 ; pin_out          ;
+; |test_no_lcd|LED[3]                                 ; |test_no_lcd|LED[3]                                 ; pin_out          ;
+; |test_no_lcd|LED[2]                                 ; |test_no_lcd|LED[2]                                 ; pin_out          ;
+; |test_no_lcd|LED[1]                                 ; |test_no_lcd|LED[1]                                 ; pin_out          ;
+; |test_no_lcd|LED[0]                                 ; |test_no_lcd|LED[0]                                 ; pin_out          ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~2  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~2  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~3  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~3  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~4  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~4  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~5  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~5  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~6  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~6  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~7  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~7  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_500Khz~0        ; |test_no_lcd|pattern_gen:inst|clock_500Khz~0        ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~10 ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~10 ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~11 ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~11 ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~12 ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~12 ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~13 ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~13 ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~14 ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~14 ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~15 ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~15 ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_500Khz~1        ; |test_no_lcd|pattern_gen:inst|clock_500Khz~1        ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~0        ; |test_no_lcd|pattern_gen:inst|pattern_temp~0        ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~1        ; |test_no_lcd|pattern_gen:inst|pattern_temp~1        ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~2        ; |test_no_lcd|pattern_gen:inst|pattern_temp~2        ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~3        ; |test_no_lcd|pattern_gen:inst|pattern_temp~3        ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~4        ; |test_no_lcd|pattern_gen:inst|pattern_temp~4        ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~5        ; |test_no_lcd|pattern_gen:inst|pattern_temp~5        ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~6        ; |test_no_lcd|pattern_gen:inst|pattern_temp~6        ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~7        ; |test_no_lcd|pattern_gen:inst|pattern_temp~7        ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~8        ; |test_no_lcd|pattern_gen:inst|pattern_temp~8        ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~9        ; |test_no_lcd|pattern_gen:inst|pattern_temp~9        ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~10       ; |test_no_lcd|pattern_gen:inst|pattern_temp~10       ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~11       ; |test_no_lcd|pattern_gen:inst|pattern_temp~11       ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~12       ; |test_no_lcd|pattern_gen:inst|pattern_temp~12       ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~13       ; |test_no_lcd|pattern_gen:inst|pattern_temp~13       ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~14       ; |test_no_lcd|pattern_gen:inst|pattern_temp~14       ; out0             ;
+; |test_no_lcd|pattern_gen:inst|pattern_temp~15       ; |test_no_lcd|pattern_gen:inst|pattern_temp~15       ; out0             ;
+; |test_no_lcd|pattern_gen:inst|state~0               ; |test_no_lcd|pattern_gen:inst|state~0               ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_500Khz          ; |test_no_lcd|pattern_gen:inst|clock_500Khz          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[7]       ; |test_no_lcd|pattern_gen:inst|address_temp[7]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[6]       ; |test_no_lcd|pattern_gen:inst|address_temp[6]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[5]       ; |test_no_lcd|pattern_gen:inst|address_temp[5]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[4]       ; |test_no_lcd|pattern_gen:inst|address_temp[4]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[3]       ; |test_no_lcd|pattern_gen:inst|address_temp[3]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[2]       ; |test_no_lcd|pattern_gen:inst|address_temp[2]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[1]       ; |test_no_lcd|pattern_gen:inst|address_temp[1]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|write_data            ; |test_no_lcd|pattern_gen:inst|write_data            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[0]       ; |test_no_lcd|pattern_gen:inst|address_temp[0]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[7]       ; |test_no_lcd|pattern_gen:inst|sram_address[7]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[6]       ; |test_no_lcd|pattern_gen:inst|sram_address[6]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[5]       ; |test_no_lcd|pattern_gen:inst|sram_address[5]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[4]       ; |test_no_lcd|pattern_gen:inst|sram_address[4]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[3]       ; |test_no_lcd|pattern_gen:inst|sram_address[3]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[2]       ; |test_no_lcd|pattern_gen:inst|sram_address[2]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[1]       ; |test_no_lcd|pattern_gen:inst|sram_address[1]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[0]       ; |test_no_lcd|pattern_gen:inst|sram_address[0]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[15]         ; |test_no_lcd|pattern_gen:inst|sram_data[15]         ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[14]         ; |test_no_lcd|pattern_gen:inst|sram_data[14]         ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[13]         ; |test_no_lcd|pattern_gen:inst|sram_data[13]         ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[12]         ; |test_no_lcd|pattern_gen:inst|sram_data[12]         ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[11]         ; |test_no_lcd|pattern_gen:inst|sram_data[11]         ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[10]         ; |test_no_lcd|pattern_gen:inst|sram_data[10]         ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[9]          ; |test_no_lcd|pattern_gen:inst|sram_data[9]          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[8]          ; |test_no_lcd|pattern_gen:inst|sram_data[8]          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[7]          ; |test_no_lcd|pattern_gen:inst|sram_data[7]          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[6]          ; |test_no_lcd|pattern_gen:inst|sram_data[6]          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[5]          ; |test_no_lcd|pattern_gen:inst|sram_data[5]          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[4]          ; |test_no_lcd|pattern_gen:inst|sram_data[4]          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[3]          ; |test_no_lcd|pattern_gen:inst|sram_data[3]          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[2]          ; |test_no_lcd|pattern_gen:inst|sram_data[2]          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[1]          ; |test_no_lcd|pattern_gen:inst|sram_data[1]          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_data[0]          ; |test_no_lcd|pattern_gen:inst|sram_data[0]          ; regout           ;
+; |test_no_lcd|pattern_gen:inst|state.idle            ; |test_no_lcd|pattern_gen:inst|state.idle            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|state.start_gen       ; |test_no_lcd|pattern_gen:inst|state.start_gen       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|state.stop_write      ; |test_no_lcd|pattern_gen:inst|state.stop_write      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[15]           ; |test_no_lcd|pattern_gen:inst|pattern[15]           ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[14]           ; |test_no_lcd|pattern_gen:inst|pattern[14]           ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[13]           ; |test_no_lcd|pattern_gen:inst|pattern[13]           ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[12]           ; |test_no_lcd|pattern_gen:inst|pattern[12]           ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[11]           ; |test_no_lcd|pattern_gen:inst|pattern[11]           ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[10]           ; |test_no_lcd|pattern_gen:inst|pattern[10]           ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[9]            ; |test_no_lcd|pattern_gen:inst|pattern[9]            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[8]            ; |test_no_lcd|pattern_gen:inst|pattern[8]            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[7]            ; |test_no_lcd|pattern_gen:inst|pattern[7]            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[6]            ; |test_no_lcd|pattern_gen:inst|pattern[6]            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[5]            ; |test_no_lcd|pattern_gen:inst|pattern[5]            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[4]            ; |test_no_lcd|pattern_gen:inst|pattern[4]            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[3]            ; |test_no_lcd|pattern_gen:inst|pattern[3]            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[2]            ; |test_no_lcd|pattern_gen:inst|pattern[2]            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[1]            ; |test_no_lcd|pattern_gen:inst|pattern[1]            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern[0]            ; |test_no_lcd|pattern_gen:inst|pattern[0]            ; regout           ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[0] ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[0] ; regout           ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[1] ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[1] ; regout           ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[2] ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[2] ; regout           ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[3] ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[3] ; regout           ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[4] ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[4] ; regout           ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[5] ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[5] ; regout           ;
+; |test_no_lcd|pattern_gen:inst|state~1               ; |test_no_lcd|pattern_gen:inst|state~1               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector70~0          ; |test_no_lcd|pattern_gen:inst|Selector70~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector70~1          ; |test_no_lcd|pattern_gen:inst|Selector70~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|state.stop_write~0    ; |test_no_lcd|pattern_gen:inst|state.stop_write~0    ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector70~2          ; |test_no_lcd|pattern_gen:inst|Selector70~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|state~8               ; |test_no_lcd|pattern_gen:inst|state~8               ; out0             ;
+; |test_no_lcd|sram_control:inst2|sram_address[17]    ; |test_no_lcd|sram_control:inst2|sram_address[17]    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[16]    ; |test_no_lcd|sram_control:inst2|sram_address[16]    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[15]    ; |test_no_lcd|sram_control:inst2|sram_address[15]    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[14]    ; |test_no_lcd|sram_control:inst2|sram_address[14]    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[13]    ; |test_no_lcd|sram_control:inst2|sram_address[13]    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[12]    ; |test_no_lcd|sram_control:inst2|sram_address[12]    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[11]    ; |test_no_lcd|sram_control:inst2|sram_address[11]    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[10]    ; |test_no_lcd|sram_control:inst2|sram_address[10]    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[9]     ; |test_no_lcd|sram_control:inst2|sram_address[9]     ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[8]     ; |test_no_lcd|sram_control:inst2|sram_address[8]     ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[7]     ; |test_no_lcd|sram_control:inst2|sram_address[7]     ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[6]     ; |test_no_lcd|sram_control:inst2|sram_address[6]     ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[5]     ; |test_no_lcd|sram_control:inst2|sram_address[5]     ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[4]     ; |test_no_lcd|sram_control:inst2|sram_address[4]     ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[3]     ; |test_no_lcd|sram_control:inst2|sram_address[3]     ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[2]     ; |test_no_lcd|sram_control:inst2|sram_address[2]     ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[1]     ; |test_no_lcd|sram_control:inst2|sram_address[1]     ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_address[0]     ; |test_no_lcd|sram_control:inst2|sram_address[0]     ; out              ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[0]     ; |test_no_lcd|sram_control:inst2|data_in_temp[0]     ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_value[15]   ; |test_no_lcd|sram_control:inst2|data_in_value[15]   ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[14]   ; |test_no_lcd|sram_control:inst2|data_in_value[14]   ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[13]   ; |test_no_lcd|sram_control:inst2|data_in_value[13]   ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[12]   ; |test_no_lcd|sram_control:inst2|data_in_value[12]   ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[11]   ; |test_no_lcd|sram_control:inst2|data_in_value[11]   ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[10]   ; |test_no_lcd|sram_control:inst2|data_in_value[10]   ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[9]    ; |test_no_lcd|sram_control:inst2|data_in_value[9]    ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[8]    ; |test_no_lcd|sram_control:inst2|data_in_value[8]    ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[7]    ; |test_no_lcd|sram_control:inst2|data_in_value[7]    ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[6]    ; |test_no_lcd|sram_control:inst2|data_in_value[6]    ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[5]    ; |test_no_lcd|sram_control:inst2|data_in_value[5]    ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[4]    ; |test_no_lcd|sram_control:inst2|data_in_value[4]    ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[3]    ; |test_no_lcd|sram_control:inst2|data_in_value[3]    ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[2]    ; |test_no_lcd|sram_control:inst2|data_in_value[2]    ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[1]    ; |test_no_lcd|sram_control:inst2|data_in_value[1]    ; out0             ;
+; |test_no_lcd|sram_control:inst2|data_in_value[0]    ; |test_no_lcd|sram_control:inst2|data_in_value[0]    ; out0             ;
+; |test_no_lcd|sram_control:inst2|sram_data[3]~0      ; |test_no_lcd|sram_control:inst2|sram_data[3]~0      ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[2]~1      ; |test_no_lcd|sram_control:inst2|sram_data[2]~1      ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[1]~2      ; |test_no_lcd|sram_control:inst2|sram_data[1]~2      ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[0]~3      ; |test_no_lcd|sram_control:inst2|sram_data[0]~3      ; out              ;
+; |test_no_lcd|sram_control:inst2|WE                  ; |test_no_lcd|sram_control:inst2|WE                  ; regout           ;
+; |test_no_lcd|sram_control:inst2|CS                  ; |test_no_lcd|sram_control:inst2|CS                  ; regout           ;
+; |test_no_lcd|sram_control:inst2|OE                  ; |test_no_lcd|sram_control:inst2|OE                  ; regout           ;
+; |test_no_lcd|sram_control:inst2|state.idle          ; |test_no_lcd|sram_control:inst2|state.idle          ; regout           ;
+; |test_no_lcd|sram_control:inst2|WE~0                ; |test_no_lcd|sram_control:inst2|WE~0                ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.read1         ; |test_no_lcd|sram_control:inst2|state.read1         ; regout           ;
+; |test_no_lcd|sram_control:inst2|OE~0                ; |test_no_lcd|sram_control:inst2|OE~0                ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.read2         ; |test_no_lcd|sram_control:inst2|state.read2         ; regout           ;
+; |test_no_lcd|sram_control:inst2|WideOr0             ; |test_no_lcd|sram_control:inst2|WideOr0             ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~0             ; |test_no_lcd|sram_control:inst2|state~0             ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.read3         ; |test_no_lcd|sram_control:inst2|state.read3         ; regout           ;
+; |test_no_lcd|sram_control:inst2|state~1             ; |test_no_lcd|sram_control:inst2|state~1             ; out              ;
+; |test_no_lcd|sram_control:inst2|state.read4         ; |test_no_lcd|sram_control:inst2|state.read4         ; regout           ;
+; |test_no_lcd|sram_control:inst2|state.read5         ; |test_no_lcd|sram_control:inst2|state.read5         ; regout           ;
+; |test_no_lcd|sram_control:inst2|state.write1        ; |test_no_lcd|sram_control:inst2|state.write1        ; regout           ;
+; |test_no_lcd|sram_control:inst2|state.write2        ; |test_no_lcd|sram_control:inst2|state.write2        ; regout           ;
+; |test_no_lcd|sram_control:inst2|state.write3        ; |test_no_lcd|sram_control:inst2|state.write3        ; regout           ;
+; |test_no_lcd|sram_control:inst2|state~2             ; |test_no_lcd|sram_control:inst2|state~2             ; out              ;
+; |test_no_lcd|sram_control:inst2|state.write4        ; |test_no_lcd|sram_control:inst2|state.write4        ; regout           ;
+; |test_no_lcd|sram_control:inst2|WE~1                ; |test_no_lcd|sram_control:inst2|WE~1                ; out              ;
+; |test_no_lcd|sram_control:inst2|CS~0                ; |test_no_lcd|sram_control:inst2|CS~0                ; out              ;
+; |test_no_lcd|sram_control:inst2|OE~1                ; |test_no_lcd|sram_control:inst2|OE~1                ; out              ;
+; |test_no_lcd|sram_control:inst2|state~3             ; |test_no_lcd|sram_control:inst2|state~3             ; out              ;
+; |test_no_lcd|sram_control:inst2|state~4             ; |test_no_lcd|sram_control:inst2|state~4             ; out              ;
+; |test_no_lcd|sram_control:inst2|state~5             ; |test_no_lcd|sram_control:inst2|state~5             ; out              ;
+; |test_no_lcd|sram_control:inst2|state~6             ; |test_no_lcd|sram_control:inst2|state~6             ; out              ;
+; |test_no_lcd|sram_control:inst2|state~7             ; |test_no_lcd|sram_control:inst2|state~7             ; out              ;
+; |test_no_lcd|sram_control:inst2|state~8             ; |test_no_lcd|sram_control:inst2|state~8             ; out              ;
+; |test_no_lcd|sram_control:inst2|state~9             ; |test_no_lcd|sram_control:inst2|state~9             ; out              ;
+; |test_no_lcd|sram_control:inst2|state~10            ; |test_no_lcd|sram_control:inst2|state~10            ; out              ;
+; |test_no_lcd|sram_control:inst2|state~11            ; |test_no_lcd|sram_control:inst2|state~11            ; out              ;
+; |test_no_lcd|sram_control:inst2|state~12            ; |test_no_lcd|sram_control:inst2|state~12            ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[4]~4      ; |test_no_lcd|sram_control:inst2|sram_data[4]~4      ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[5]~5      ; |test_no_lcd|sram_control:inst2|sram_data[5]~5      ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[6]~6      ; |test_no_lcd|sram_control:inst2|sram_data[6]~6      ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[7]~7      ; |test_no_lcd|sram_control:inst2|sram_data[7]~7      ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[8]~8      ; |test_no_lcd|sram_control:inst2|sram_data[8]~8      ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[9]~9      ; |test_no_lcd|sram_control:inst2|sram_data[9]~9      ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[10]~10    ; |test_no_lcd|sram_control:inst2|sram_data[10]~10    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[11]~11    ; |test_no_lcd|sram_control:inst2|sram_data[11]~11    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[12]~12    ; |test_no_lcd|sram_control:inst2|sram_data[12]~12    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[13]~13    ; |test_no_lcd|sram_control:inst2|sram_data[13]~13    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[14]~14    ; |test_no_lcd|sram_control:inst2|sram_data[14]~14    ; out              ;
+; |test_no_lcd|sram_control:inst2|sram_data[15]~15    ; |test_no_lcd|sram_control:inst2|sram_data[15]~15    ; out              ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[1]     ; |test_no_lcd|sram_control:inst2|data_in_temp[1]     ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[2]     ; |test_no_lcd|sram_control:inst2|data_in_temp[2]     ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[3]     ; |test_no_lcd|sram_control:inst2|data_in_temp[3]     ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[4]     ; |test_no_lcd|sram_control:inst2|data_in_temp[4]     ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[5]     ; |test_no_lcd|sram_control:inst2|data_in_temp[5]     ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[6]     ; |test_no_lcd|sram_control:inst2|data_in_temp[6]     ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[7]     ; |test_no_lcd|sram_control:inst2|data_in_temp[7]     ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[8]     ; |test_no_lcd|sram_control:inst2|data_in_temp[8]     ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[9]     ; |test_no_lcd|sram_control:inst2|data_in_temp[9]     ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[10]    ; |test_no_lcd|sram_control:inst2|data_in_temp[10]    ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[11]    ; |test_no_lcd|sram_control:inst2|data_in_temp[11]    ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[12]    ; |test_no_lcd|sram_control:inst2|data_in_temp[12]    ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[13]    ; |test_no_lcd|sram_control:inst2|data_in_temp[13]    ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[14]    ; |test_no_lcd|sram_control:inst2|data_in_temp[14]    ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_in_temp[15]    ; |test_no_lcd|sram_control:inst2|data_in_temp[15]    ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[0]   ; |test_no_lcd|sram_control:inst2|data_out_value[0]   ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[1]   ; |test_no_lcd|sram_control:inst2|data_out_value[1]   ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[2]   ; |test_no_lcd|sram_control:inst2|data_out_value[2]   ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[3]   ; |test_no_lcd|sram_control:inst2|data_out_value[3]   ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[4]   ; |test_no_lcd|sram_control:inst2|data_out_value[4]   ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[5]   ; |test_no_lcd|sram_control:inst2|data_out_value[5]   ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[6]   ; |test_no_lcd|sram_control:inst2|data_out_value[6]   ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[7]   ; |test_no_lcd|sram_control:inst2|data_out_value[7]   ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[8]   ; |test_no_lcd|sram_control:inst2|data_out_value[8]   ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[9]   ; |test_no_lcd|sram_control:inst2|data_out_value[9]   ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[10]  ; |test_no_lcd|sram_control:inst2|data_out_value[10]  ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[11]  ; |test_no_lcd|sram_control:inst2|data_out_value[11]  ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[12]  ; |test_no_lcd|sram_control:inst2|data_out_value[12]  ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[13]  ; |test_no_lcd|sram_control:inst2|data_out_value[13]  ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[14]  ; |test_no_lcd|sram_control:inst2|data_out_value[14]  ; regout           ;
+; |test_no_lcd|sram_control:inst2|data_out_value[15]  ; |test_no_lcd|sram_control:inst2|data_out_value[15]  ; regout           ;
+; |test_no_lcd|sram_control:inst2|state~13            ; |test_no_lcd|sram_control:inst2|state~13            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.idle~0        ; |test_no_lcd|sram_control:inst2|state.idle~0        ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~26            ; |test_no_lcd|sram_control:inst2|state~26            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.read1~0       ; |test_no_lcd|sram_control:inst2|state.read1~0       ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~27            ; |test_no_lcd|sram_control:inst2|state~27            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.read2~0       ; |test_no_lcd|sram_control:inst2|state.read2~0       ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~28            ; |test_no_lcd|sram_control:inst2|state~28            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.read3~0       ; |test_no_lcd|sram_control:inst2|state.read3~0       ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~29            ; |test_no_lcd|sram_control:inst2|state~29            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.read4~0       ; |test_no_lcd|sram_control:inst2|state.read4~0       ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~30            ; |test_no_lcd|sram_control:inst2|state~30            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.read5~0       ; |test_no_lcd|sram_control:inst2|state.read5~0       ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~31            ; |test_no_lcd|sram_control:inst2|state~31            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.write1~0      ; |test_no_lcd|sram_control:inst2|state.write1~0      ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~32            ; |test_no_lcd|sram_control:inst2|state~32            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.write2~0      ; |test_no_lcd|sram_control:inst2|state.write2~0      ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~33            ; |test_no_lcd|sram_control:inst2|state~33            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.write3~0      ; |test_no_lcd|sram_control:inst2|state.write3~0      ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~34            ; |test_no_lcd|sram_control:inst2|state~34            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state.write4~0      ; |test_no_lcd|sram_control:inst2|state.write4~0      ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~35            ; |test_no_lcd|sram_control:inst2|state~35            ; out0             ;
+; |test_no_lcd|sram_control:inst2|state~37            ; |test_no_lcd|sram_control:inst2|state~37            ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector0~0           ; |test_no_lcd|pattern_gen:inst|Selector0~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector0~2           ; |test_no_lcd|pattern_gen:inst|Selector0~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector1~0           ; |test_no_lcd|pattern_gen:inst|Selector1~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector1~2           ; |test_no_lcd|pattern_gen:inst|Selector1~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector2~0           ; |test_no_lcd|pattern_gen:inst|Selector2~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector2~2           ; |test_no_lcd|pattern_gen:inst|Selector2~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector3~0           ; |test_no_lcd|pattern_gen:inst|Selector3~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector3~2           ; |test_no_lcd|pattern_gen:inst|Selector3~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector4~0           ; |test_no_lcd|pattern_gen:inst|Selector4~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector4~2           ; |test_no_lcd|pattern_gen:inst|Selector4~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector5~0           ; |test_no_lcd|pattern_gen:inst|Selector5~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector5~2           ; |test_no_lcd|pattern_gen:inst|Selector5~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector6~0           ; |test_no_lcd|pattern_gen:inst|Selector6~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector6~2           ; |test_no_lcd|pattern_gen:inst|Selector6~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector7~0           ; |test_no_lcd|pattern_gen:inst|Selector7~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector7~2           ; |test_no_lcd|pattern_gen:inst|Selector7~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector8~0           ; |test_no_lcd|pattern_gen:inst|Selector8~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector8~2           ; |test_no_lcd|pattern_gen:inst|Selector8~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector9~0           ; |test_no_lcd|pattern_gen:inst|Selector9~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector9~2           ; |test_no_lcd|pattern_gen:inst|Selector9~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector10~0          ; |test_no_lcd|pattern_gen:inst|Selector10~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector10~2          ; |test_no_lcd|pattern_gen:inst|Selector10~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector11~0          ; |test_no_lcd|pattern_gen:inst|Selector11~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector11~2          ; |test_no_lcd|pattern_gen:inst|Selector11~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector12~0          ; |test_no_lcd|pattern_gen:inst|Selector12~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector12~2          ; |test_no_lcd|pattern_gen:inst|Selector12~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector13~0          ; |test_no_lcd|pattern_gen:inst|Selector13~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector13~2          ; |test_no_lcd|pattern_gen:inst|Selector13~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector14~0          ; |test_no_lcd|pattern_gen:inst|Selector14~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector14~2          ; |test_no_lcd|pattern_gen:inst|Selector14~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector15~0          ; |test_no_lcd|pattern_gen:inst|Selector15~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector15~2          ; |test_no_lcd|pattern_gen:inst|Selector15~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector25~0          ; |test_no_lcd|pattern_gen:inst|Selector25~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector25~2          ; |test_no_lcd|pattern_gen:inst|Selector25~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector26~0          ; |test_no_lcd|pattern_gen:inst|Selector26~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector26~1          ; |test_no_lcd|pattern_gen:inst|Selector26~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector26~2          ; |test_no_lcd|pattern_gen:inst|Selector26~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector27~0          ; |test_no_lcd|pattern_gen:inst|Selector27~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector27~1          ; |test_no_lcd|pattern_gen:inst|Selector27~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector27~2          ; |test_no_lcd|pattern_gen:inst|Selector27~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector28~0          ; |test_no_lcd|pattern_gen:inst|Selector28~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector28~2          ; |test_no_lcd|pattern_gen:inst|Selector28~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector29~0          ; |test_no_lcd|pattern_gen:inst|Selector29~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector29~2          ; |test_no_lcd|pattern_gen:inst|Selector29~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector30~0          ; |test_no_lcd|pattern_gen:inst|Selector30~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector30~1          ; |test_no_lcd|pattern_gen:inst|Selector30~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector30~2          ; |test_no_lcd|pattern_gen:inst|Selector30~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector31~0          ; |test_no_lcd|pattern_gen:inst|Selector31~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector31~1          ; |test_no_lcd|pattern_gen:inst|Selector31~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector31~2          ; |test_no_lcd|pattern_gen:inst|Selector31~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector32~0          ; |test_no_lcd|pattern_gen:inst|Selector32~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector32~1          ; |test_no_lcd|pattern_gen:inst|Selector32~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector32~2          ; |test_no_lcd|pattern_gen:inst|Selector32~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector33~0          ; |test_no_lcd|pattern_gen:inst|Selector33~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector33~1          ; |test_no_lcd|pattern_gen:inst|Selector33~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector33~2          ; |test_no_lcd|pattern_gen:inst|Selector33~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector34~0          ; |test_no_lcd|pattern_gen:inst|Selector34~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector34~1          ; |test_no_lcd|pattern_gen:inst|Selector34~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector34~2          ; |test_no_lcd|pattern_gen:inst|Selector34~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector35~0          ; |test_no_lcd|pattern_gen:inst|Selector35~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector35~2          ; |test_no_lcd|pattern_gen:inst|Selector35~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector36~0          ; |test_no_lcd|pattern_gen:inst|Selector36~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector36~1          ; |test_no_lcd|pattern_gen:inst|Selector36~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector36~2          ; |test_no_lcd|pattern_gen:inst|Selector36~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector37~0          ; |test_no_lcd|pattern_gen:inst|Selector37~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector37~2          ; |test_no_lcd|pattern_gen:inst|Selector37~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector38~0          ; |test_no_lcd|pattern_gen:inst|Selector38~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector38~1          ; |test_no_lcd|pattern_gen:inst|Selector38~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector38~2          ; |test_no_lcd|pattern_gen:inst|Selector38~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector39~0          ; |test_no_lcd|pattern_gen:inst|Selector39~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector39~2          ; |test_no_lcd|pattern_gen:inst|Selector39~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector40~0          ; |test_no_lcd|pattern_gen:inst|Selector40~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector40~1          ; |test_no_lcd|pattern_gen:inst|Selector40~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector40~2          ; |test_no_lcd|pattern_gen:inst|Selector40~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector41~0          ; |test_no_lcd|pattern_gen:inst|Selector41~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector41~2          ; |test_no_lcd|pattern_gen:inst|Selector41~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector42~0          ; |test_no_lcd|pattern_gen:inst|Selector42~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector42~1          ; |test_no_lcd|pattern_gen:inst|Selector42~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector42~2          ; |test_no_lcd|pattern_gen:inst|Selector42~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector43~0          ; |test_no_lcd|pattern_gen:inst|Selector43~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector43~2          ; |test_no_lcd|pattern_gen:inst|Selector43~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector44~0          ; |test_no_lcd|pattern_gen:inst|Selector44~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector44~1          ; |test_no_lcd|pattern_gen:inst|Selector44~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector44~2          ; |test_no_lcd|pattern_gen:inst|Selector44~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector45~0          ; |test_no_lcd|pattern_gen:inst|Selector45~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector45~2          ; |test_no_lcd|pattern_gen:inst|Selector45~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector46~0          ; |test_no_lcd|pattern_gen:inst|Selector46~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector46~1          ; |test_no_lcd|pattern_gen:inst|Selector46~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector46~2          ; |test_no_lcd|pattern_gen:inst|Selector46~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector47~0          ; |test_no_lcd|pattern_gen:inst|Selector47~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector47~2          ; |test_no_lcd|pattern_gen:inst|Selector47~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector48~0          ; |test_no_lcd|pattern_gen:inst|Selector48~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector48~1          ; |test_no_lcd|pattern_gen:inst|Selector48~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector48~2          ; |test_no_lcd|pattern_gen:inst|Selector48~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector49~0          ; |test_no_lcd|pattern_gen:inst|Selector49~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector49~2          ; |test_no_lcd|pattern_gen:inst|Selector49~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector59~0          ; |test_no_lcd|pattern_gen:inst|Selector59~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector59~2          ; |test_no_lcd|pattern_gen:inst|Selector59~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector60~0          ; |test_no_lcd|pattern_gen:inst|Selector60~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector60~1          ; |test_no_lcd|pattern_gen:inst|Selector60~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector60~2          ; |test_no_lcd|pattern_gen:inst|Selector60~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector61~0          ; |test_no_lcd|pattern_gen:inst|Selector61~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector61~1          ; |test_no_lcd|pattern_gen:inst|Selector61~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector61~2          ; |test_no_lcd|pattern_gen:inst|Selector61~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector62~0          ; |test_no_lcd|pattern_gen:inst|Selector62~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector62~2          ; |test_no_lcd|pattern_gen:inst|Selector62~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector63~0          ; |test_no_lcd|pattern_gen:inst|Selector63~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector63~2          ; |test_no_lcd|pattern_gen:inst|Selector63~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector64~0          ; |test_no_lcd|pattern_gen:inst|Selector64~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector64~1          ; |test_no_lcd|pattern_gen:inst|Selector64~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector64~2          ; |test_no_lcd|pattern_gen:inst|Selector64~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector65~0          ; |test_no_lcd|pattern_gen:inst|Selector65~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector65~1          ; |test_no_lcd|pattern_gen:inst|Selector65~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector65~2          ; |test_no_lcd|pattern_gen:inst|Selector65~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector66~0          ; |test_no_lcd|pattern_gen:inst|Selector66~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector66~1          ; |test_no_lcd|pattern_gen:inst|Selector66~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector66~2          ; |test_no_lcd|pattern_gen:inst|Selector66~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector67~0          ; |test_no_lcd|pattern_gen:inst|Selector67~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector67~1          ; |test_no_lcd|pattern_gen:inst|Selector67~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector67~2          ; |test_no_lcd|pattern_gen:inst|Selector67~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector68~0          ; |test_no_lcd|pattern_gen:inst|Selector68~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector68~1          ; |test_no_lcd|pattern_gen:inst|Selector68~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector69~0          ; |test_no_lcd|pattern_gen:inst|Selector69~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector69~1          ; |test_no_lcd|pattern_gen:inst|Selector69~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector69~2          ; |test_no_lcd|pattern_gen:inst|Selector69~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector70~3          ; |test_no_lcd|pattern_gen:inst|Selector70~3          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|LessThan0~0           ; |test_no_lcd|pattern_gen:inst|LessThan0~0           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|LessThan0~1           ; |test_no_lcd|pattern_gen:inst|LessThan0~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|LessThan0~2           ; |test_no_lcd|pattern_gen:inst|LessThan0~2           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|LessThan0~3           ; |test_no_lcd|pattern_gen:inst|LessThan0~3           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|LessThan0~4           ; |test_no_lcd|pattern_gen:inst|LessThan0~4           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|LessThan0~5           ; |test_no_lcd|pattern_gen:inst|LessThan0~5           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|LessThan0~6           ; |test_no_lcd|pattern_gen:inst|LessThan0~6           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|LessThan0~7           ; |test_no_lcd|pattern_gen:inst|LessThan0~7           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~0                ; |test_no_lcd|pattern_gen:inst|Add0~0                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~1                ; |test_no_lcd|pattern_gen:inst|Add0~1                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~2                ; |test_no_lcd|pattern_gen:inst|Add0~2                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~3                ; |test_no_lcd|pattern_gen:inst|Add0~3                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~4                ; |test_no_lcd|pattern_gen:inst|Add0~4                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~5                ; |test_no_lcd|pattern_gen:inst|Add0~5                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~6                ; |test_no_lcd|pattern_gen:inst|Add0~6                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~7                ; |test_no_lcd|pattern_gen:inst|Add0~7                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~8                ; |test_no_lcd|pattern_gen:inst|Add0~8                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~0                ; |test_no_lcd|pattern_gen:inst|Add1~0                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~1                ; |test_no_lcd|pattern_gen:inst|Add1~1                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~2                ; |test_no_lcd|pattern_gen:inst|Add1~2                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~3                ; |test_no_lcd|pattern_gen:inst|Add1~3                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~4                ; |test_no_lcd|pattern_gen:inst|Add1~4                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~5                ; |test_no_lcd|pattern_gen:inst|Add1~5                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~6                ; |test_no_lcd|pattern_gen:inst|Add1~6                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~7                ; |test_no_lcd|pattern_gen:inst|Add1~7                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~8                ; |test_no_lcd|pattern_gen:inst|Add1~8                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~9                ; |test_no_lcd|pattern_gen:inst|Add1~9                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~10               ; |test_no_lcd|pattern_gen:inst|Add1~10               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~11               ; |test_no_lcd|pattern_gen:inst|Add1~11               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~12               ; |test_no_lcd|pattern_gen:inst|Add1~12               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~13               ; |test_no_lcd|pattern_gen:inst|Add1~13               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~14               ; |test_no_lcd|pattern_gen:inst|Add1~14               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Equal0~0              ; |test_no_lcd|pattern_gen:inst|Equal0~0              ; out0             ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                     ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; Node Name                                           ; Output Port Name                                    ; Output Port Type ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; |test_no_lcd|Reset                                  ; |test_no_lcd|Reset                                  ; out              ;
+; |test_no_lcd|Data_SRAM[15]                          ; |test_no_lcd|Data_SRAM[15]                          ; out              ;
+; |test_no_lcd|Data_SRAM[14]                          ; |test_no_lcd|Data_SRAM[14]                          ; out              ;
+; |test_no_lcd|Data_SRAM[13]                          ; |test_no_lcd|Data_SRAM[13]                          ; out              ;
+; |test_no_lcd|Data_SRAM[12]                          ; |test_no_lcd|Data_SRAM[12]                          ; out              ;
+; |test_no_lcd|Data_SRAM[11]                          ; |test_no_lcd|Data_SRAM[11]                          ; out              ;
+; |test_no_lcd|Data_SRAM[10]                          ; |test_no_lcd|Data_SRAM[10]                          ; out              ;
+; |test_no_lcd|Data_SRAM[9]                           ; |test_no_lcd|Data_SRAM[9]                           ; out              ;
+; |test_no_lcd|Data_SRAM[8]                           ; |test_no_lcd|Data_SRAM[8]                           ; out              ;
+; |test_no_lcd|Data_SRAM[3]                           ; |test_no_lcd|Data_SRAM[3]                           ; out              ;
+; |test_no_lcd|Data_SRAM[2]                           ; |test_no_lcd|Data_SRAM[2]                           ; out              ;
+; |test_no_lcd|SRAM_US                                ; |test_no_lcd|SRAM_US                                ; pin_out          ;
+; |test_no_lcd|SRAM_LS                                ; |test_no_lcd|SRAM_LS                                ; pin_out          ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~0  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~0  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~1  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~1  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~8  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~8  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~9  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~9  ; out              ;
+; |test_no_lcd|pattern_gen:inst|address_temp[17]      ; |test_no_lcd|pattern_gen:inst|address_temp[17]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[16]      ; |test_no_lcd|pattern_gen:inst|address_temp[16]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[15]      ; |test_no_lcd|pattern_gen:inst|address_temp[15]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[14]      ; |test_no_lcd|pattern_gen:inst|address_temp[14]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[13]      ; |test_no_lcd|pattern_gen:inst|address_temp[13]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[12]      ; |test_no_lcd|pattern_gen:inst|address_temp[12]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[11]      ; |test_no_lcd|pattern_gen:inst|address_temp[11]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[10]      ; |test_no_lcd|pattern_gen:inst|address_temp[10]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[9]       ; |test_no_lcd|pattern_gen:inst|address_temp[9]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[8]       ; |test_no_lcd|pattern_gen:inst|address_temp[8]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[17]      ; |test_no_lcd|pattern_gen:inst|sram_address[17]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[16]      ; |test_no_lcd|pattern_gen:inst|sram_address[16]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[15]      ; |test_no_lcd|pattern_gen:inst|sram_address[15]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[14]      ; |test_no_lcd|pattern_gen:inst|sram_address[14]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[13]      ; |test_no_lcd|pattern_gen:inst|sram_address[13]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[12]      ; |test_no_lcd|pattern_gen:inst|sram_address[12]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[11]      ; |test_no_lcd|pattern_gen:inst|sram_address[11]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[10]      ; |test_no_lcd|pattern_gen:inst|sram_address[10]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[9]       ; |test_no_lcd|pattern_gen:inst|sram_address[9]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[8]       ; |test_no_lcd|pattern_gen:inst|sram_address[8]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[6] ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[6] ; regout           ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[7] ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[7] ; regout           ;
+; |test_no_lcd|pattern_gen:inst|state~2               ; |test_no_lcd|pattern_gen:inst|state~2               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|state~10              ; |test_no_lcd|pattern_gen:inst|state~10              ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector0~1           ; |test_no_lcd|pattern_gen:inst|Selector0~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector1~1           ; |test_no_lcd|pattern_gen:inst|Selector1~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector2~1           ; |test_no_lcd|pattern_gen:inst|Selector2~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector3~1           ; |test_no_lcd|pattern_gen:inst|Selector3~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector4~1           ; |test_no_lcd|pattern_gen:inst|Selector4~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector5~1           ; |test_no_lcd|pattern_gen:inst|Selector5~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector6~1           ; |test_no_lcd|pattern_gen:inst|Selector6~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector7~1           ; |test_no_lcd|pattern_gen:inst|Selector7~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector8~1           ; |test_no_lcd|pattern_gen:inst|Selector8~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector9~1           ; |test_no_lcd|pattern_gen:inst|Selector9~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector10~1          ; |test_no_lcd|pattern_gen:inst|Selector10~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector11~1          ; |test_no_lcd|pattern_gen:inst|Selector11~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector12~1          ; |test_no_lcd|pattern_gen:inst|Selector12~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector13~1          ; |test_no_lcd|pattern_gen:inst|Selector13~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector14~1          ; |test_no_lcd|pattern_gen:inst|Selector14~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector15~1          ; |test_no_lcd|pattern_gen:inst|Selector15~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector16~0          ; |test_no_lcd|pattern_gen:inst|Selector16~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector16~1          ; |test_no_lcd|pattern_gen:inst|Selector16~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector16~2          ; |test_no_lcd|pattern_gen:inst|Selector16~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector17~0          ; |test_no_lcd|pattern_gen:inst|Selector17~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector17~1          ; |test_no_lcd|pattern_gen:inst|Selector17~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector17~2          ; |test_no_lcd|pattern_gen:inst|Selector17~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector18~0          ; |test_no_lcd|pattern_gen:inst|Selector18~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector18~1          ; |test_no_lcd|pattern_gen:inst|Selector18~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector18~2          ; |test_no_lcd|pattern_gen:inst|Selector18~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector19~0          ; |test_no_lcd|pattern_gen:inst|Selector19~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector19~1          ; |test_no_lcd|pattern_gen:inst|Selector19~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector19~2          ; |test_no_lcd|pattern_gen:inst|Selector19~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector20~0          ; |test_no_lcd|pattern_gen:inst|Selector20~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector20~1          ; |test_no_lcd|pattern_gen:inst|Selector20~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector20~2          ; |test_no_lcd|pattern_gen:inst|Selector20~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector21~0          ; |test_no_lcd|pattern_gen:inst|Selector21~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector21~1          ; |test_no_lcd|pattern_gen:inst|Selector21~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector21~2          ; |test_no_lcd|pattern_gen:inst|Selector21~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector22~0          ; |test_no_lcd|pattern_gen:inst|Selector22~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector22~1          ; |test_no_lcd|pattern_gen:inst|Selector22~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector22~2          ; |test_no_lcd|pattern_gen:inst|Selector22~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector23~0          ; |test_no_lcd|pattern_gen:inst|Selector23~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector23~1          ; |test_no_lcd|pattern_gen:inst|Selector23~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector23~2          ; |test_no_lcd|pattern_gen:inst|Selector23~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector24~0          ; |test_no_lcd|pattern_gen:inst|Selector24~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector24~1          ; |test_no_lcd|pattern_gen:inst|Selector24~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector24~2          ; |test_no_lcd|pattern_gen:inst|Selector24~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector25~1          ; |test_no_lcd|pattern_gen:inst|Selector25~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector28~1          ; |test_no_lcd|pattern_gen:inst|Selector28~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector29~1          ; |test_no_lcd|pattern_gen:inst|Selector29~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector35~1          ; |test_no_lcd|pattern_gen:inst|Selector35~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector37~1          ; |test_no_lcd|pattern_gen:inst|Selector37~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector39~1          ; |test_no_lcd|pattern_gen:inst|Selector39~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector41~1          ; |test_no_lcd|pattern_gen:inst|Selector41~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector43~1          ; |test_no_lcd|pattern_gen:inst|Selector43~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector45~1          ; |test_no_lcd|pattern_gen:inst|Selector45~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector47~1          ; |test_no_lcd|pattern_gen:inst|Selector47~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector49~1          ; |test_no_lcd|pattern_gen:inst|Selector49~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector50~0          ; |test_no_lcd|pattern_gen:inst|Selector50~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector50~1          ; |test_no_lcd|pattern_gen:inst|Selector50~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector50~2          ; |test_no_lcd|pattern_gen:inst|Selector50~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector51~0          ; |test_no_lcd|pattern_gen:inst|Selector51~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector51~1          ; |test_no_lcd|pattern_gen:inst|Selector51~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector51~2          ; |test_no_lcd|pattern_gen:inst|Selector51~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector52~0          ; |test_no_lcd|pattern_gen:inst|Selector52~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector52~1          ; |test_no_lcd|pattern_gen:inst|Selector52~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector52~2          ; |test_no_lcd|pattern_gen:inst|Selector52~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector53~0          ; |test_no_lcd|pattern_gen:inst|Selector53~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector53~1          ; |test_no_lcd|pattern_gen:inst|Selector53~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector53~2          ; |test_no_lcd|pattern_gen:inst|Selector53~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector54~0          ; |test_no_lcd|pattern_gen:inst|Selector54~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector54~1          ; |test_no_lcd|pattern_gen:inst|Selector54~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector54~2          ; |test_no_lcd|pattern_gen:inst|Selector54~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector55~0          ; |test_no_lcd|pattern_gen:inst|Selector55~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector55~1          ; |test_no_lcd|pattern_gen:inst|Selector55~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector55~2          ; |test_no_lcd|pattern_gen:inst|Selector55~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector56~0          ; |test_no_lcd|pattern_gen:inst|Selector56~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector56~1          ; |test_no_lcd|pattern_gen:inst|Selector56~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector56~2          ; |test_no_lcd|pattern_gen:inst|Selector56~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector57~0          ; |test_no_lcd|pattern_gen:inst|Selector57~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector57~1          ; |test_no_lcd|pattern_gen:inst|Selector57~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector57~2          ; |test_no_lcd|pattern_gen:inst|Selector57~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector58~0          ; |test_no_lcd|pattern_gen:inst|Selector58~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector58~1          ; |test_no_lcd|pattern_gen:inst|Selector58~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector58~2          ; |test_no_lcd|pattern_gen:inst|Selector58~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector59~1          ; |test_no_lcd|pattern_gen:inst|Selector59~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector62~1          ; |test_no_lcd|pattern_gen:inst|Selector62~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector63~1          ; |test_no_lcd|pattern_gen:inst|Selector63~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector70~4          ; |test_no_lcd|pattern_gen:inst|Selector70~4          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~9                ; |test_no_lcd|pattern_gen:inst|Add0~9                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~10               ; |test_no_lcd|pattern_gen:inst|Add0~10               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~11               ; |test_no_lcd|pattern_gen:inst|Add0~11               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~12               ; |test_no_lcd|pattern_gen:inst|Add0~12               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~15               ; |test_no_lcd|pattern_gen:inst|Add1~15               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~16               ; |test_no_lcd|pattern_gen:inst|Add1~16               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~17               ; |test_no_lcd|pattern_gen:inst|Add1~17               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~18               ; |test_no_lcd|pattern_gen:inst|Add1~18               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~19               ; |test_no_lcd|pattern_gen:inst|Add1~19               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~20               ; |test_no_lcd|pattern_gen:inst|Add1~20               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~21               ; |test_no_lcd|pattern_gen:inst|Add1~21               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~22               ; |test_no_lcd|pattern_gen:inst|Add1~22               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~23               ; |test_no_lcd|pattern_gen:inst|Add1~23               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~24               ; |test_no_lcd|pattern_gen:inst|Add1~24               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~25               ; |test_no_lcd|pattern_gen:inst|Add1~25               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~26               ; |test_no_lcd|pattern_gen:inst|Add1~26               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~27               ; |test_no_lcd|pattern_gen:inst|Add1~27               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~28               ; |test_no_lcd|pattern_gen:inst|Add1~28               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~29               ; |test_no_lcd|pattern_gen:inst|Add1~29               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~30               ; |test_no_lcd|pattern_gen:inst|Add1~30               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~31               ; |test_no_lcd|pattern_gen:inst|Add1~31               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~32               ; |test_no_lcd|pattern_gen:inst|Add1~32               ; out0             ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                     ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; Node Name                                           ; Output Port Name                                    ; Output Port Type ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+; |test_no_lcd|Reset                                  ; |test_no_lcd|Reset                                  ; out              ;
+; |test_no_lcd|SRAM_US                                ; |test_no_lcd|SRAM_US                                ; pin_out          ;
+; |test_no_lcd|SRAM_LS                                ; |test_no_lcd|SRAM_LS                                ; pin_out          ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~0  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~0  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~1  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~1  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~8  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~8  ; out              ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~9  ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz~9  ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~0         ; |test_no_lcd|pattern_gen:inst|pattern_xor~0         ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~1         ; |test_no_lcd|pattern_gen:inst|pattern_xor~1         ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~2         ; |test_no_lcd|pattern_gen:inst|pattern_xor~2         ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~3         ; |test_no_lcd|pattern_gen:inst|pattern_xor~3         ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~4         ; |test_no_lcd|pattern_gen:inst|pattern_xor~4         ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~5         ; |test_no_lcd|pattern_gen:inst|pattern_xor~5         ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~6         ; |test_no_lcd|pattern_gen:inst|pattern_xor~6         ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~7         ; |test_no_lcd|pattern_gen:inst|pattern_xor~7         ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~8         ; |test_no_lcd|pattern_gen:inst|pattern_xor~8         ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~9         ; |test_no_lcd|pattern_gen:inst|pattern_xor~9         ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~10        ; |test_no_lcd|pattern_gen:inst|pattern_xor~10        ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~11        ; |test_no_lcd|pattern_gen:inst|pattern_xor~11        ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~12        ; |test_no_lcd|pattern_gen:inst|pattern_xor~12        ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~13        ; |test_no_lcd|pattern_gen:inst|pattern_xor~13        ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~14        ; |test_no_lcd|pattern_gen:inst|pattern_xor~14        ; out              ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor~15        ; |test_no_lcd|pattern_gen:inst|pattern_xor~15        ; out              ;
+; |test_no_lcd|pattern_gen:inst|address_temp[17]      ; |test_no_lcd|pattern_gen:inst|address_temp[17]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[16]      ; |test_no_lcd|pattern_gen:inst|address_temp[16]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[15]      ; |test_no_lcd|pattern_gen:inst|address_temp[15]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[14]      ; |test_no_lcd|pattern_gen:inst|address_temp[14]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[13]      ; |test_no_lcd|pattern_gen:inst|address_temp[13]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[12]      ; |test_no_lcd|pattern_gen:inst|address_temp[12]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[11]      ; |test_no_lcd|pattern_gen:inst|address_temp[11]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[10]      ; |test_no_lcd|pattern_gen:inst|address_temp[10]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[9]       ; |test_no_lcd|pattern_gen:inst|address_temp[9]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|address_temp[8]       ; |test_no_lcd|pattern_gen:inst|address_temp[8]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[17]      ; |test_no_lcd|pattern_gen:inst|sram_address[17]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[16]      ; |test_no_lcd|pattern_gen:inst|sram_address[16]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[15]      ; |test_no_lcd|pattern_gen:inst|sram_address[15]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[14]      ; |test_no_lcd|pattern_gen:inst|sram_address[14]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[13]      ; |test_no_lcd|pattern_gen:inst|sram_address[13]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[12]      ; |test_no_lcd|pattern_gen:inst|sram_address[12]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[11]      ; |test_no_lcd|pattern_gen:inst|sram_address[11]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[10]      ; |test_no_lcd|pattern_gen:inst|sram_address[10]      ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[9]       ; |test_no_lcd|pattern_gen:inst|sram_address[9]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|sram_address[8]       ; |test_no_lcd|pattern_gen:inst|sram_address[8]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[15]       ; |test_no_lcd|pattern_gen:inst|pattern_xor[15]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[14]       ; |test_no_lcd|pattern_gen:inst|pattern_xor[14]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[13]       ; |test_no_lcd|pattern_gen:inst|pattern_xor[13]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[12]       ; |test_no_lcd|pattern_gen:inst|pattern_xor[12]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[11]       ; |test_no_lcd|pattern_gen:inst|pattern_xor[11]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[10]       ; |test_no_lcd|pattern_gen:inst|pattern_xor[10]       ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[9]        ; |test_no_lcd|pattern_gen:inst|pattern_xor[9]        ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[8]        ; |test_no_lcd|pattern_gen:inst|pattern_xor[8]        ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[7]        ; |test_no_lcd|pattern_gen:inst|pattern_xor[7]        ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[6]        ; |test_no_lcd|pattern_gen:inst|pattern_xor[6]        ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[5]        ; |test_no_lcd|pattern_gen:inst|pattern_xor[5]        ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[4]        ; |test_no_lcd|pattern_gen:inst|pattern_xor[4]        ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[3]        ; |test_no_lcd|pattern_gen:inst|pattern_xor[3]        ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[2]        ; |test_no_lcd|pattern_gen:inst|pattern_xor[2]        ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[1]        ; |test_no_lcd|pattern_gen:inst|pattern_xor[1]        ; regout           ;
+; |test_no_lcd|pattern_gen:inst|pattern_xor[0]        ; |test_no_lcd|pattern_gen:inst|pattern_xor[0]        ; regout           ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[6] ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[6] ; regout           ;
+; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[7] ; |test_no_lcd|pattern_gen:inst|clock_count_500Khz[7] ; regout           ;
+; |test_no_lcd|pattern_gen:inst|state~2               ; |test_no_lcd|pattern_gen:inst|state~2               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|state~10              ; |test_no_lcd|pattern_gen:inst|state~10              ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector0~1           ; |test_no_lcd|pattern_gen:inst|Selector0~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector1~1           ; |test_no_lcd|pattern_gen:inst|Selector1~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector2~1           ; |test_no_lcd|pattern_gen:inst|Selector2~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector3~1           ; |test_no_lcd|pattern_gen:inst|Selector3~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector4~1           ; |test_no_lcd|pattern_gen:inst|Selector4~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector5~1           ; |test_no_lcd|pattern_gen:inst|Selector5~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector6~1           ; |test_no_lcd|pattern_gen:inst|Selector6~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector7~1           ; |test_no_lcd|pattern_gen:inst|Selector7~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector8~1           ; |test_no_lcd|pattern_gen:inst|Selector8~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector9~1           ; |test_no_lcd|pattern_gen:inst|Selector9~1           ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector10~1          ; |test_no_lcd|pattern_gen:inst|Selector10~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector11~1          ; |test_no_lcd|pattern_gen:inst|Selector11~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector12~1          ; |test_no_lcd|pattern_gen:inst|Selector12~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector13~1          ; |test_no_lcd|pattern_gen:inst|Selector13~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector14~1          ; |test_no_lcd|pattern_gen:inst|Selector14~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector15~1          ; |test_no_lcd|pattern_gen:inst|Selector15~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector16~0          ; |test_no_lcd|pattern_gen:inst|Selector16~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector16~1          ; |test_no_lcd|pattern_gen:inst|Selector16~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector16~2          ; |test_no_lcd|pattern_gen:inst|Selector16~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector17~0          ; |test_no_lcd|pattern_gen:inst|Selector17~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector17~1          ; |test_no_lcd|pattern_gen:inst|Selector17~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector17~2          ; |test_no_lcd|pattern_gen:inst|Selector17~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector18~0          ; |test_no_lcd|pattern_gen:inst|Selector18~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector18~1          ; |test_no_lcd|pattern_gen:inst|Selector18~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector18~2          ; |test_no_lcd|pattern_gen:inst|Selector18~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector19~0          ; |test_no_lcd|pattern_gen:inst|Selector19~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector19~1          ; |test_no_lcd|pattern_gen:inst|Selector19~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector19~2          ; |test_no_lcd|pattern_gen:inst|Selector19~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector20~0          ; |test_no_lcd|pattern_gen:inst|Selector20~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector20~1          ; |test_no_lcd|pattern_gen:inst|Selector20~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector20~2          ; |test_no_lcd|pattern_gen:inst|Selector20~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector21~0          ; |test_no_lcd|pattern_gen:inst|Selector21~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector21~1          ; |test_no_lcd|pattern_gen:inst|Selector21~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector21~2          ; |test_no_lcd|pattern_gen:inst|Selector21~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector22~0          ; |test_no_lcd|pattern_gen:inst|Selector22~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector22~1          ; |test_no_lcd|pattern_gen:inst|Selector22~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector22~2          ; |test_no_lcd|pattern_gen:inst|Selector22~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector23~0          ; |test_no_lcd|pattern_gen:inst|Selector23~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector23~1          ; |test_no_lcd|pattern_gen:inst|Selector23~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector23~2          ; |test_no_lcd|pattern_gen:inst|Selector23~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector24~0          ; |test_no_lcd|pattern_gen:inst|Selector24~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector24~1          ; |test_no_lcd|pattern_gen:inst|Selector24~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector24~2          ; |test_no_lcd|pattern_gen:inst|Selector24~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector25~1          ; |test_no_lcd|pattern_gen:inst|Selector25~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector28~1          ; |test_no_lcd|pattern_gen:inst|Selector28~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector29~1          ; |test_no_lcd|pattern_gen:inst|Selector29~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector35~1          ; |test_no_lcd|pattern_gen:inst|Selector35~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector37~1          ; |test_no_lcd|pattern_gen:inst|Selector37~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector39~1          ; |test_no_lcd|pattern_gen:inst|Selector39~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector41~1          ; |test_no_lcd|pattern_gen:inst|Selector41~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector43~1          ; |test_no_lcd|pattern_gen:inst|Selector43~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector45~1          ; |test_no_lcd|pattern_gen:inst|Selector45~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector47~1          ; |test_no_lcd|pattern_gen:inst|Selector47~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector49~1          ; |test_no_lcd|pattern_gen:inst|Selector49~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector50~0          ; |test_no_lcd|pattern_gen:inst|Selector50~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector50~1          ; |test_no_lcd|pattern_gen:inst|Selector50~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector50~2          ; |test_no_lcd|pattern_gen:inst|Selector50~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector51~0          ; |test_no_lcd|pattern_gen:inst|Selector51~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector51~1          ; |test_no_lcd|pattern_gen:inst|Selector51~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector51~2          ; |test_no_lcd|pattern_gen:inst|Selector51~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector52~0          ; |test_no_lcd|pattern_gen:inst|Selector52~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector52~1          ; |test_no_lcd|pattern_gen:inst|Selector52~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector52~2          ; |test_no_lcd|pattern_gen:inst|Selector52~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector53~0          ; |test_no_lcd|pattern_gen:inst|Selector53~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector53~1          ; |test_no_lcd|pattern_gen:inst|Selector53~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector53~2          ; |test_no_lcd|pattern_gen:inst|Selector53~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector54~0          ; |test_no_lcd|pattern_gen:inst|Selector54~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector54~1          ; |test_no_lcd|pattern_gen:inst|Selector54~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector54~2          ; |test_no_lcd|pattern_gen:inst|Selector54~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector55~0          ; |test_no_lcd|pattern_gen:inst|Selector55~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector55~1          ; |test_no_lcd|pattern_gen:inst|Selector55~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector55~2          ; |test_no_lcd|pattern_gen:inst|Selector55~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector56~0          ; |test_no_lcd|pattern_gen:inst|Selector56~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector56~1          ; |test_no_lcd|pattern_gen:inst|Selector56~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector56~2          ; |test_no_lcd|pattern_gen:inst|Selector56~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector57~0          ; |test_no_lcd|pattern_gen:inst|Selector57~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector57~1          ; |test_no_lcd|pattern_gen:inst|Selector57~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector57~2          ; |test_no_lcd|pattern_gen:inst|Selector57~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector58~0          ; |test_no_lcd|pattern_gen:inst|Selector58~0          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector58~1          ; |test_no_lcd|pattern_gen:inst|Selector58~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector58~2          ; |test_no_lcd|pattern_gen:inst|Selector58~2          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector59~1          ; |test_no_lcd|pattern_gen:inst|Selector59~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector62~1          ; |test_no_lcd|pattern_gen:inst|Selector62~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector63~1          ; |test_no_lcd|pattern_gen:inst|Selector63~1          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Selector70~4          ; |test_no_lcd|pattern_gen:inst|Selector70~4          ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~9                ; |test_no_lcd|pattern_gen:inst|Add0~9                ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~10               ; |test_no_lcd|pattern_gen:inst|Add0~10               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~11               ; |test_no_lcd|pattern_gen:inst|Add0~11               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add0~12               ; |test_no_lcd|pattern_gen:inst|Add0~12               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~15               ; |test_no_lcd|pattern_gen:inst|Add1~15               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~16               ; |test_no_lcd|pattern_gen:inst|Add1~16               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~17               ; |test_no_lcd|pattern_gen:inst|Add1~17               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~18               ; |test_no_lcd|pattern_gen:inst|Add1~18               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~19               ; |test_no_lcd|pattern_gen:inst|Add1~19               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~20               ; |test_no_lcd|pattern_gen:inst|Add1~20               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~21               ; |test_no_lcd|pattern_gen:inst|Add1~21               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~22               ; |test_no_lcd|pattern_gen:inst|Add1~22               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~23               ; |test_no_lcd|pattern_gen:inst|Add1~23               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~24               ; |test_no_lcd|pattern_gen:inst|Add1~24               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~25               ; |test_no_lcd|pattern_gen:inst|Add1~25               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~26               ; |test_no_lcd|pattern_gen:inst|Add1~26               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~27               ; |test_no_lcd|pattern_gen:inst|Add1~27               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~28               ; |test_no_lcd|pattern_gen:inst|Add1~28               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~29               ; |test_no_lcd|pattern_gen:inst|Add1~29               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~30               ; |test_no_lcd|pattern_gen:inst|Add1~30               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~31               ; |test_no_lcd|pattern_gen:inst|Add1~31               ; out0             ;
+; |test_no_lcd|pattern_gen:inst|Add1~32               ; |test_no_lcd|pattern_gen:inst|Add1~32               ; out0             ;
++-----------------------------------------------------+-----------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Sep 22 11:50:29 2011
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off test_no_lcd -c test_no_lcd
+Info: Using vector source file "H:/Comp Arch/LABS/Project/test_no_lcd/test_no_lcd.vwf"
+Warning: Can't find node "sram_control:inst2|write_data" for functional simulation. Ignored vector source file node.
+Warning: Wrong node type and/or width for node "|test_no_lcd|pattern_gen:inst|state" in vector source file. Node in design is of type Enum and of width 1, but node in vector source file is of type 9-Level and of width 1.
+Warning: Signal name "|test_no_lcd|pattern_gen:inst|state" changed to enum type
+Warning: Wrong node type and/or width for node "|test_no_lcd|sram_control:inst2|state" in vector source file. Node in design is of type Enum and of width 1, but node in vector source file is of type 9-Level and of width 1.
+Warning: Signal name "|test_no_lcd|sram_control:inst2|state" changed to enum type
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      72.97 %
+Info: Number of transitions in simulation is 824821
+Info: Quartus II Simulator was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 115 megabytes
+    Info: Processing ended: Thu Sep 22 11:50:36 2011
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
+
+

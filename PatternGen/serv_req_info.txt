@@ -1,0 +1,15 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>CFG</sub_system>
+	<file>/quartus/gcl/cfg/cfg_registry_key.cpp</file>
+	<line>1585</line>
+	<callstack>
+	0x00d82ee8: gcl_cfg + 0x2ee8 (?create_branch@CFG_REGISTRY_KEY@@IAIPAUHKEY__@@PAU2@@Z + 0x1b8)
+	</callstack>
+	<error>disposition == REG_CREATED_NEW_KEY</error>
+	<date>Thu Sep 08 08:27:14 2011</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>disposition == REG_CREATED_NEW_KEY
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+

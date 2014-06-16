@@ -1,0 +1,108 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+test_no_lcd
+# storage
+db|test_no_lcd.(0).cnf
+db|test_no_lcd.(0).cnf
+# case_insensitive
+# source_file
+test_no_lcd.bdf
+491c15a2d8b659d5ee084cba9485f6
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+sram_control
+# storage
+db|test_no_lcd.(1).cnf
+db|test_no_lcd.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|SRAM_Control|sram_control.vhd
+c580ead39dd1243929ea2f93d67e3b7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+sram_control:inst2
+}
+# lmf
+c:|altera|90sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+pattern_gen
+# storage
+db|test_no_lcd.(2).cnf
+db|test_no_lcd.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|PatternGen|pattern_gen.vhd
+70efbd6c735255ad18ee5fa2af0eb57
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+pattern_gen:inst
+}
+# lmf
+c:|altera|90sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

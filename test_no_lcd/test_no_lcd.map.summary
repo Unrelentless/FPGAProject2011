@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Sep 22 11:55:00 2011
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : test_no_lcd
+Top-level Entity Name : test_no_lcd
+Family : Cyclone II
+Total logic elements : 129
+    Total combinational functions : 97
+    Dedicated logic registers : 80
+Total registers : 80
+Total pins : 76
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,924 @@
+Simulator report for LCD_controller
+Mon Sep 26 18:28:20 2011
+Quartus II Version 9.0 Build 132 02/25/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 ms       ;
+; Simulation Netlist Size     ; 372 nodes    ;
+; Simulation Coverage         ;      12.30 % ;
+; Total Number of Transitions ; 102252       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      12.30 % ;
+; Total nodes checked                                 ; 372          ;
+; Total output ports checked                          ; 382          ;
+; Total output ports with complete 1/0-value coverage ; 47           ;
+; Total output ports with no 1/0-value coverage       ; 335          ;
+; Total output ports with no 1-value coverage         ; 335          ;
+; Total output ports with no 0-value coverage         ; 335          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                    ;
++-------------------------------------+---------------------------------------+------------------+
+; Node Name                           ; Output Port Name                      ; Output Port Type ;
++-------------------------------------+---------------------------------------+------------------+
+; |LCD_controller|LessThan4~0         ; |LCD_controller|LessThan4~0           ; combout          ;
+; |LCD_controller|add_1[1]~29         ; |LCD_controller|add_1[1]~29           ; combout          ;
+; |LCD_controller|add_1~30            ; |LCD_controller|add_1~30              ; combout          ;
+; |LCD_controller|LessThan1~0         ; |LCD_controller|LessThan1~0           ; combout          ;
+; |LCD_controller|LessThan7~0         ; |LCD_controller|LessThan7~0           ; combout          ;
+; |LCD_controller|LessThan8~0         ; |LCD_controller|LessThan8~0           ; combout          ;
+; |LCD_controller|LessThan3~0         ; |LCD_controller|LessThan3~0           ; combout          ;
+; |LCD_controller|LessThan4~1         ; |LCD_controller|LessThan4~1           ; combout          ;
+; |LCD_controller|LessThan5~0         ; |LCD_controller|LessThan5~0           ; combout          ;
+; |LCD_controller|LessThan6~0         ; |LCD_controller|LessThan6~0           ; combout          ;
+; |LCD_controller|LessThan2~0         ; |LCD_controller|LessThan2~0           ; combout          ;
+; |LCD_controller|clock_50Mhz         ; |LCD_controller|clock_50Mhz~corein    ; combout          ;
+; |LCD_controller|address_in[0]       ; |LCD_controller|address_in[0]~corein  ; combout          ;
+; |LCD_controller|address_in[2]       ; |LCD_controller|address_in[2]~corein  ; combout          ;
+; |LCD_controller|address_in[1]       ; |LCD_controller|address_in[1]~corein  ; combout          ;
+; |LCD_controller|address_in[3]       ; |LCD_controller|address_in[3]~corein  ; combout          ;
+; |LCD_controller|data_in[12]         ; |LCD_controller|data_in[12]~corein    ; combout          ;
+; |LCD_controller|data_in[0]          ; |LCD_controller|data_in[0]~corein     ; combout          ;
+; |LCD_controller|address_in[4]       ; |LCD_controller|address_in[4]~corein  ; combout          ;
+; |LCD_controller|data_in[8]          ; |LCD_controller|data_in[8]~corein     ; combout          ;
+; |LCD_controller|address_in[16]      ; |LCD_controller|address_in[16]~corein ; combout          ;
+; |LCD_controller|data_in[4]          ; |LCD_controller|data_in[4]~corein     ; combout          ;
+; |LCD_controller|address_in[12]      ; |LCD_controller|address_in[12]~corein ; combout          ;
+; |LCD_controller|address_in[8]       ; |LCD_controller|address_in[8]~corein  ; combout          ;
+; |LCD_controller|address_in[13]      ; |LCD_controller|address_in[13]~corein ; combout          ;
+; |LCD_controller|address_in[5]       ; |LCD_controller|address_in[5]~corein  ; combout          ;
+; |LCD_controller|address_in[9]       ; |LCD_controller|address_in[9]~corein  ; combout          ;
+; |LCD_controller|data_in[5]          ; |LCD_controller|data_in[5]~corein     ; combout          ;
+; |LCD_controller|data_in[13]         ; |LCD_controller|data_in[13]~corein    ; combout          ;
+; |LCD_controller|data_in[1]          ; |LCD_controller|data_in[1]~corein     ; combout          ;
+; |LCD_controller|data_in[9]          ; |LCD_controller|data_in[9]~corein     ; combout          ;
+; |LCD_controller|address_in[17]      ; |LCD_controller|address_in[17]~corein ; combout          ;
+; |LCD_controller|data_in[10]         ; |LCD_controller|data_in[10]~corein    ; combout          ;
+; |LCD_controller|data_in[14]         ; |LCD_controller|data_in[14]~corein    ; combout          ;
+; |LCD_controller|address_in[14]      ; |LCD_controller|address_in[14]~corein ; combout          ;
+; |LCD_controller|data_in[6]          ; |LCD_controller|data_in[6]~corein     ; combout          ;
+; |LCD_controller|address_in[6]       ; |LCD_controller|address_in[6]~corein  ; combout          ;
+; |LCD_controller|data_in[2]          ; |LCD_controller|data_in[2]~corein     ; combout          ;
+; |LCD_controller|address_in[10]      ; |LCD_controller|address_in[10]~corein ; combout          ;
+; |LCD_controller|data_in[7]          ; |LCD_controller|data_in[7]~corein     ; combout          ;
+; |LCD_controller|address_in[15]      ; |LCD_controller|address_in[15]~corein ; combout          ;
+; |LCD_controller|address_in[11]      ; |LCD_controller|address_in[11]~corein ; combout          ;
+; |LCD_controller|data_in[3]          ; |LCD_controller|data_in[3]~corein     ; combout          ;
+; |LCD_controller|data_in[11]         ; |LCD_controller|data_in[11]~corein    ; combout          ;
+; |LCD_controller|address_in[7]       ; |LCD_controller|address_in[7]~corein  ; combout          ;
+; |LCD_controller|data_in[15]         ; |LCD_controller|data_in[15]~corein    ; combout          ;
+; |LCD_controller|clock_50Mhz~clkctrl ; |LCD_controller|clock_50Mhz~clkctrl   ; outclk           ;
++-------------------------------------+---------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                   ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |LCD_controller|clock_count_400Hz[16]      ; |LCD_controller|clock_count_400Hz[16]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[17]      ; |LCD_controller|clock_count_400Hz[17]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[18]      ; |LCD_controller|clock_count_400Hz[18]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[19]      ; |LCD_controller|clock_count_400Hz[19]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[11]      ; |LCD_controller|clock_count_400Hz[11]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[10]      ; |LCD_controller|clock_count_400Hz[10]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[12]      ; |LCD_controller|clock_count_400Hz[12]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[13]      ; |LCD_controller|clock_count_400Hz[13]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[2]       ; |LCD_controller|clock_count_400Hz[2]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[3]       ; |LCD_controller|clock_count_400Hz[3]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[4]       ; |LCD_controller|clock_count_400Hz[4]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[5]       ; |LCD_controller|clock_count_400Hz[5]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[6]       ; |LCD_controller|clock_count_400Hz[6]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[7]       ; |LCD_controller|clock_count_400Hz[7]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[8]       ; |LCD_controller|clock_count_400Hz[8]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[9]       ; |LCD_controller|clock_count_400Hz[9]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[14]      ; |LCD_controller|clock_count_400Hz[14]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[15]      ; |LCD_controller|clock_count_400Hz[15]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[1]       ; |LCD_controller|clock_count_400Hz[1]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[0]       ; |LCD_controller|clock_count_400Hz[0]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[0]~60    ; |LCD_controller|clock_count_400Hz[0]~60    ; combout          ;
+; |LCD_controller|clock_count_400Hz[0]~60    ; |LCD_controller|clock_count_400Hz[0]~61    ; cout             ;
+; |LCD_controller|clock_count_400Hz[1]~62    ; |LCD_controller|clock_count_400Hz[1]~62    ; combout          ;
+; |LCD_controller|clock_count_400Hz[1]~62    ; |LCD_controller|clock_count_400Hz[1]~63    ; cout             ;
+; |LCD_controller|clock_count_400Hz[2]~64    ; |LCD_controller|clock_count_400Hz[2]~64    ; combout          ;
+; |LCD_controller|clock_count_400Hz[2]~64    ; |LCD_controller|clock_count_400Hz[2]~65    ; cout             ;
+; |LCD_controller|clock_count_400Hz[3]~66    ; |LCD_controller|clock_count_400Hz[3]~66    ; combout          ;
+; |LCD_controller|clock_count_400Hz[3]~66    ; |LCD_controller|clock_count_400Hz[3]~67    ; cout             ;
+; |LCD_controller|clock_count_400Hz[4]~68    ; |LCD_controller|clock_count_400Hz[4]~68    ; combout          ;
+; |LCD_controller|clock_count_400Hz[4]~68    ; |LCD_controller|clock_count_400Hz[4]~69    ; cout             ;
+; |LCD_controller|clock_count_400Hz[5]~70    ; |LCD_controller|clock_count_400Hz[5]~70    ; combout          ;
+; |LCD_controller|clock_count_400Hz[5]~70    ; |LCD_controller|clock_count_400Hz[5]~71    ; cout             ;
+; |LCD_controller|clock_count_400Hz[6]~72    ; |LCD_controller|clock_count_400Hz[6]~72    ; combout          ;
+; |LCD_controller|clock_count_400Hz[6]~72    ; |LCD_controller|clock_count_400Hz[6]~73    ; cout             ;
+; |LCD_controller|clock_count_400Hz[7]~74    ; |LCD_controller|clock_count_400Hz[7]~74    ; combout          ;
+; |LCD_controller|clock_count_400Hz[7]~74    ; |LCD_controller|clock_count_400Hz[7]~75    ; cout             ;
+; |LCD_controller|clock_count_400Hz[8]~76    ; |LCD_controller|clock_count_400Hz[8]~76    ; combout          ;
+; |LCD_controller|clock_count_400Hz[8]~76    ; |LCD_controller|clock_count_400Hz[8]~77    ; cout             ;
+; |LCD_controller|clock_count_400Hz[9]~78    ; |LCD_controller|clock_count_400Hz[9]~78    ; combout          ;
+; |LCD_controller|clock_count_400Hz[9]~78    ; |LCD_controller|clock_count_400Hz[9]~79    ; cout             ;
+; |LCD_controller|clock_count_400Hz[10]~80   ; |LCD_controller|clock_count_400Hz[10]~80   ; combout          ;
+; |LCD_controller|clock_count_400Hz[10]~80   ; |LCD_controller|clock_count_400Hz[10]~81   ; cout             ;
+; |LCD_controller|clock_count_400Hz[11]~82   ; |LCD_controller|clock_count_400Hz[11]~82   ; combout          ;
+; |LCD_controller|clock_count_400Hz[11]~82   ; |LCD_controller|clock_count_400Hz[11]~83   ; cout             ;
+; |LCD_controller|clock_count_400Hz[12]~84   ; |LCD_controller|clock_count_400Hz[12]~84   ; combout          ;
+; |LCD_controller|clock_count_400Hz[12]~84   ; |LCD_controller|clock_count_400Hz[12]~85   ; cout             ;
+; |LCD_controller|clock_count_400Hz[13]~86   ; |LCD_controller|clock_count_400Hz[13]~86   ; combout          ;
+; |LCD_controller|clock_count_400Hz[13]~86   ; |LCD_controller|clock_count_400Hz[13]~87   ; cout             ;
+; |LCD_controller|clock_count_400Hz[14]~88   ; |LCD_controller|clock_count_400Hz[14]~88   ; combout          ;
+; |LCD_controller|clock_count_400Hz[14]~88   ; |LCD_controller|clock_count_400Hz[14]~89   ; cout             ;
+; |LCD_controller|clock_count_400Hz[15]~90   ; |LCD_controller|clock_count_400Hz[15]~90   ; combout          ;
+; |LCD_controller|clock_count_400Hz[15]~90   ; |LCD_controller|clock_count_400Hz[15]~91   ; cout             ;
+; |LCD_controller|clock_count_400Hz[16]~92   ; |LCD_controller|clock_count_400Hz[16]~92   ; combout          ;
+; |LCD_controller|clock_count_400Hz[16]~92   ; |LCD_controller|clock_count_400Hz[16]~93   ; cout             ;
+; |LCD_controller|clock_count_400Hz[17]~95   ; |LCD_controller|clock_count_400Hz[17]~95   ; combout          ;
+; |LCD_controller|clock_count_400Hz[17]~95   ; |LCD_controller|clock_count_400Hz[17]~96   ; cout             ;
+; |LCD_controller|clock_count_400Hz[18]~97   ; |LCD_controller|clock_count_400Hz[18]~97   ; combout          ;
+; |LCD_controller|clock_count_400Hz[18]~97   ; |LCD_controller|clock_count_400Hz[18]~98   ; cout             ;
+; |LCD_controller|clock_count_400Hz[19]~99   ; |LCD_controller|clock_count_400Hz[19]~99   ; combout          ;
+; |LCD_controller|LCD_EN~reg0                ; |LCD_controller|LCD_EN~reg0                ; regout           ;
+; |LCD_controller|LCD_RS~reg0                ; |LCD_controller|LCD_RS~reg0                ; regout           ;
+; |LCD_controller|state.HOLD                 ; |LCD_controller|state.HOLD                 ; regout           ;
+; |LCD_controller|state.TOGGLE_E             ; |LCD_controller|state.TOGGLE_E             ; regout           ;
+; |LCD_controller|LCD_EN~0                   ; |LCD_controller|LCD_EN~0                   ; combout          ;
+; |LCD_controller|clock_400Hz                ; |LCD_controller|clock_400Hz                ; regout           ;
+; |LCD_controller|LCD_RS~1                   ; |LCD_controller|LCD_RS~1                   ; combout          ;
+; |LCD_controller|state.DISPLAY_ON           ; |LCD_controller|state.DISPLAY_ON           ; regout           ;
+; |LCD_controller|state.MODE_SET             ; |LCD_controller|state.MODE_SET             ; regout           ;
+; |LCD_controller|state.DISPLAY_OFF          ; |LCD_controller|state.DISPLAY_OFF          ; regout           ;
+; |LCD_controller|state.DISPLAY_CLEAR        ; |LCD_controller|state.DISPLAY_CLEAR        ; regout           ;
+; |LCD_controller|WideOr2~0                  ; |LCD_controller|WideOr2~0                  ; combout          ;
+; |LCD_controller|state.MODE_SET2            ; |LCD_controller|state.MODE_SET2            ; regout           ;
+; |LCD_controller|state.RETURN_HOME          ; |LCD_controller|state.RETURN_HOME          ; regout           ;
+; |LCD_controller|WideOr2~1                  ; |LCD_controller|WideOr2~1                  ; combout          ;
+; |LCD_controller|state.RESET1               ; |LCD_controller|state.RESET1               ; regout           ;
+; |LCD_controller|state.FUNC_SET             ; |LCD_controller|state.FUNC_SET             ; regout           ;
+; |LCD_controller|state.RESET2               ; |LCD_controller|state.RESET2               ; regout           ;
+; |LCD_controller|state.RESET3               ; |LCD_controller|state.RESET3               ; regout           ;
+; |LCD_controller|WideOr2~2                  ; |LCD_controller|WideOr2~2                  ; combout          ;
+; |LCD_controller|Selector1~0                ; |LCD_controller|Selector1~0                ; combout          ;
+; |LCD_controller|LessThan0~0                ; |LCD_controller|LessThan0~0                ; combout          ;
+; |LCD_controller|LessThan0~1                ; |LCD_controller|LessThan0~1                ; combout          ;
+; |LCD_controller|LessThan0~2                ; |LCD_controller|LessThan0~2                ; combout          ;
+; |LCD_controller|LessThan0~3                ; |LCD_controller|LessThan0~3                ; combout          ;
+; |LCD_controller|LessThan0~4                ; |LCD_controller|LessThan0~4                ; combout          ;
+; |LCD_controller|LessThan0~5                ; |LCD_controller|LessThan0~5                ; combout          ;
+; |LCD_controller|clock_400Hz~2              ; |LCD_controller|clock_400Hz~2              ; combout          ;
+; |LCD_controller|next_command.DISPLAY_ON    ; |LCD_controller|next_command.DISPLAY_ON    ; regout           ;
+; |LCD_controller|state~98                   ; |LCD_controller|state~98                   ; combout          ;
+; |LCD_controller|next_command.MODE_SET      ; |LCD_controller|next_command.MODE_SET      ; regout           ;
+; |LCD_controller|state~99                   ; |LCD_controller|state~99                   ; combout          ;
+; |LCD_controller|next_command.DISPLAY_OFF   ; |LCD_controller|next_command.DISPLAY_OFF   ; regout           ;
+; |LCD_controller|state~100                  ; |LCD_controller|state~100                  ; combout          ;
+; |LCD_controller|next_command.DISPLAY_CLEAR ; |LCD_controller|next_command.DISPLAY_CLEAR ; regout           ;
+; |LCD_controller|state~101                  ; |LCD_controller|state~101                  ; combout          ;
+; |LCD_controller|next_command.MODE_SET2     ; |LCD_controller|next_command.MODE_SET2     ; regout           ;
+; |LCD_controller|state~102                  ; |LCD_controller|state~102                  ; combout          ;
+; |LCD_controller|next_command.RETURN_HOME   ; |LCD_controller|next_command.RETURN_HOME   ; regout           ;
+; |LCD_controller|state~103                  ; |LCD_controller|state~103                  ; combout          ;
+; |LCD_controller|next_command.FUNC_SET      ; |LCD_controller|next_command.FUNC_SET      ; regout           ;
+; |LCD_controller|state~104                  ; |LCD_controller|state~104                  ; combout          ;
+; |LCD_controller|next_command.RESET2        ; |LCD_controller|next_command.RESET2        ; regout           ;
+; |LCD_controller|state~105                  ; |LCD_controller|state~105                  ; combout          ;
+; |LCD_controller|next_command.RESET3        ; |LCD_controller|next_command.RESET3        ; regout           ;
+; |LCD_controller|state~106                  ; |LCD_controller|state~106                  ; combout          ;
+; |LCD_controller|data_bus_value[0]          ; |LCD_controller|data_bus_value[0]          ; regout           ;
+; |LCD_controller|data_bus_value[1]          ; |LCD_controller|data_bus_value[1]          ; regout           ;
+; |LCD_controller|data_bus_value[2]          ; |LCD_controller|data_bus_value[2]          ; regout           ;
+; |LCD_controller|data_bus_value[3]          ; |LCD_controller|data_bus_value[3]          ; regout           ;
+; |LCD_controller|data_bus_value[4]          ; |LCD_controller|data_bus_value[4]          ; regout           ;
+; |LCD_controller|data_bus_value[5]          ; |LCD_controller|data_bus_value[5]          ; regout           ;
+; |LCD_controller|data_bus_value[6]          ; |LCD_controller|data_bus_value[6]          ; regout           ;
+; |LCD_controller|data_bus_value[7]          ; |LCD_controller|data_bus_value[7]          ; regout           ;
+; |LCD_controller|clock_count_400Hz[18]~94   ; |LCD_controller|clock_count_400Hz[18]~94   ; combout          ;
+; |LCD_controller|Selector13~1               ; |LCD_controller|Selector13~1               ; combout          ;
+; |LCD_controller|Selector14~1               ; |LCD_controller|Selector14~1               ; combout          ;
+; |LCD_controller|Selector51~1               ; |LCD_controller|Selector51~1               ; combout          ;
+; |LCD_controller|Selector52~2               ; |LCD_controller|Selector52~2               ; combout          ;
+; |LCD_controller|state.WRITE_ADD16          ; |LCD_controller|state.WRITE_ADD16          ; regout           ;
+; |LCD_controller|Selector15~1               ; |LCD_controller|Selector15~1               ; combout          ;
+; |LCD_controller|state.WRITE_DATA16         ; |LCD_controller|state.WRITE_DATA16         ; regout           ;
+; |LCD_controller|Selector48~1               ; |LCD_controller|Selector48~1               ; combout          ;
+; |LCD_controller|Selector12~1               ; |LCD_controller|Selector12~1               ; combout          ;
+; |LCD_controller|Selector49~1               ; |LCD_controller|Selector49~1               ; combout          ;
+; |LCD_controller|Selector50~1               ; |LCD_controller|Selector50~1               ; combout          ;
+; |LCD_controller|state.WRITE_ADD15          ; |LCD_controller|state.WRITE_ADD15          ; regout           ;
+; |LCD_controller|Selector9~0                ; |LCD_controller|Selector9~0                ; combout          ;
+; |LCD_controller|state.WRITE_DATA15         ; |LCD_controller|state.WRITE_DATA15         ; regout           ;
+; |LCD_controller|state.WRITE_DATA12         ; |LCD_controller|state.WRITE_DATA12         ; regout           ;
+; |LCD_controller|Selector9~1                ; |LCD_controller|Selector9~1                ; combout          ;
+; |LCD_controller|state.WRITE_ADD9           ; |LCD_controller|state.WRITE_ADD9           ; regout           ;
+; |LCD_controller|state.WRITE_DATA9          ; |LCD_controller|state.WRITE_DATA9          ; regout           ;
+; |LCD_controller|state.WRITE_ADD14          ; |LCD_controller|state.WRITE_ADD14          ; regout           ;
+; |LCD_controller|Selector9~2                ; |LCD_controller|Selector9~2                ; combout          ;
+; |LCD_controller|state.WRITE_ADD11          ; |LCD_controller|state.WRITE_ADD11          ; regout           ;
+; |LCD_controller|state.WRITE_DATA13         ; |LCD_controller|state.WRITE_DATA13         ; regout           ;
+; |LCD_controller|Selector9~3                ; |LCD_controller|Selector9~3                ; combout          ;
+; |LCD_controller|state.WRITE_ADD12          ; |LCD_controller|state.WRITE_ADD12          ; regout           ;
+; |LCD_controller|state.WRITE_DATA14         ; |LCD_controller|state.WRITE_DATA14         ; regout           ;
+; |LCD_controller|Selector9~4                ; |LCD_controller|Selector9~4                ; combout          ;
+; |LCD_controller|Selector9~5                ; |LCD_controller|Selector9~5                ; combout          ;
+; |LCD_controller|state.WRITE_ADD13          ; |LCD_controller|state.WRITE_ADD13          ; regout           ;
+; |LCD_controller|Selector9~6                ; |LCD_controller|Selector9~6                ; combout          ;
+; |LCD_controller|Selector9~7                ; |LCD_controller|Selector9~7                ; combout          ;
+; |LCD_controller|state.WRITE_ADD6           ; |LCD_controller|state.WRITE_ADD6           ; regout           ;
+; |LCD_controller|state.WRITE_ADD7           ; |LCD_controller|state.WRITE_ADD7           ; regout           ;
+; |LCD_controller|state.WRITE_ADD1           ; |LCD_controller|state.WRITE_ADD1           ; regout           ;
+; |LCD_controller|state.WRITE_ADD5           ; |LCD_controller|state.WRITE_ADD5           ; regout           ;
+; |LCD_controller|Selector3~0                ; |LCD_controller|Selector3~0                ; combout          ;
+; |LCD_controller|state.WRITE_DATA2          ; |LCD_controller|state.WRITE_DATA2          ; regout           ;
+; |LCD_controller|state.WRITE_DATA4          ; |LCD_controller|state.WRITE_DATA4          ; regout           ;
+; |LCD_controller|Selector3~1                ; |LCD_controller|Selector3~1                ; combout          ;
+; |LCD_controller|Selector9~8                ; |LCD_controller|Selector9~8                ; combout          ;
+; |LCD_controller|Selector8~0                ; |LCD_controller|Selector8~0                ; combout          ;
+; |LCD_controller|Selector8~1                ; |LCD_controller|Selector8~1                ; combout          ;
+; |LCD_controller|Selector8~2                ; |LCD_controller|Selector8~2                ; combout          ;
+; |LCD_controller|Selector8~3                ; |LCD_controller|Selector8~3                ; combout          ;
+; |LCD_controller|state.WRITE_ADD4           ; |LCD_controller|state.WRITE_ADD4           ; regout           ;
+; |LCD_controller|Selector5~0                ; |LCD_controller|Selector5~0                ; combout          ;
+; |LCD_controller|Selector8~4                ; |LCD_controller|Selector8~4                ; combout          ;
+; |LCD_controller|Selector8~5                ; |LCD_controller|Selector8~5                ; combout          ;
+; |LCD_controller|Selector7~0                ; |LCD_controller|Selector7~0                ; combout          ;
+; |LCD_controller|Selector8~6                ; |LCD_controller|Selector8~6                ; combout          ;
+; |LCD_controller|Selector7~1                ; |LCD_controller|Selector7~1                ; combout          ;
+; |LCD_controller|Selector8~7                ; |LCD_controller|Selector8~7                ; combout          ;
+; |LCD_controller|Selector8~8                ; |LCD_controller|Selector8~8                ; combout          ;
+; |LCD_controller|Selector8~9                ; |LCD_controller|Selector8~9                ; combout          ;
+; |LCD_controller|Selector7~2                ; |LCD_controller|Selector7~2                ; combout          ;
+; |LCD_controller|Selector7~3                ; |LCD_controller|Selector7~3                ; combout          ;
+; |LCD_controller|state.WRITE_ADD2           ; |LCD_controller|state.WRITE_ADD2           ; regout           ;
+; |LCD_controller|state.WRITE_ADD3           ; |LCD_controller|state.WRITE_ADD3           ; regout           ;
+; |LCD_controller|state.WRITE_DATA1          ; |LCD_controller|state.WRITE_DATA1          ; regout           ;
+; |LCD_controller|state.WRITE_DATA3          ; |LCD_controller|state.WRITE_DATA3          ; regout           ;
+; |LCD_controller|Selector3~2                ; |LCD_controller|Selector3~2                ; combout          ;
+; |LCD_controller|Selector7~4                ; |LCD_controller|Selector7~4                ; combout          ;
+; |LCD_controller|Selector7~5                ; |LCD_controller|Selector7~5                ; combout          ;
+; |LCD_controller|Selector7~6                ; |LCD_controller|Selector7~6                ; combout          ;
+; |LCD_controller|Selector7~7                ; |LCD_controller|Selector7~7                ; combout          ;
+; |LCD_controller|Selector7~8                ; |LCD_controller|Selector7~8                ; combout          ;
+; |LCD_controller|Selector7~9                ; |LCD_controller|Selector7~9                ; combout          ;
+; |LCD_controller|Selector7~10               ; |LCD_controller|Selector7~10               ; combout          ;
+; |LCD_controller|Selector7~11               ; |LCD_controller|Selector7~11               ; combout          ;
+; |LCD_controller|Selector7~12               ; |LCD_controller|Selector7~12               ; combout          ;
+; |LCD_controller|Selector7~13               ; |LCD_controller|Selector7~13               ; combout          ;
+; |LCD_controller|Selector7~14               ; |LCD_controller|Selector7~14               ; combout          ;
+; |LCD_controller|Selector6~0                ; |LCD_controller|Selector6~0                ; combout          ;
+; |LCD_controller|Selector6~1                ; |LCD_controller|Selector6~1                ; combout          ;
+; |LCD_controller|Selector6~2                ; |LCD_controller|Selector6~2                ; combout          ;
+; |LCD_controller|Selector6~3                ; |LCD_controller|Selector6~3                ; combout          ;
+; |LCD_controller|Selector6~4                ; |LCD_controller|Selector6~4                ; combout          ;
+; |LCD_controller|Selector6~5                ; |LCD_controller|Selector6~5                ; combout          ;
+; |LCD_controller|Selector6~6                ; |LCD_controller|Selector6~6                ; combout          ;
+; |LCD_controller|Selector5~1                ; |LCD_controller|Selector5~1                ; combout          ;
+; |LCD_controller|Selector9~9                ; |LCD_controller|Selector9~9                ; combout          ;
+; |LCD_controller|Selector5~2                ; |LCD_controller|Selector5~2                ; combout          ;
+; |LCD_controller|Selector5~3                ; |LCD_controller|Selector5~3                ; combout          ;
+; |LCD_controller|Selector5~4                ; |LCD_controller|Selector5~4                ; combout          ;
+; |LCD_controller|Selector5~5                ; |LCD_controller|Selector5~5                ; combout          ;
+; |LCD_controller|Selector5~6                ; |LCD_controller|Selector5~6                ; combout          ;
+; |LCD_controller|Selector5~7                ; |LCD_controller|Selector5~7                ; combout          ;
+; |LCD_controller|Selector5~8                ; |LCD_controller|Selector5~8                ; combout          ;
+; |LCD_controller|WideOr6~0                  ; |LCD_controller|WideOr6~0                  ; combout          ;
+; |LCD_controller|WideOr6~1                  ; |LCD_controller|WideOr6~1                  ; combout          ;
+; |LCD_controller|WideOr6~2                  ; |LCD_controller|WideOr6~2                  ; combout          ;
+; |LCD_controller|WideOr6~3                  ; |LCD_controller|WideOr6~3                  ; combout          ;
+; |LCD_controller|Selector4~0                ; |LCD_controller|Selector4~0                ; combout          ;
+; |LCD_controller|Selector3~3                ; |LCD_controller|Selector3~3                ; combout          ;
+; |LCD_controller|Selector3~4                ; |LCD_controller|Selector3~4                ; combout          ;
+; |LCD_controller|Selector3~5                ; |LCD_controller|Selector3~5                ; combout          ;
+; |LCD_controller|Selector3~6                ; |LCD_controller|Selector3~6                ; combout          ;
+; |LCD_controller|Selector3~7                ; |LCD_controller|Selector3~7                ; combout          ;
+; |LCD_controller|Selector3~8                ; |LCD_controller|Selector3~8                ; combout          ;
+; |LCD_controller|Selector3~9                ; |LCD_controller|Selector3~9                ; combout          ;
+; |LCD_controller|Selector2~0                ; |LCD_controller|Selector2~0                ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD16   ; |LCD_controller|next_command.WRITE_ADD16   ; regout           ;
+; |LCD_controller|state~107                  ; |LCD_controller|state~107                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA16  ; |LCD_controller|next_command.WRITE_DATA16  ; regout           ;
+; |LCD_controller|state~108                  ; |LCD_controller|state~108                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD15   ; |LCD_controller|next_command.WRITE_ADD15   ; regout           ;
+; |LCD_controller|state~109                  ; |LCD_controller|state~109                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA15  ; |LCD_controller|next_command.WRITE_DATA15  ; regout           ;
+; |LCD_controller|state~110                  ; |LCD_controller|state~110                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA12  ; |LCD_controller|next_command.WRITE_DATA12  ; regout           ;
+; |LCD_controller|state~111                  ; |LCD_controller|state~111                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD9    ; |LCD_controller|next_command.WRITE_ADD9    ; regout           ;
+; |LCD_controller|state~112                  ; |LCD_controller|state~112                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA9   ; |LCD_controller|next_command.WRITE_DATA9   ; regout           ;
+; |LCD_controller|state~113                  ; |LCD_controller|state~113                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD14   ; |LCD_controller|next_command.WRITE_ADD14   ; regout           ;
+; |LCD_controller|state~114                  ; |LCD_controller|state~114                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD11   ; |LCD_controller|next_command.WRITE_ADD11   ; regout           ;
+; |LCD_controller|state~115                  ; |LCD_controller|state~115                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA13  ; |LCD_controller|next_command.WRITE_DATA13  ; regout           ;
+; |LCD_controller|state~116                  ; |LCD_controller|state~116                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD12   ; |LCD_controller|next_command.WRITE_ADD12   ; regout           ;
+; |LCD_controller|state~117                  ; |LCD_controller|state~117                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA14  ; |LCD_controller|next_command.WRITE_DATA14  ; regout           ;
+; |LCD_controller|state~118                  ; |LCD_controller|state~118                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD13   ; |LCD_controller|next_command.WRITE_ADD13   ; regout           ;
+; |LCD_controller|state~119                  ; |LCD_controller|state~119                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD6    ; |LCD_controller|next_command.WRITE_ADD6    ; regout           ;
+; |LCD_controller|state~120                  ; |LCD_controller|state~120                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD7    ; |LCD_controller|next_command.WRITE_ADD7    ; regout           ;
+; |LCD_controller|state~121                  ; |LCD_controller|state~121                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD1    ; |LCD_controller|next_command.WRITE_ADD1    ; regout           ;
+; |LCD_controller|state~122                  ; |LCD_controller|state~122                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD5    ; |LCD_controller|next_command.WRITE_ADD5    ; regout           ;
+; |LCD_controller|state~123                  ; |LCD_controller|state~123                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA2   ; |LCD_controller|next_command.WRITE_DATA2   ; regout           ;
+; |LCD_controller|state~124                  ; |LCD_controller|state~124                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA4   ; |LCD_controller|next_command.WRITE_DATA4   ; regout           ;
+; |LCD_controller|state~125                  ; |LCD_controller|state~125                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD4    ; |LCD_controller|next_command.WRITE_ADD4    ; regout           ;
+; |LCD_controller|state~126                  ; |LCD_controller|state~126                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD2    ; |LCD_controller|next_command.WRITE_ADD2    ; regout           ;
+; |LCD_controller|state~127                  ; |LCD_controller|state~127                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD3    ; |LCD_controller|next_command.WRITE_ADD3    ; regout           ;
+; |LCD_controller|state~128                  ; |LCD_controller|state~128                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA1   ; |LCD_controller|next_command.WRITE_DATA1   ; regout           ;
+; |LCD_controller|state~129                  ; |LCD_controller|state~129                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA3   ; |LCD_controller|next_command.WRITE_DATA3   ; regout           ;
+; |LCD_controller|state~130                  ; |LCD_controller|state~130                  ; combout          ;
+; |LCD_controller|Selector31~1               ; |LCD_controller|Selector31~1               ; combout          ;
+; |LCD_controller|Selector47~1               ; |LCD_controller|Selector47~1               ; combout          ;
+; |LCD_controller|Selector30~1               ; |LCD_controller|Selector30~1               ; combout          ;
+; |LCD_controller|Selector46~1               ; |LCD_controller|Selector46~1               ; combout          ;
+; |LCD_controller|state.WRITE_DATA11         ; |LCD_controller|state.WRITE_DATA11         ; regout           ;
+; |LCD_controller|Selector43~1               ; |LCD_controller|Selector43~1               ; combout          ;
+; |LCD_controller|state.WRITE_ADD8           ; |LCD_controller|state.WRITE_ADD8           ; regout           ;
+; |LCD_controller|Selector24~1               ; |LCD_controller|Selector24~1               ; combout          ;
+; |LCD_controller|state.WRITE_DATA8          ; |LCD_controller|state.WRITE_DATA8          ; regout           ;
+; |LCD_controller|Selector40~1               ; |LCD_controller|Selector40~1               ; combout          ;
+; |LCD_controller|Selector29~1               ; |LCD_controller|Selector29~1               ; combout          ;
+; |LCD_controller|state.WRITE_ADD10          ; |LCD_controller|state.WRITE_ADD10          ; regout           ;
+; |LCD_controller|Selector26~1               ; |LCD_controller|Selector26~1               ; combout          ;
+; |LCD_controller|Selector44~1               ; |LCD_controller|Selector44~1               ; combout          ;
+; |LCD_controller|Selector27~1               ; |LCD_controller|Selector27~1               ; combout          ;
+; |LCD_controller|Selector45~1               ; |LCD_controller|Selector45~1               ; combout          ;
+; |LCD_controller|Selector28~1               ; |LCD_controller|Selector28~1               ; combout          ;
+; |LCD_controller|Selector21~1               ; |LCD_controller|Selector21~1               ; combout          ;
+; |LCD_controller|Selector22~1               ; |LCD_controller|Selector22~1               ; combout          ;
+; |LCD_controller|Selector16~1               ; |LCD_controller|Selector16~1               ; combout          ;
+; |LCD_controller|Selector20~1               ; |LCD_controller|Selector20~1               ; combout          ;
+; |LCD_controller|Selector33~1               ; |LCD_controller|Selector33~1               ; combout          ;
+; |LCD_controller|Selector35~1               ; |LCD_controller|Selector35~1               ; combout          ;
+; |LCD_controller|Selector19~1               ; |LCD_controller|Selector19~1               ; combout          ;
+; |LCD_controller|Selector17~1               ; |LCD_controller|Selector17~1               ; combout          ;
+; |LCD_controller|Selector18~1               ; |LCD_controller|Selector18~1               ; combout          ;
+; |LCD_controller|Selector32~1               ; |LCD_controller|Selector32~1               ; combout          ;
+; |LCD_controller|Selector34~1               ; |LCD_controller|Selector34~1               ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA11  ; |LCD_controller|next_command.WRITE_DATA11  ; regout           ;
+; |LCD_controller|state~131                  ; |LCD_controller|state~131                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD8    ; |LCD_controller|next_command.WRITE_ADD8    ; regout           ;
+; |LCD_controller|state~132                  ; |LCD_controller|state~132                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA8   ; |LCD_controller|next_command.WRITE_DATA8   ; regout           ;
+; |LCD_controller|state~133                  ; |LCD_controller|state~133                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD10   ; |LCD_controller|next_command.WRITE_ADD10   ; regout           ;
+; |LCD_controller|state~134                  ; |LCD_controller|state~134                  ; combout          ;
+; |LCD_controller|state.WRITE_DATA10         ; |LCD_controller|state.WRITE_DATA10         ; regout           ;
+; |LCD_controller|Selector42~1               ; |LCD_controller|Selector42~1               ; combout          ;
+; |LCD_controller|Selector23~1               ; |LCD_controller|Selector23~1               ; combout          ;
+; |LCD_controller|state.WRITE_DATA7          ; |LCD_controller|state.WRITE_DATA7          ; regout           ;
+; |LCD_controller|Selector39~1               ; |LCD_controller|Selector39~1               ; combout          ;
+; |LCD_controller|Selector25~1               ; |LCD_controller|Selector25~1               ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA10  ; |LCD_controller|next_command.WRITE_DATA10  ; regout           ;
+; |LCD_controller|state~135                  ; |LCD_controller|state~135                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA7   ; |LCD_controller|next_command.WRITE_DATA7   ; regout           ;
+; |LCD_controller|state~136                  ; |LCD_controller|state~136                  ; combout          ;
+; |LCD_controller|Selector41~1               ; |LCD_controller|Selector41~1               ; combout          ;
+; |LCD_controller|state.WRITE_DATA6          ; |LCD_controller|state.WRITE_DATA6          ; regout           ;
+; |LCD_controller|Selector38~1               ; |LCD_controller|Selector38~1               ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA6   ; |LCD_controller|next_command.WRITE_DATA6   ; regout           ;
+; |LCD_controller|state~137                  ; |LCD_controller|state~137                  ; combout          ;
+; |LCD_controller|state.WRITE_DATA5          ; |LCD_controller|state.WRITE_DATA5          ; regout           ;
+; |LCD_controller|Selector37~1               ; |LCD_controller|Selector37~1               ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA5   ; |LCD_controller|next_command.WRITE_DATA5   ; regout           ;
+; |LCD_controller|state~138                  ; |LCD_controller|state~138                  ; combout          ;
+; |LCD_controller|Selector36~1               ; |LCD_controller|Selector36~1               ; combout          ;
+; |LCD_controller|data_bus[0]                ; |LCD_controller|data_bus[0]~output         ; padio            ;
+; |LCD_controller|data_bus[1]                ; |LCD_controller|data_bus[1]~output         ; padio            ;
+; |LCD_controller|data_bus[2]                ; |LCD_controller|data_bus[2]~output         ; padio            ;
+; |LCD_controller|data_bus[3]                ; |LCD_controller|data_bus[3]~output         ; padio            ;
+; |LCD_controller|data_bus[4]                ; |LCD_controller|data_bus[4]~output         ; padio            ;
+; |LCD_controller|data_bus[5]                ; |LCD_controller|data_bus[5]~output         ; padio            ;
+; |LCD_controller|data_bus[6]                ; |LCD_controller|data_bus[6]~output         ; padio            ;
+; |LCD_controller|data_bus[7]                ; |LCD_controller|data_bus[7]~output         ; padio            ;
+; |LCD_controller|LCD_EN                     ; |LCD_controller|LCD_EN                     ; padio            ;
+; |LCD_controller|LCD_RS                     ; |LCD_controller|LCD_RS                     ; padio            ;
+; |LCD_controller|LCD_ON                     ; |LCD_controller|LCD_ON                     ; padio            ;
+; |LCD_controller|LCD_RW                     ; |LCD_controller|LCD_RW                     ; padio            ;
+; |LCD_controller|reset                      ; |LCD_controller|reset~corein               ; combout          ;
+; |LCD_controller|reset~clk_delay_ctrl       ; |LCD_controller|reset~clk_delay_ctrl       ; clkout           ;
+; |LCD_controller|clock_400Hz~clkctrl        ; |LCD_controller|clock_400Hz~clkctrl        ; outclk           ;
+; |LCD_controller|reset~clkctrl              ; |LCD_controller|reset~clkctrl              ; outclk           ;
+; |LCD_controller|state.RESET1~feeder        ; |LCD_controller|state.RESET1~feeder        ; combout          ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                   ;
++--------------------------------------------+--------------------------------------------+------------------+
+; Node Name                                  ; Output Port Name                           ; Output Port Type ;
++--------------------------------------------+--------------------------------------------+------------------+
+; |LCD_controller|clock_count_400Hz[16]      ; |LCD_controller|clock_count_400Hz[16]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[17]      ; |LCD_controller|clock_count_400Hz[17]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[18]      ; |LCD_controller|clock_count_400Hz[18]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[19]      ; |LCD_controller|clock_count_400Hz[19]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[11]      ; |LCD_controller|clock_count_400Hz[11]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[10]      ; |LCD_controller|clock_count_400Hz[10]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[12]      ; |LCD_controller|clock_count_400Hz[12]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[13]      ; |LCD_controller|clock_count_400Hz[13]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[2]       ; |LCD_controller|clock_count_400Hz[2]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[3]       ; |LCD_controller|clock_count_400Hz[3]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[4]       ; |LCD_controller|clock_count_400Hz[4]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[5]       ; |LCD_controller|clock_count_400Hz[5]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[6]       ; |LCD_controller|clock_count_400Hz[6]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[7]       ; |LCD_controller|clock_count_400Hz[7]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[8]       ; |LCD_controller|clock_count_400Hz[8]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[9]       ; |LCD_controller|clock_count_400Hz[9]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[14]      ; |LCD_controller|clock_count_400Hz[14]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[15]      ; |LCD_controller|clock_count_400Hz[15]      ; regout           ;
+; |LCD_controller|clock_count_400Hz[1]       ; |LCD_controller|clock_count_400Hz[1]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[0]       ; |LCD_controller|clock_count_400Hz[0]       ; regout           ;
+; |LCD_controller|clock_count_400Hz[0]~60    ; |LCD_controller|clock_count_400Hz[0]~60    ; combout          ;
+; |LCD_controller|clock_count_400Hz[0]~60    ; |LCD_controller|clock_count_400Hz[0]~61    ; cout             ;
+; |LCD_controller|clock_count_400Hz[1]~62    ; |LCD_controller|clock_count_400Hz[1]~62    ; combout          ;
+; |LCD_controller|clock_count_400Hz[1]~62    ; |LCD_controller|clock_count_400Hz[1]~63    ; cout             ;
+; |LCD_controller|clock_count_400Hz[2]~64    ; |LCD_controller|clock_count_400Hz[2]~64    ; combout          ;
+; |LCD_controller|clock_count_400Hz[2]~64    ; |LCD_controller|clock_count_400Hz[2]~65    ; cout             ;
+; |LCD_controller|clock_count_400Hz[3]~66    ; |LCD_controller|clock_count_400Hz[3]~66    ; combout          ;
+; |LCD_controller|clock_count_400Hz[3]~66    ; |LCD_controller|clock_count_400Hz[3]~67    ; cout             ;
+; |LCD_controller|clock_count_400Hz[4]~68    ; |LCD_controller|clock_count_400Hz[4]~68    ; combout          ;
+; |LCD_controller|clock_count_400Hz[4]~68    ; |LCD_controller|clock_count_400Hz[4]~69    ; cout             ;
+; |LCD_controller|clock_count_400Hz[5]~70    ; |LCD_controller|clock_count_400Hz[5]~70    ; combout          ;
+; |LCD_controller|clock_count_400Hz[5]~70    ; |LCD_controller|clock_count_400Hz[5]~71    ; cout             ;
+; |LCD_controller|clock_count_400Hz[6]~72    ; |LCD_controller|clock_count_400Hz[6]~72    ; combout          ;
+; |LCD_controller|clock_count_400Hz[6]~72    ; |LCD_controller|clock_count_400Hz[6]~73    ; cout             ;
+; |LCD_controller|clock_count_400Hz[7]~74    ; |LCD_controller|clock_count_400Hz[7]~74    ; combout          ;
+; |LCD_controller|clock_count_400Hz[7]~74    ; |LCD_controller|clock_count_400Hz[7]~75    ; cout             ;
+; |LCD_controller|clock_count_400Hz[8]~76    ; |LCD_controller|clock_count_400Hz[8]~76    ; combout          ;
+; |LCD_controller|clock_count_400Hz[8]~76    ; |LCD_controller|clock_count_400Hz[8]~77    ; cout             ;
+; |LCD_controller|clock_count_400Hz[9]~78    ; |LCD_controller|clock_count_400Hz[9]~78    ; combout          ;
+; |LCD_controller|clock_count_400Hz[9]~78    ; |LCD_controller|clock_count_400Hz[9]~79    ; cout             ;
+; |LCD_controller|clock_count_400Hz[10]~80   ; |LCD_controller|clock_count_400Hz[10]~80   ; combout          ;
+; |LCD_controller|clock_count_400Hz[10]~80   ; |LCD_controller|clock_count_400Hz[10]~81   ; cout             ;
+; |LCD_controller|clock_count_400Hz[11]~82   ; |LCD_controller|clock_count_400Hz[11]~82   ; combout          ;
+; |LCD_controller|clock_count_400Hz[11]~82   ; |LCD_controller|clock_count_400Hz[11]~83   ; cout             ;
+; |LCD_controller|clock_count_400Hz[12]~84   ; |LCD_controller|clock_count_400Hz[12]~84   ; combout          ;
+; |LCD_controller|clock_count_400Hz[12]~84   ; |LCD_controller|clock_count_400Hz[12]~85   ; cout             ;
+; |LCD_controller|clock_count_400Hz[13]~86   ; |LCD_controller|clock_count_400Hz[13]~86   ; combout          ;
+; |LCD_controller|clock_count_400Hz[13]~86   ; |LCD_controller|clock_count_400Hz[13]~87   ; cout             ;
+; |LCD_controller|clock_count_400Hz[14]~88   ; |LCD_controller|clock_count_400Hz[14]~88   ; combout          ;
+; |LCD_controller|clock_count_400Hz[14]~88   ; |LCD_controller|clock_count_400Hz[14]~89   ; cout             ;
+; |LCD_controller|clock_count_400Hz[15]~90   ; |LCD_controller|clock_count_400Hz[15]~90   ; combout          ;
+; |LCD_controller|clock_count_400Hz[15]~90   ; |LCD_controller|clock_count_400Hz[15]~91   ; cout             ;
+; |LCD_controller|clock_count_400Hz[16]~92   ; |LCD_controller|clock_count_400Hz[16]~92   ; combout          ;
+; |LCD_controller|clock_count_400Hz[16]~92   ; |LCD_controller|clock_count_400Hz[16]~93   ; cout             ;
+; |LCD_controller|clock_count_400Hz[17]~95   ; |LCD_controller|clock_count_400Hz[17]~95   ; combout          ;
+; |LCD_controller|clock_count_400Hz[17]~95   ; |LCD_controller|clock_count_400Hz[17]~96   ; cout             ;
+; |LCD_controller|clock_count_400Hz[18]~97   ; |LCD_controller|clock_count_400Hz[18]~97   ; combout          ;
+; |LCD_controller|clock_count_400Hz[18]~97   ; |LCD_controller|clock_count_400Hz[18]~98   ; cout             ;
+; |LCD_controller|clock_count_400Hz[19]~99   ; |LCD_controller|clock_count_400Hz[19]~99   ; combout          ;
+; |LCD_controller|LCD_EN~reg0                ; |LCD_controller|LCD_EN~reg0                ; regout           ;
+; |LCD_controller|LCD_RS~reg0                ; |LCD_controller|LCD_RS~reg0                ; regout           ;
+; |LCD_controller|state.HOLD                 ; |LCD_controller|state.HOLD                 ; regout           ;
+; |LCD_controller|state.TOGGLE_E             ; |LCD_controller|state.TOGGLE_E             ; regout           ;
+; |LCD_controller|LCD_EN~0                   ; |LCD_controller|LCD_EN~0                   ; combout          ;
+; |LCD_controller|clock_400Hz                ; |LCD_controller|clock_400Hz                ; regout           ;
+; |LCD_controller|LCD_RS~1                   ; |LCD_controller|LCD_RS~1                   ; combout          ;
+; |LCD_controller|state.DISPLAY_ON           ; |LCD_controller|state.DISPLAY_ON           ; regout           ;
+; |LCD_controller|state.MODE_SET             ; |LCD_controller|state.MODE_SET             ; regout           ;
+; |LCD_controller|state.DISPLAY_OFF          ; |LCD_controller|state.DISPLAY_OFF          ; regout           ;
+; |LCD_controller|state.DISPLAY_CLEAR        ; |LCD_controller|state.DISPLAY_CLEAR        ; regout           ;
+; |LCD_controller|WideOr2~0                  ; |LCD_controller|WideOr2~0                  ; combout          ;
+; |LCD_controller|state.MODE_SET2            ; |LCD_controller|state.MODE_SET2            ; regout           ;
+; |LCD_controller|state.RETURN_HOME          ; |LCD_controller|state.RETURN_HOME          ; regout           ;
+; |LCD_controller|WideOr2~1                  ; |LCD_controller|WideOr2~1                  ; combout          ;
+; |LCD_controller|state.RESET1               ; |LCD_controller|state.RESET1               ; regout           ;
+; |LCD_controller|state.FUNC_SET             ; |LCD_controller|state.FUNC_SET             ; regout           ;
+; |LCD_controller|state.RESET2               ; |LCD_controller|state.RESET2               ; regout           ;
+; |LCD_controller|state.RESET3               ; |LCD_controller|state.RESET3               ; regout           ;
+; |LCD_controller|WideOr2~2                  ; |LCD_controller|WideOr2~2                  ; combout          ;
+; |LCD_controller|Selector1~0                ; |LCD_controller|Selector1~0                ; combout          ;
+; |LCD_controller|LessThan0~0                ; |LCD_controller|LessThan0~0                ; combout          ;
+; |LCD_controller|LessThan0~1                ; |LCD_controller|LessThan0~1                ; combout          ;
+; |LCD_controller|LessThan0~2                ; |LCD_controller|LessThan0~2                ; combout          ;
+; |LCD_controller|LessThan0~3                ; |LCD_controller|LessThan0~3                ; combout          ;
+; |LCD_controller|LessThan0~4                ; |LCD_controller|LessThan0~4                ; combout          ;
+; |LCD_controller|LessThan0~5                ; |LCD_controller|LessThan0~5                ; combout          ;
+; |LCD_controller|clock_400Hz~2              ; |LCD_controller|clock_400Hz~2              ; combout          ;
+; |LCD_controller|next_command.DISPLAY_ON    ; |LCD_controller|next_command.DISPLAY_ON    ; regout           ;
+; |LCD_controller|state~98                   ; |LCD_controller|state~98                   ; combout          ;
+; |LCD_controller|next_command.MODE_SET      ; |LCD_controller|next_command.MODE_SET      ; regout           ;
+; |LCD_controller|state~99                   ; |LCD_controller|state~99                   ; combout          ;
+; |LCD_controller|next_command.DISPLAY_OFF   ; |LCD_controller|next_command.DISPLAY_OFF   ; regout           ;
+; |LCD_controller|state~100                  ; |LCD_controller|state~100                  ; combout          ;
+; |LCD_controller|next_command.DISPLAY_CLEAR ; |LCD_controller|next_command.DISPLAY_CLEAR ; regout           ;
+; |LCD_controller|state~101                  ; |LCD_controller|state~101                  ; combout          ;
+; |LCD_controller|next_command.MODE_SET2     ; |LCD_controller|next_command.MODE_SET2     ; regout           ;
+; |LCD_controller|state~102                  ; |LCD_controller|state~102                  ; combout          ;
+; |LCD_controller|next_command.RETURN_HOME   ; |LCD_controller|next_command.RETURN_HOME   ; regout           ;
+; |LCD_controller|state~103                  ; |LCD_controller|state~103                  ; combout          ;
+; |LCD_controller|next_command.FUNC_SET      ; |LCD_controller|next_command.FUNC_SET      ; regout           ;
+; |LCD_controller|state~104                  ; |LCD_controller|state~104                  ; combout          ;
+; |LCD_controller|next_command.RESET2        ; |LCD_controller|next_command.RESET2        ; regout           ;
+; |LCD_controller|state~105                  ; |LCD_controller|state~105                  ; combout          ;
+; |LCD_controller|next_command.RESET3        ; |LCD_controller|next_command.RESET3        ; regout           ;
+; |LCD_controller|state~106                  ; |LCD_controller|state~106                  ; combout          ;
+; |LCD_controller|data_bus_value[0]          ; |LCD_controller|data_bus_value[0]          ; regout           ;
+; |LCD_controller|data_bus_value[1]          ; |LCD_controller|data_bus_value[1]          ; regout           ;
+; |LCD_controller|data_bus_value[2]          ; |LCD_controller|data_bus_value[2]          ; regout           ;
+; |LCD_controller|data_bus_value[3]          ; |LCD_controller|data_bus_value[3]          ; regout           ;
+; |LCD_controller|data_bus_value[4]          ; |LCD_controller|data_bus_value[4]          ; regout           ;
+; |LCD_controller|data_bus_value[5]          ; |LCD_controller|data_bus_value[5]          ; regout           ;
+; |LCD_controller|data_bus_value[6]          ; |LCD_controller|data_bus_value[6]          ; regout           ;
+; |LCD_controller|data_bus_value[7]          ; |LCD_controller|data_bus_value[7]          ; regout           ;
+; |LCD_controller|clock_count_400Hz[18]~94   ; |LCD_controller|clock_count_400Hz[18]~94   ; combout          ;
+; |LCD_controller|Selector13~1               ; |LCD_controller|Selector13~1               ; combout          ;
+; |LCD_controller|Selector14~1               ; |LCD_controller|Selector14~1               ; combout          ;
+; |LCD_controller|Selector51~1               ; |LCD_controller|Selector51~1               ; combout          ;
+; |LCD_controller|Selector52~2               ; |LCD_controller|Selector52~2               ; combout          ;
+; |LCD_controller|state.WRITE_ADD16          ; |LCD_controller|state.WRITE_ADD16          ; regout           ;
+; |LCD_controller|Selector15~1               ; |LCD_controller|Selector15~1               ; combout          ;
+; |LCD_controller|state.WRITE_DATA16         ; |LCD_controller|state.WRITE_DATA16         ; regout           ;
+; |LCD_controller|Selector48~1               ; |LCD_controller|Selector48~1               ; combout          ;
+; |LCD_controller|Selector12~1               ; |LCD_controller|Selector12~1               ; combout          ;
+; |LCD_controller|Selector49~1               ; |LCD_controller|Selector49~1               ; combout          ;
+; |LCD_controller|Selector50~1               ; |LCD_controller|Selector50~1               ; combout          ;
+; |LCD_controller|state.WRITE_ADD15          ; |LCD_controller|state.WRITE_ADD15          ; regout           ;
+; |LCD_controller|Selector9~0                ; |LCD_controller|Selector9~0                ; combout          ;
+; |LCD_controller|state.WRITE_DATA15         ; |LCD_controller|state.WRITE_DATA15         ; regout           ;
+; |LCD_controller|state.WRITE_DATA12         ; |LCD_controller|state.WRITE_DATA12         ; regout           ;
+; |LCD_controller|Selector9~1                ; |LCD_controller|Selector9~1                ; combout          ;
+; |LCD_controller|state.WRITE_ADD9           ; |LCD_controller|state.WRITE_ADD9           ; regout           ;
+; |LCD_controller|state.WRITE_DATA9          ; |LCD_controller|state.WRITE_DATA9          ; regout           ;
+; |LCD_controller|state.WRITE_ADD14          ; |LCD_controller|state.WRITE_ADD14          ; regout           ;
+; |LCD_controller|Selector9~2                ; |LCD_controller|Selector9~2                ; combout          ;
+; |LCD_controller|state.WRITE_ADD11          ; |LCD_controller|state.WRITE_ADD11          ; regout           ;
+; |LCD_controller|state.WRITE_DATA13         ; |LCD_controller|state.WRITE_DATA13         ; regout           ;
+; |LCD_controller|Selector9~3                ; |LCD_controller|Selector9~3                ; combout          ;
+; |LCD_controller|state.WRITE_ADD12          ; |LCD_controller|state.WRITE_ADD12          ; regout           ;
+; |LCD_controller|state.WRITE_DATA14         ; |LCD_controller|state.WRITE_DATA14         ; regout           ;
+; |LCD_controller|Selector9~4                ; |LCD_controller|Selector9~4                ; combout          ;
+; |LCD_controller|Selector9~5                ; |LCD_controller|Selector9~5                ; combout          ;
+; |LCD_controller|state.WRITE_ADD13          ; |LCD_controller|state.WRITE_ADD13          ; regout           ;
+; |LCD_controller|Selector9~6                ; |LCD_controller|Selector9~6                ; combout          ;
+; |LCD_controller|Selector9~7                ; |LCD_controller|Selector9~7                ; combout          ;
+; |LCD_controller|state.WRITE_ADD6           ; |LCD_controller|state.WRITE_ADD6           ; regout           ;
+; |LCD_controller|state.WRITE_ADD7           ; |LCD_controller|state.WRITE_ADD7           ; regout           ;
+; |LCD_controller|state.WRITE_ADD1           ; |LCD_controller|state.WRITE_ADD1           ; regout           ;
+; |LCD_controller|state.WRITE_ADD5           ; |LCD_controller|state.WRITE_ADD5           ; regout           ;
+; |LCD_controller|Selector3~0                ; |LCD_controller|Selector3~0                ; combout          ;
+; |LCD_controller|state.WRITE_DATA2          ; |LCD_controller|state.WRITE_DATA2          ; regout           ;
+; |LCD_controller|state.WRITE_DATA4          ; |LCD_controller|state.WRITE_DATA4          ; regout           ;
+; |LCD_controller|Selector3~1                ; |LCD_controller|Selector3~1                ; combout          ;
+; |LCD_controller|Selector9~8                ; |LCD_controller|Selector9~8                ; combout          ;
+; |LCD_controller|Selector8~0                ; |LCD_controller|Selector8~0                ; combout          ;
+; |LCD_controller|Selector8~1                ; |LCD_controller|Selector8~1                ; combout          ;
+; |LCD_controller|Selector8~2                ; |LCD_controller|Selector8~2                ; combout          ;
+; |LCD_controller|Selector8~3                ; |LCD_controller|Selector8~3                ; combout          ;
+; |LCD_controller|state.WRITE_ADD4           ; |LCD_controller|state.WRITE_ADD4           ; regout           ;
+; |LCD_controller|Selector5~0                ; |LCD_controller|Selector5~0                ; combout          ;
+; |LCD_controller|Selector8~4                ; |LCD_controller|Selector8~4                ; combout          ;
+; |LCD_controller|Selector8~5                ; |LCD_controller|Selector8~5                ; combout          ;
+; |LCD_controller|Selector7~0                ; |LCD_controller|Selector7~0                ; combout          ;
+; |LCD_controller|Selector8~6                ; |LCD_controller|Selector8~6                ; combout          ;
+; |LCD_controller|Selector7~1                ; |LCD_controller|Selector7~1                ; combout          ;
+; |LCD_controller|Selector8~7                ; |LCD_controller|Selector8~7                ; combout          ;
+; |LCD_controller|Selector8~8                ; |LCD_controller|Selector8~8                ; combout          ;
+; |LCD_controller|Selector8~9                ; |LCD_controller|Selector8~9                ; combout          ;
+; |LCD_controller|Selector7~2                ; |LCD_controller|Selector7~2                ; combout          ;
+; |LCD_controller|Selector7~3                ; |LCD_controller|Selector7~3                ; combout          ;
+; |LCD_controller|state.WRITE_ADD2           ; |LCD_controller|state.WRITE_ADD2           ; regout           ;
+; |LCD_controller|state.WRITE_ADD3           ; |LCD_controller|state.WRITE_ADD3           ; regout           ;
+; |LCD_controller|state.WRITE_DATA1          ; |LCD_controller|state.WRITE_DATA1          ; regout           ;
+; |LCD_controller|state.WRITE_DATA3          ; |LCD_controller|state.WRITE_DATA3          ; regout           ;
+; |LCD_controller|Selector3~2                ; |LCD_controller|Selector3~2                ; combout          ;
+; |LCD_controller|Selector7~4                ; |LCD_controller|Selector7~4                ; combout          ;
+; |LCD_controller|Selector7~5                ; |LCD_controller|Selector7~5                ; combout          ;
+; |LCD_controller|Selector7~6                ; |LCD_controller|Selector7~6                ; combout          ;
+; |LCD_controller|Selector7~7                ; |LCD_controller|Selector7~7                ; combout          ;
+; |LCD_controller|Selector7~8                ; |LCD_controller|Selector7~8                ; combout          ;
+; |LCD_controller|Selector7~9                ; |LCD_controller|Selector7~9                ; combout          ;
+; |LCD_controller|Selector7~10               ; |LCD_controller|Selector7~10               ; combout          ;
+; |LCD_controller|Selector7~11               ; |LCD_controller|Selector7~11               ; combout          ;
+; |LCD_controller|Selector7~12               ; |LCD_controller|Selector7~12               ; combout          ;
+; |LCD_controller|Selector7~13               ; |LCD_controller|Selector7~13               ; combout          ;
+; |LCD_controller|Selector7~14               ; |LCD_controller|Selector7~14               ; combout          ;
+; |LCD_controller|Selector6~0                ; |LCD_controller|Selector6~0                ; combout          ;
+; |LCD_controller|Selector6~1                ; |LCD_controller|Selector6~1                ; combout          ;
+; |LCD_controller|Selector6~2                ; |LCD_controller|Selector6~2                ; combout          ;
+; |LCD_controller|Selector6~3                ; |LCD_controller|Selector6~3                ; combout          ;
+; |LCD_controller|Selector6~4                ; |LCD_controller|Selector6~4                ; combout          ;
+; |LCD_controller|Selector6~5                ; |LCD_controller|Selector6~5                ; combout          ;
+; |LCD_controller|Selector6~6                ; |LCD_controller|Selector6~6                ; combout          ;
+; |LCD_controller|Selector5~1                ; |LCD_controller|Selector5~1                ; combout          ;
+; |LCD_controller|Selector9~9                ; |LCD_controller|Selector9~9                ; combout          ;
+; |LCD_controller|Selector5~2                ; |LCD_controller|Selector5~2                ; combout          ;
+; |LCD_controller|Selector5~3                ; |LCD_controller|Selector5~3                ; combout          ;
+; |LCD_controller|Selector5~4                ; |LCD_controller|Selector5~4                ; combout          ;
+; |LCD_controller|Selector5~5                ; |LCD_controller|Selector5~5                ; combout          ;
+; |LCD_controller|Selector5~6                ; |LCD_controller|Selector5~6                ; combout          ;
+; |LCD_controller|Selector5~7                ; |LCD_controller|Selector5~7                ; combout          ;
+; |LCD_controller|Selector5~8                ; |LCD_controller|Selector5~8                ; combout          ;
+; |LCD_controller|WideOr6~0                  ; |LCD_controller|WideOr6~0                  ; combout          ;
+; |LCD_controller|WideOr6~1                  ; |LCD_controller|WideOr6~1                  ; combout          ;
+; |LCD_controller|WideOr6~2                  ; |LCD_controller|WideOr6~2                  ; combout          ;
+; |LCD_controller|WideOr6~3                  ; |LCD_controller|WideOr6~3                  ; combout          ;
+; |LCD_controller|Selector4~0                ; |LCD_controller|Selector4~0                ; combout          ;
+; |LCD_controller|Selector3~3                ; |LCD_controller|Selector3~3                ; combout          ;
+; |LCD_controller|Selector3~4                ; |LCD_controller|Selector3~4                ; combout          ;
+; |LCD_controller|Selector3~5                ; |LCD_controller|Selector3~5                ; combout          ;
+; |LCD_controller|Selector3~6                ; |LCD_controller|Selector3~6                ; combout          ;
+; |LCD_controller|Selector3~7                ; |LCD_controller|Selector3~7                ; combout          ;
+; |LCD_controller|Selector3~8                ; |LCD_controller|Selector3~8                ; combout          ;
+; |LCD_controller|Selector3~9                ; |LCD_controller|Selector3~9                ; combout          ;
+; |LCD_controller|Selector2~0                ; |LCD_controller|Selector2~0                ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD16   ; |LCD_controller|next_command.WRITE_ADD16   ; regout           ;
+; |LCD_controller|state~107                  ; |LCD_controller|state~107                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA16  ; |LCD_controller|next_command.WRITE_DATA16  ; regout           ;
+; |LCD_controller|state~108                  ; |LCD_controller|state~108                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD15   ; |LCD_controller|next_command.WRITE_ADD15   ; regout           ;
+; |LCD_controller|state~109                  ; |LCD_controller|state~109                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA15  ; |LCD_controller|next_command.WRITE_DATA15  ; regout           ;
+; |LCD_controller|state~110                  ; |LCD_controller|state~110                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA12  ; |LCD_controller|next_command.WRITE_DATA12  ; regout           ;
+; |LCD_controller|state~111                  ; |LCD_controller|state~111                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD9    ; |LCD_controller|next_command.WRITE_ADD9    ; regout           ;
+; |LCD_controller|state~112                  ; |LCD_controller|state~112                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA9   ; |LCD_controller|next_command.WRITE_DATA9   ; regout           ;
+; |LCD_controller|state~113                  ; |LCD_controller|state~113                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD14   ; |LCD_controller|next_command.WRITE_ADD14   ; regout           ;
+; |LCD_controller|state~114                  ; |LCD_controller|state~114                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD11   ; |LCD_controller|next_command.WRITE_ADD11   ; regout           ;
+; |LCD_controller|state~115                  ; |LCD_controller|state~115                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA13  ; |LCD_controller|next_command.WRITE_DATA13  ; regout           ;
+; |LCD_controller|state~116                  ; |LCD_controller|state~116                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD12   ; |LCD_controller|next_command.WRITE_ADD12   ; regout           ;
+; |LCD_controller|state~117                  ; |LCD_controller|state~117                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA14  ; |LCD_controller|next_command.WRITE_DATA14  ; regout           ;
+; |LCD_controller|state~118                  ; |LCD_controller|state~118                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD13   ; |LCD_controller|next_command.WRITE_ADD13   ; regout           ;
+; |LCD_controller|state~119                  ; |LCD_controller|state~119                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD6    ; |LCD_controller|next_command.WRITE_ADD6    ; regout           ;
+; |LCD_controller|state~120                  ; |LCD_controller|state~120                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD7    ; |LCD_controller|next_command.WRITE_ADD7    ; regout           ;
+; |LCD_controller|state~121                  ; |LCD_controller|state~121                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD1    ; |LCD_controller|next_command.WRITE_ADD1    ; regout           ;
+; |LCD_controller|state~122                  ; |LCD_controller|state~122                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD5    ; |LCD_controller|next_command.WRITE_ADD5    ; regout           ;
+; |LCD_controller|state~123                  ; |LCD_controller|state~123                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA2   ; |LCD_controller|next_command.WRITE_DATA2   ; regout           ;
+; |LCD_controller|state~124                  ; |LCD_controller|state~124                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA4   ; |LCD_controller|next_command.WRITE_DATA4   ; regout           ;
+; |LCD_controller|state~125                  ; |LCD_controller|state~125                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD4    ; |LCD_controller|next_command.WRITE_ADD4    ; regout           ;
+; |LCD_controller|state~126                  ; |LCD_controller|state~126                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD2    ; |LCD_controller|next_command.WRITE_ADD2    ; regout           ;
+; |LCD_controller|state~127                  ; |LCD_controller|state~127                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD3    ; |LCD_controller|next_command.WRITE_ADD3    ; regout           ;
+; |LCD_controller|state~128                  ; |LCD_controller|state~128                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA1   ; |LCD_controller|next_command.WRITE_DATA1   ; regout           ;
+; |LCD_controller|state~129                  ; |LCD_controller|state~129                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA3   ; |LCD_controller|next_command.WRITE_DATA3   ; regout           ;
+; |LCD_controller|state~130                  ; |LCD_controller|state~130                  ; combout          ;
+; |LCD_controller|Selector31~1               ; |LCD_controller|Selector31~1               ; combout          ;
+; |LCD_controller|Selector47~1               ; |LCD_controller|Selector47~1               ; combout          ;
+; |LCD_controller|Selector30~1               ; |LCD_controller|Selector30~1               ; combout          ;
+; |LCD_controller|Selector46~1               ; |LCD_controller|Selector46~1               ; combout          ;
+; |LCD_controller|state.WRITE_DATA11         ; |LCD_controller|state.WRITE_DATA11         ; regout           ;
+; |LCD_controller|Selector43~1               ; |LCD_controller|Selector43~1               ; combout          ;
+; |LCD_controller|state.WRITE_ADD8           ; |LCD_controller|state.WRITE_ADD8           ; regout           ;
+; |LCD_controller|Selector24~1               ; |LCD_controller|Selector24~1               ; combout          ;
+; |LCD_controller|state.WRITE_DATA8          ; |LCD_controller|state.WRITE_DATA8          ; regout           ;
+; |LCD_controller|Selector40~1               ; |LCD_controller|Selector40~1               ; combout          ;
+; |LCD_controller|Selector29~1               ; |LCD_controller|Selector29~1               ; combout          ;
+; |LCD_controller|state.WRITE_ADD10          ; |LCD_controller|state.WRITE_ADD10          ; regout           ;
+; |LCD_controller|Selector26~1               ; |LCD_controller|Selector26~1               ; combout          ;
+; |LCD_controller|Selector44~1               ; |LCD_controller|Selector44~1               ; combout          ;
+; |LCD_controller|Selector27~1               ; |LCD_controller|Selector27~1               ; combout          ;
+; |LCD_controller|Selector45~1               ; |LCD_controller|Selector45~1               ; combout          ;
+; |LCD_controller|Selector28~1               ; |LCD_controller|Selector28~1               ; combout          ;
+; |LCD_controller|Selector21~1               ; |LCD_controller|Selector21~1               ; combout          ;
+; |LCD_controller|Selector22~1               ; |LCD_controller|Selector22~1               ; combout          ;
+; |LCD_controller|Selector16~1               ; |LCD_controller|Selector16~1               ; combout          ;
+; |LCD_controller|Selector20~1               ; |LCD_controller|Selector20~1               ; combout          ;
+; |LCD_controller|Selector33~1               ; |LCD_controller|Selector33~1               ; combout          ;
+; |LCD_controller|Selector35~1               ; |LCD_controller|Selector35~1               ; combout          ;
+; |LCD_controller|Selector19~1               ; |LCD_controller|Selector19~1               ; combout          ;
+; |LCD_controller|Selector17~1               ; |LCD_controller|Selector17~1               ; combout          ;
+; |LCD_controller|Selector18~1               ; |LCD_controller|Selector18~1               ; combout          ;
+; |LCD_controller|Selector32~1               ; |LCD_controller|Selector32~1               ; combout          ;
+; |LCD_controller|Selector34~1               ; |LCD_controller|Selector34~1               ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA11  ; |LCD_controller|next_command.WRITE_DATA11  ; regout           ;
+; |LCD_controller|state~131                  ; |LCD_controller|state~131                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD8    ; |LCD_controller|next_command.WRITE_ADD8    ; regout           ;
+; |LCD_controller|state~132                  ; |LCD_controller|state~132                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA8   ; |LCD_controller|next_command.WRITE_DATA8   ; regout           ;
+; |LCD_controller|state~133                  ; |LCD_controller|state~133                  ; combout          ;
+; |LCD_controller|next_command.WRITE_ADD10   ; |LCD_controller|next_command.WRITE_ADD10   ; regout           ;
+; |LCD_controller|state~134                  ; |LCD_controller|state~134                  ; combout          ;
+; |LCD_controller|state.WRITE_DATA10         ; |LCD_controller|state.WRITE_DATA10         ; regout           ;
+; |LCD_controller|Selector42~1               ; |LCD_controller|Selector42~1               ; combout          ;
+; |LCD_controller|Selector23~1               ; |LCD_controller|Selector23~1               ; combout          ;
+; |LCD_controller|state.WRITE_DATA7          ; |LCD_controller|state.WRITE_DATA7          ; regout           ;
+; |LCD_controller|Selector39~1               ; |LCD_controller|Selector39~1               ; combout          ;
+; |LCD_controller|Selector25~1               ; |LCD_controller|Selector25~1               ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA10  ; |LCD_controller|next_command.WRITE_DATA10  ; regout           ;
+; |LCD_controller|state~135                  ; |LCD_controller|state~135                  ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA7   ; |LCD_controller|next_command.WRITE_DATA7   ; regout           ;
+; |LCD_controller|state~136                  ; |LCD_controller|state~136                  ; combout          ;
+; |LCD_controller|Selector41~1               ; |LCD_controller|Selector41~1               ; combout          ;
+; |LCD_controller|state.WRITE_DATA6          ; |LCD_controller|state.WRITE_DATA6          ; regout           ;
+; |LCD_controller|Selector38~1               ; |LCD_controller|Selector38~1               ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA6   ; |LCD_controller|next_command.WRITE_DATA6   ; regout           ;
+; |LCD_controller|state~137                  ; |LCD_controller|state~137                  ; combout          ;
+; |LCD_controller|state.WRITE_DATA5          ; |LCD_controller|state.WRITE_DATA5          ; regout           ;
+; |LCD_controller|Selector37~1               ; |LCD_controller|Selector37~1               ; combout          ;
+; |LCD_controller|next_command.WRITE_DATA5   ; |LCD_controller|next_command.WRITE_DATA5   ; regout           ;
+; |LCD_controller|state~138                  ; |LCD_controller|state~138                  ; combout          ;
+; |LCD_controller|Selector36~1               ; |LCD_controller|Selector36~1               ; combout          ;
+; |LCD_controller|data_bus[0]                ; |LCD_controller|data_bus[0]~output         ; padio            ;
+; |LCD_controller|data_bus[1]                ; |LCD_controller|data_bus[1]~output         ; padio            ;
+; |LCD_controller|data_bus[2]                ; |LCD_controller|data_bus[2]~output         ; padio            ;
+; |LCD_controller|data_bus[3]                ; |LCD_controller|data_bus[3]~output         ; padio            ;
+; |LCD_controller|data_bus[4]                ; |LCD_controller|data_bus[4]~output         ; padio            ;
+; |LCD_controller|data_bus[5]                ; |LCD_controller|data_bus[5]~output         ; padio            ;
+; |LCD_controller|data_bus[6]                ; |LCD_controller|data_bus[6]~output         ; padio            ;
+; |LCD_controller|data_bus[7]                ; |LCD_controller|data_bus[7]~output         ; padio            ;
+; |LCD_controller|LCD_EN                     ; |LCD_controller|LCD_EN                     ; padio            ;
+; |LCD_controller|LCD_RS                     ; |LCD_controller|LCD_RS                     ; padio            ;
+; |LCD_controller|LCD_ON                     ; |LCD_controller|LCD_ON                     ; padio            ;
+; |LCD_controller|LCD_RW                     ; |LCD_controller|LCD_RW                     ; padio            ;
+; |LCD_controller|reset                      ; |LCD_controller|reset~corein               ; combout          ;
+; |LCD_controller|reset~clk_delay_ctrl       ; |LCD_controller|reset~clk_delay_ctrl       ; clkout           ;
+; |LCD_controller|clock_400Hz~clkctrl        ; |LCD_controller|clock_400Hz~clkctrl        ; outclk           ;
+; |LCD_controller|reset~clkctrl              ; |LCD_controller|reset~clkctrl              ; outclk           ;
+; |LCD_controller|state.RESET1~feeder        ; |LCD_controller|state.RESET1~feeder        ; combout          ;
++--------------------------------------------+--------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 132 02/25/2009 SJ Web Edition
+    Info: Processing started: Mon Sep 26 18:28:15 2011
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off LCD_controller -c LCD_controller
+Info: Using vector source file "C:/Users/Unrelentless/Desktop/Comp Arch/LABS/Project/LCD_controller/LCD_controller.vwf"
+Warning: Can't display state machine states -- register holding state machine bit "|LCD_controller|next_command.HOLD" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|LCD_controller|next_command.RESET1" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|LCD_controller|next_command.TOGGLE_E" was synthesized away
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_1[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_1[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_1[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_1[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_2[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_2[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_2[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_2[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_3[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_3[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_3[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_3[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_4[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_4[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_4[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "data_4[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_1[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_1[2]" in design.
+Warning: Compiler packed, optimized or synthesized away node "add_1[1]". Ignored vector source file node.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_1[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_2[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_2[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_2[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_2[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_3[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_3[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_3[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_3[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_4[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_4[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_4[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_4[0]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_5[3]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_5[2]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_5[1]" in design.
+Warning: Ignored node in vector source file. Can't find corresponding node name "add_5[0]" in design.
+Warning: Wrong node type and/or width for node "|LCD_controller|state" in vector source file. Node in design is of type Enum and of width 1, but node in vector source file is of type 9-Level and of width 1.
+Warning: Signal name "|LCD_controller|state" changed to enum type
+Info: Inverted registers were found during simulation
+    Info: Register: |LCD_controller|LCD_EN~reg0
+    Info: Register: |LCD_controller|data_bus_value[3]
+    Info: Register: |LCD_controller|data_bus_value[4]
+    Info: Register: |LCD_controller|data_bus_value[5]
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      12.30 %
+Info: Number of transitions in simulation is 102252
+Info: Quartus II Simulator was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 260 megabytes
+    Info: Processing ended: Mon Sep 26 18:28:20 2011
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:04
+
+

@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.467 ns
+From           : Reset
+To             : pattern_gen:inst|clock_count_500Khz[0]
+From Clock     : --
+To Clock       : 50Mhz
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.641 ns
+From           : pattern_gen:inst|write_data
+To             : Address_SRAM[0]
+From Clock     : 50Mhz
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 10.646 ns
+From           : Switches[14]
+To             : Address_SRAM[14]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.991 ns
+From           : Reset
+To             : pattern_gen:inst|pattern[14]
+From Clock     : --
+To Clock       : 50Mhz
+Failed Paths   : 0
+
+Type           : Clock Setup: '50Mhz'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 199.52 MHz ( period = 5.012 ns )
+From           : pattern_gen:inst|sram_data[15]
+To             : sram_control:inst2|data_out_value[7]
+From Clock     : 50Mhz
+To Clock       : 50Mhz
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

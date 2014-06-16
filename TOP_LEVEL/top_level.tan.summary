@@ -1,0 +1,76 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 5.719 ns
+From           : Reset
+To             : LCD_controller:inst|clock_count_400Hz[0]
+From Clock     : --
+To Clock       : Clock_50Mhz
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.972 ns
+From           : pattern_gen:inst1|address_temp[9]
+To             : SRAM_ADDRESS[9]
+From Clock     : Clock_50Mhz
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 12.204 ns
+From           : Switches[17]
+To             : SRAM_ADDRESS[17]
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 1.743 ns
+From           : Switches[11]
+To             : LCD_controller:inst|data_bus_value[2]
+From Clock     : --
+To Clock       : Clock_50Mhz
+Failed Paths   : 0
+
+Type           : Clock Setup: 'Clock_50Mhz'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 175.35 MHz ( period = 5.703 ns )
+From           : pattern_gen:inst1|address_temp[0]
+To             : pattern_gen:inst1|state.start_gen
+From Clock     : Clock_50Mhz
+To Clock       : Clock_50Mhz
+Failed Paths   : 0
+
+Type           : Clock Hold: 'Clock_50Mhz'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : sram_control:inst2|data_in_temp[14]
+To             : LCD_controller:inst|data_bus_value[3]
+From Clock     : Clock_50Mhz
+To Clock       : Clock_50Mhz
+Failed Paths   : 69
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 69
+
+--------------------------------------------------------------------------------------
+

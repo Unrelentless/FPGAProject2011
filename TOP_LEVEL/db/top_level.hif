@@ -1,0 +1,141 @@
+Version 9.0 Build 132 02/25/2009 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+sram_control
+# storage
+db|top_level.(2).cnf
+db|top_level.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|SRAM_Control|sram_control.vhd
+e75f7b3d6d76eacfbb890153ba125a4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+sram_control:inst2
+}
+# lmf
+..|..|..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+top_level
+# storage
+db|top_level.(0).cnf
+db|top_level.(0).cnf
+# case_insensitive
+# source_file
+top_level.bdf
+ee38d769ff467cd07212284ed3d2a492
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+pattern_gen
+# storage
+db|top_level.(3).cnf
+db|top_level.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|PatternGen|pattern_gen.vhd
+864dc6c74a91d4e61a466c8e93adccef
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+pattern_gen:inst1
+}
+# lmf
+..|..|..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+LCD_controller
+# storage
+db|top_level.(1).cnf
+db|top_level.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+..|LCD_controller|LCD_controller.vhd
+940a2753792ef7efdb127c72bbac06a
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+LCD_controller:inst
+}
+# lmf
+..|..|..|..|..|..|altera|90|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

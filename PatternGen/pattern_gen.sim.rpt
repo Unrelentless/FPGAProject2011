@@ -1,0 +1,765 @@
+Simulator report for pattern_gen
+Thu Sep 22 11:17:20 2011
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 ms       ;
+; Simulation Netlist Size     ; 460 nodes    ;
+; Simulation Coverage         ;      62.17 % ;
+; Total Number of Transitions ; 748720       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Option                                                                                     ; Setting         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+; Simulation mode                                                                            ; Functional      ; Timing        ;
+; Start time                                                                                 ; 0 ns            ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF            ;               ;
+; Vector input source                                                                        ; pattern_gen.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On              ; On            ;
+; Check outputs                                                                              ; Off             ; Off           ;
+; Report simulation coverage                                                                 ; On              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On              ; On            ;
+; Display missing 1-value coverage report                                                    ; On              ; On            ;
+; Display missing 0-value coverage report                                                    ; On              ; On            ;
+; Detect setup and hold time violations                                                      ; Off             ; Off           ;
+; Detect glitches                                                                            ; Off             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off             ; Off           ;
+; Generate Signal Activity File                                                              ; Off             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      62.17 % ;
+; Total nodes checked                                 ; 460          ;
+; Total output ports checked                          ; 460          ;
+; Total output ports with complete 1/0-value coverage ; 286          ;
+; Total output ports with no 1/0-value coverage       ; 142          ;
+; Total output ports with no 1-value coverage         ; 142          ;
+; Total output ports with no 0-value coverage         ; 174          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |pattern_gen|clock_count_500Khz~2  ; |pattern_gen|clock_count_500Khz~2  ; out              ;
+; |pattern_gen|clock_count_500Khz~3  ; |pattern_gen|clock_count_500Khz~3  ; out              ;
+; |pattern_gen|clock_count_500Khz~4  ; |pattern_gen|clock_count_500Khz~4  ; out              ;
+; |pattern_gen|clock_count_500Khz~5  ; |pattern_gen|clock_count_500Khz~5  ; out              ;
+; |pattern_gen|clock_count_500Khz~6  ; |pattern_gen|clock_count_500Khz~6  ; out              ;
+; |pattern_gen|clock_count_500Khz~7  ; |pattern_gen|clock_count_500Khz~7  ; out              ;
+; |pattern_gen|clock_500Khz~0        ; |pattern_gen|clock_500Khz~0        ; out              ;
+; |pattern_gen|clock_count_500Khz~10 ; |pattern_gen|clock_count_500Khz~10 ; out              ;
+; |pattern_gen|clock_count_500Khz~11 ; |pattern_gen|clock_count_500Khz~11 ; out              ;
+; |pattern_gen|clock_count_500Khz~12 ; |pattern_gen|clock_count_500Khz~12 ; out              ;
+; |pattern_gen|clock_count_500Khz~13 ; |pattern_gen|clock_count_500Khz~13 ; out              ;
+; |pattern_gen|clock_count_500Khz~14 ; |pattern_gen|clock_count_500Khz~14 ; out              ;
+; |pattern_gen|clock_count_500Khz~15 ; |pattern_gen|clock_count_500Khz~15 ; out              ;
+; |pattern_gen|clock_500Khz~1        ; |pattern_gen|clock_500Khz~1        ; out              ;
+; |pattern_gen|pattern_temp~0        ; |pattern_gen|pattern_temp~0        ; out0             ;
+; |pattern_gen|pattern_temp~1        ; |pattern_gen|pattern_temp~1        ; out0             ;
+; |pattern_gen|pattern_temp~2        ; |pattern_gen|pattern_temp~2        ; out0             ;
+; |pattern_gen|pattern_temp~3        ; |pattern_gen|pattern_temp~3        ; out0             ;
+; |pattern_gen|pattern_temp~4        ; |pattern_gen|pattern_temp~4        ; out0             ;
+; |pattern_gen|pattern_temp~5        ; |pattern_gen|pattern_temp~5        ; out0             ;
+; |pattern_gen|pattern_temp~6        ; |pattern_gen|pattern_temp~6        ; out0             ;
+; |pattern_gen|pattern_temp~7        ; |pattern_gen|pattern_temp~7        ; out0             ;
+; |pattern_gen|pattern_temp~8        ; |pattern_gen|pattern_temp~8        ; out0             ;
+; |pattern_gen|pattern_temp~9        ; |pattern_gen|pattern_temp~9        ; out0             ;
+; |pattern_gen|pattern_temp~10       ; |pattern_gen|pattern_temp~10       ; out0             ;
+; |pattern_gen|pattern_temp~11       ; |pattern_gen|pattern_temp~11       ; out0             ;
+; |pattern_gen|pattern_temp~12       ; |pattern_gen|pattern_temp~12       ; out0             ;
+; |pattern_gen|pattern_temp~13       ; |pattern_gen|pattern_temp~13       ; out0             ;
+; |pattern_gen|pattern_temp~14       ; |pattern_gen|pattern_temp~14       ; out0             ;
+; |pattern_gen|pattern_temp~15       ; |pattern_gen|pattern_temp~15       ; out0             ;
+; |pattern_gen|state~0               ; |pattern_gen|state~0               ; out              ;
+; |pattern_gen|clock_500Khz          ; |pattern_gen|clock_500Khz          ; regout           ;
+; |pattern_gen|address_temp[7]       ; |pattern_gen|address_temp[7]       ; regout           ;
+; |pattern_gen|address_temp[6]       ; |pattern_gen|address_temp[6]       ; regout           ;
+; |pattern_gen|address_temp[5]       ; |pattern_gen|address_temp[5]       ; regout           ;
+; |pattern_gen|address_temp[4]       ; |pattern_gen|address_temp[4]       ; regout           ;
+; |pattern_gen|address_temp[3]       ; |pattern_gen|address_temp[3]       ; regout           ;
+; |pattern_gen|address_temp[2]       ; |pattern_gen|address_temp[2]       ; regout           ;
+; |pattern_gen|address_temp[1]       ; |pattern_gen|address_temp[1]       ; regout           ;
+; |pattern_gen|write_data~reg0       ; |pattern_gen|write_data~reg0       ; regout           ;
+; |pattern_gen|address_temp[0]       ; |pattern_gen|address_temp[0]       ; regout           ;
+; |pattern_gen|sram_address[7]~reg0  ; |pattern_gen|sram_address[7]~reg0  ; regout           ;
+; |pattern_gen|sram_address[6]~reg0  ; |pattern_gen|sram_address[6]~reg0  ; regout           ;
+; |pattern_gen|sram_address[5]~reg0  ; |pattern_gen|sram_address[5]~reg0  ; regout           ;
+; |pattern_gen|sram_address[4]~reg0  ; |pattern_gen|sram_address[4]~reg0  ; regout           ;
+; |pattern_gen|sram_address[3]~reg0  ; |pattern_gen|sram_address[3]~reg0  ; regout           ;
+; |pattern_gen|sram_address[2]~reg0  ; |pattern_gen|sram_address[2]~reg0  ; regout           ;
+; |pattern_gen|sram_address[1]~reg0  ; |pattern_gen|sram_address[1]~reg0  ; regout           ;
+; |pattern_gen|sram_address[0]~reg0  ; |pattern_gen|sram_address[0]~reg0  ; regout           ;
+; |pattern_gen|sram_data[15]~reg0    ; |pattern_gen|sram_data[15]~reg0    ; regout           ;
+; |pattern_gen|sram_data[14]~reg0    ; |pattern_gen|sram_data[14]~reg0    ; regout           ;
+; |pattern_gen|sram_data[13]~reg0    ; |pattern_gen|sram_data[13]~reg0    ; regout           ;
+; |pattern_gen|sram_data[12]~reg0    ; |pattern_gen|sram_data[12]~reg0    ; regout           ;
+; |pattern_gen|sram_data[11]~reg0    ; |pattern_gen|sram_data[11]~reg0    ; regout           ;
+; |pattern_gen|sram_data[10]~reg0    ; |pattern_gen|sram_data[10]~reg0    ; regout           ;
+; |pattern_gen|sram_data[9]~reg0     ; |pattern_gen|sram_data[9]~reg0     ; regout           ;
+; |pattern_gen|sram_data[8]~reg0     ; |pattern_gen|sram_data[8]~reg0     ; regout           ;
+; |pattern_gen|sram_data[7]~reg0     ; |pattern_gen|sram_data[7]~reg0     ; regout           ;
+; |pattern_gen|sram_data[6]~reg0     ; |pattern_gen|sram_data[6]~reg0     ; regout           ;
+; |pattern_gen|sram_data[5]~reg0     ; |pattern_gen|sram_data[5]~reg0     ; regout           ;
+; |pattern_gen|sram_data[4]~reg0     ; |pattern_gen|sram_data[4]~reg0     ; regout           ;
+; |pattern_gen|sram_data[3]~reg0     ; |pattern_gen|sram_data[3]~reg0     ; regout           ;
+; |pattern_gen|sram_data[2]~reg0     ; |pattern_gen|sram_data[2]~reg0     ; regout           ;
+; |pattern_gen|sram_data[1]~reg0     ; |pattern_gen|sram_data[1]~reg0     ; regout           ;
+; |pattern_gen|sram_data[0]~reg0     ; |pattern_gen|sram_data[0]~reg0     ; regout           ;
+; |pattern_gen|state.idle            ; |pattern_gen|state.idle            ; regout           ;
+; |pattern_gen|state.start_gen       ; |pattern_gen|state.start_gen       ; regout           ;
+; |pattern_gen|state.stop_write      ; |pattern_gen|state.stop_write      ; regout           ;
+; |pattern_gen|pattern[15]           ; |pattern_gen|pattern[15]           ; regout           ;
+; |pattern_gen|pattern[14]           ; |pattern_gen|pattern[14]           ; regout           ;
+; |pattern_gen|pattern[13]           ; |pattern_gen|pattern[13]           ; regout           ;
+; |pattern_gen|pattern[12]           ; |pattern_gen|pattern[12]           ; regout           ;
+; |pattern_gen|pattern[11]           ; |pattern_gen|pattern[11]           ; regout           ;
+; |pattern_gen|pattern[10]           ; |pattern_gen|pattern[10]           ; regout           ;
+; |pattern_gen|pattern[9]            ; |pattern_gen|pattern[9]            ; regout           ;
+; |pattern_gen|pattern[8]            ; |pattern_gen|pattern[8]            ; regout           ;
+; |pattern_gen|pattern[7]            ; |pattern_gen|pattern[7]            ; regout           ;
+; |pattern_gen|pattern[6]            ; |pattern_gen|pattern[6]            ; regout           ;
+; |pattern_gen|pattern[5]            ; |pattern_gen|pattern[5]            ; regout           ;
+; |pattern_gen|pattern[4]            ; |pattern_gen|pattern[4]            ; regout           ;
+; |pattern_gen|pattern[3]            ; |pattern_gen|pattern[3]            ; regout           ;
+; |pattern_gen|pattern[2]            ; |pattern_gen|pattern[2]            ; regout           ;
+; |pattern_gen|pattern[1]            ; |pattern_gen|pattern[1]            ; regout           ;
+; |pattern_gen|pattern[0]            ; |pattern_gen|pattern[0]            ; regout           ;
+; |pattern_gen|clock_count_500Khz[0] ; |pattern_gen|clock_count_500Khz[0] ; regout           ;
+; |pattern_gen|clock_count_500Khz[1] ; |pattern_gen|clock_count_500Khz[1] ; regout           ;
+; |pattern_gen|clock_count_500Khz[2] ; |pattern_gen|clock_count_500Khz[2] ; regout           ;
+; |pattern_gen|clock_count_500Khz[3] ; |pattern_gen|clock_count_500Khz[3] ; regout           ;
+; |pattern_gen|clock_count_500Khz[4] ; |pattern_gen|clock_count_500Khz[4] ; regout           ;
+; |pattern_gen|clock_count_500Khz[5] ; |pattern_gen|clock_count_500Khz[5] ; regout           ;
+; |pattern_gen|clock_50Mhz           ; |pattern_gen|clock_50Mhz           ; out              ;
+; |pattern_gen|start_PB              ; |pattern_gen|start_PB              ; out              ;
+; |pattern_gen|write_data            ; |pattern_gen|write_data            ; pin_out          ;
+; |pattern_gen|sram_address[0]       ; |pattern_gen|sram_address[0]       ; pin_out          ;
+; |pattern_gen|sram_address[1]       ; |pattern_gen|sram_address[1]       ; pin_out          ;
+; |pattern_gen|sram_address[2]       ; |pattern_gen|sram_address[2]       ; pin_out          ;
+; |pattern_gen|sram_address[3]       ; |pattern_gen|sram_address[3]       ; pin_out          ;
+; |pattern_gen|sram_address[4]       ; |pattern_gen|sram_address[4]       ; pin_out          ;
+; |pattern_gen|sram_address[5]       ; |pattern_gen|sram_address[5]       ; pin_out          ;
+; |pattern_gen|sram_address[6]       ; |pattern_gen|sram_address[6]       ; pin_out          ;
+; |pattern_gen|sram_address[7]       ; |pattern_gen|sram_address[7]       ; pin_out          ;
+; |pattern_gen|sram_data[0]          ; |pattern_gen|sram_data[0]          ; pin_out          ;
+; |pattern_gen|sram_data[1]          ; |pattern_gen|sram_data[1]          ; pin_out          ;
+; |pattern_gen|sram_data[2]          ; |pattern_gen|sram_data[2]          ; pin_out          ;
+; |pattern_gen|sram_data[3]          ; |pattern_gen|sram_data[3]          ; pin_out          ;
+; |pattern_gen|sram_data[4]          ; |pattern_gen|sram_data[4]          ; pin_out          ;
+; |pattern_gen|sram_data[5]          ; |pattern_gen|sram_data[5]          ; pin_out          ;
+; |pattern_gen|sram_data[6]          ; |pattern_gen|sram_data[6]          ; pin_out          ;
+; |pattern_gen|sram_data[7]          ; |pattern_gen|sram_data[7]          ; pin_out          ;
+; |pattern_gen|sram_data[8]          ; |pattern_gen|sram_data[8]          ; pin_out          ;
+; |pattern_gen|sram_data[9]          ; |pattern_gen|sram_data[9]          ; pin_out          ;
+; |pattern_gen|sram_data[10]         ; |pattern_gen|sram_data[10]         ; pin_out          ;
+; |pattern_gen|sram_data[11]         ; |pattern_gen|sram_data[11]         ; pin_out          ;
+; |pattern_gen|sram_data[12]         ; |pattern_gen|sram_data[12]         ; pin_out          ;
+; |pattern_gen|sram_data[13]         ; |pattern_gen|sram_data[13]         ; pin_out          ;
+; |pattern_gen|sram_data[14]         ; |pattern_gen|sram_data[14]         ; pin_out          ;
+; |pattern_gen|sram_data[15]         ; |pattern_gen|sram_data[15]         ; pin_out          ;
+; |pattern_gen|state~1               ; |pattern_gen|state~1               ; out0             ;
+; |pattern_gen|Selector70~0          ; |pattern_gen|Selector70~0          ; out0             ;
+; |pattern_gen|Selector70~1          ; |pattern_gen|Selector70~1          ; out0             ;
+; |pattern_gen|state.stop_write~0    ; |pattern_gen|state.stop_write~0    ; out0             ;
+; |pattern_gen|Selector70~2          ; |pattern_gen|Selector70~2          ; out0             ;
+; |pattern_gen|state~8               ; |pattern_gen|state~8               ; out0             ;
+; |pattern_gen|Selector0~0           ; |pattern_gen|Selector0~0           ; out0             ;
+; |pattern_gen|Selector0~2           ; |pattern_gen|Selector0~2           ; out0             ;
+; |pattern_gen|Selector1~0           ; |pattern_gen|Selector1~0           ; out0             ;
+; |pattern_gen|Selector1~2           ; |pattern_gen|Selector1~2           ; out0             ;
+; |pattern_gen|Selector2~0           ; |pattern_gen|Selector2~0           ; out0             ;
+; |pattern_gen|Selector2~2           ; |pattern_gen|Selector2~2           ; out0             ;
+; |pattern_gen|Selector3~0           ; |pattern_gen|Selector3~0           ; out0             ;
+; |pattern_gen|Selector3~2           ; |pattern_gen|Selector3~2           ; out0             ;
+; |pattern_gen|Selector4~0           ; |pattern_gen|Selector4~0           ; out0             ;
+; |pattern_gen|Selector4~2           ; |pattern_gen|Selector4~2           ; out0             ;
+; |pattern_gen|Selector5~0           ; |pattern_gen|Selector5~0           ; out0             ;
+; |pattern_gen|Selector5~2           ; |pattern_gen|Selector5~2           ; out0             ;
+; |pattern_gen|Selector6~0           ; |pattern_gen|Selector6~0           ; out0             ;
+; |pattern_gen|Selector6~2           ; |pattern_gen|Selector6~2           ; out0             ;
+; |pattern_gen|Selector7~0           ; |pattern_gen|Selector7~0           ; out0             ;
+; |pattern_gen|Selector7~2           ; |pattern_gen|Selector7~2           ; out0             ;
+; |pattern_gen|Selector8~0           ; |pattern_gen|Selector8~0           ; out0             ;
+; |pattern_gen|Selector8~2           ; |pattern_gen|Selector8~2           ; out0             ;
+; |pattern_gen|Selector9~0           ; |pattern_gen|Selector9~0           ; out0             ;
+; |pattern_gen|Selector9~2           ; |pattern_gen|Selector9~2           ; out0             ;
+; |pattern_gen|Selector10~0          ; |pattern_gen|Selector10~0          ; out0             ;
+; |pattern_gen|Selector10~2          ; |pattern_gen|Selector10~2          ; out0             ;
+; |pattern_gen|Selector11~0          ; |pattern_gen|Selector11~0          ; out0             ;
+; |pattern_gen|Selector11~2          ; |pattern_gen|Selector11~2          ; out0             ;
+; |pattern_gen|Selector12~0          ; |pattern_gen|Selector12~0          ; out0             ;
+; |pattern_gen|Selector12~2          ; |pattern_gen|Selector12~2          ; out0             ;
+; |pattern_gen|Selector13~0          ; |pattern_gen|Selector13~0          ; out0             ;
+; |pattern_gen|Selector13~2          ; |pattern_gen|Selector13~2          ; out0             ;
+; |pattern_gen|Selector14~0          ; |pattern_gen|Selector14~0          ; out0             ;
+; |pattern_gen|Selector14~2          ; |pattern_gen|Selector14~2          ; out0             ;
+; |pattern_gen|Selector15~0          ; |pattern_gen|Selector15~0          ; out0             ;
+; |pattern_gen|Selector15~2          ; |pattern_gen|Selector15~2          ; out0             ;
+; |pattern_gen|Selector25~0          ; |pattern_gen|Selector25~0          ; out0             ;
+; |pattern_gen|Selector25~2          ; |pattern_gen|Selector25~2          ; out0             ;
+; |pattern_gen|Selector26~0          ; |pattern_gen|Selector26~0          ; out0             ;
+; |pattern_gen|Selector26~1          ; |pattern_gen|Selector26~1          ; out0             ;
+; |pattern_gen|Selector26~2          ; |pattern_gen|Selector26~2          ; out0             ;
+; |pattern_gen|Selector27~0          ; |pattern_gen|Selector27~0          ; out0             ;
+; |pattern_gen|Selector27~1          ; |pattern_gen|Selector27~1          ; out0             ;
+; |pattern_gen|Selector27~2          ; |pattern_gen|Selector27~2          ; out0             ;
+; |pattern_gen|Selector28~0          ; |pattern_gen|Selector28~0          ; out0             ;
+; |pattern_gen|Selector28~1          ; |pattern_gen|Selector28~1          ; out0             ;
+; |pattern_gen|Selector28~2          ; |pattern_gen|Selector28~2          ; out0             ;
+; |pattern_gen|Selector29~0          ; |pattern_gen|Selector29~0          ; out0             ;
+; |pattern_gen|Selector29~1          ; |pattern_gen|Selector29~1          ; out0             ;
+; |pattern_gen|Selector29~2          ; |pattern_gen|Selector29~2          ; out0             ;
+; |pattern_gen|Selector30~0          ; |pattern_gen|Selector30~0          ; out0             ;
+; |pattern_gen|Selector30~1          ; |pattern_gen|Selector30~1          ; out0             ;
+; |pattern_gen|Selector30~2          ; |pattern_gen|Selector30~2          ; out0             ;
+; |pattern_gen|Selector31~0          ; |pattern_gen|Selector31~0          ; out0             ;
+; |pattern_gen|Selector31~1          ; |pattern_gen|Selector31~1          ; out0             ;
+; |pattern_gen|Selector31~2          ; |pattern_gen|Selector31~2          ; out0             ;
+; |pattern_gen|Selector32~0          ; |pattern_gen|Selector32~0          ; out0             ;
+; |pattern_gen|Selector32~1          ; |pattern_gen|Selector32~1          ; out0             ;
+; |pattern_gen|Selector32~2          ; |pattern_gen|Selector32~2          ; out0             ;
+; |pattern_gen|Selector33~0          ; |pattern_gen|Selector33~0          ; out0             ;
+; |pattern_gen|Selector33~1          ; |pattern_gen|Selector33~1          ; out0             ;
+; |pattern_gen|Selector33~2          ; |pattern_gen|Selector33~2          ; out0             ;
+; |pattern_gen|Selector34~0          ; |pattern_gen|Selector34~0          ; out0             ;
+; |pattern_gen|Selector34~1          ; |pattern_gen|Selector34~1          ; out0             ;
+; |pattern_gen|Selector34~2          ; |pattern_gen|Selector34~2          ; out0             ;
+; |pattern_gen|Selector35~0          ; |pattern_gen|Selector35~0          ; out0             ;
+; |pattern_gen|Selector35~2          ; |pattern_gen|Selector35~2          ; out0             ;
+; |pattern_gen|Selector36~0          ; |pattern_gen|Selector36~0          ; out0             ;
+; |pattern_gen|Selector36~1          ; |pattern_gen|Selector36~1          ; out0             ;
+; |pattern_gen|Selector36~2          ; |pattern_gen|Selector36~2          ; out0             ;
+; |pattern_gen|Selector37~0          ; |pattern_gen|Selector37~0          ; out0             ;
+; |pattern_gen|Selector37~2          ; |pattern_gen|Selector37~2          ; out0             ;
+; |pattern_gen|Selector38~0          ; |pattern_gen|Selector38~0          ; out0             ;
+; |pattern_gen|Selector38~1          ; |pattern_gen|Selector38~1          ; out0             ;
+; |pattern_gen|Selector38~2          ; |pattern_gen|Selector38~2          ; out0             ;
+; |pattern_gen|Selector39~0          ; |pattern_gen|Selector39~0          ; out0             ;
+; |pattern_gen|Selector39~2          ; |pattern_gen|Selector39~2          ; out0             ;
+; |pattern_gen|Selector40~0          ; |pattern_gen|Selector40~0          ; out0             ;
+; |pattern_gen|Selector40~1          ; |pattern_gen|Selector40~1          ; out0             ;
+; |pattern_gen|Selector40~2          ; |pattern_gen|Selector40~2          ; out0             ;
+; |pattern_gen|Selector41~0          ; |pattern_gen|Selector41~0          ; out0             ;
+; |pattern_gen|Selector41~2          ; |pattern_gen|Selector41~2          ; out0             ;
+; |pattern_gen|Selector42~0          ; |pattern_gen|Selector42~0          ; out0             ;
+; |pattern_gen|Selector42~1          ; |pattern_gen|Selector42~1          ; out0             ;
+; |pattern_gen|Selector42~2          ; |pattern_gen|Selector42~2          ; out0             ;
+; |pattern_gen|Selector43~0          ; |pattern_gen|Selector43~0          ; out0             ;
+; |pattern_gen|Selector43~2          ; |pattern_gen|Selector43~2          ; out0             ;
+; |pattern_gen|Selector44~0          ; |pattern_gen|Selector44~0          ; out0             ;
+; |pattern_gen|Selector44~1          ; |pattern_gen|Selector44~1          ; out0             ;
+; |pattern_gen|Selector44~2          ; |pattern_gen|Selector44~2          ; out0             ;
+; |pattern_gen|Selector45~0          ; |pattern_gen|Selector45~0          ; out0             ;
+; |pattern_gen|Selector45~2          ; |pattern_gen|Selector45~2          ; out0             ;
+; |pattern_gen|Selector46~0          ; |pattern_gen|Selector46~0          ; out0             ;
+; |pattern_gen|Selector46~1          ; |pattern_gen|Selector46~1          ; out0             ;
+; |pattern_gen|Selector46~2          ; |pattern_gen|Selector46~2          ; out0             ;
+; |pattern_gen|Selector47~0          ; |pattern_gen|Selector47~0          ; out0             ;
+; |pattern_gen|Selector47~2          ; |pattern_gen|Selector47~2          ; out0             ;
+; |pattern_gen|Selector48~0          ; |pattern_gen|Selector48~0          ; out0             ;
+; |pattern_gen|Selector48~1          ; |pattern_gen|Selector48~1          ; out0             ;
+; |pattern_gen|Selector48~2          ; |pattern_gen|Selector48~2          ; out0             ;
+; |pattern_gen|Selector49~0          ; |pattern_gen|Selector49~0          ; out0             ;
+; |pattern_gen|Selector49~2          ; |pattern_gen|Selector49~2          ; out0             ;
+; |pattern_gen|Selector59~0          ; |pattern_gen|Selector59~0          ; out0             ;
+; |pattern_gen|Selector59~2          ; |pattern_gen|Selector59~2          ; out0             ;
+; |pattern_gen|Selector60~0          ; |pattern_gen|Selector60~0          ; out0             ;
+; |pattern_gen|Selector60~1          ; |pattern_gen|Selector60~1          ; out0             ;
+; |pattern_gen|Selector60~2          ; |pattern_gen|Selector60~2          ; out0             ;
+; |pattern_gen|Selector61~0          ; |pattern_gen|Selector61~0          ; out0             ;
+; |pattern_gen|Selector61~1          ; |pattern_gen|Selector61~1          ; out0             ;
+; |pattern_gen|Selector61~2          ; |pattern_gen|Selector61~2          ; out0             ;
+; |pattern_gen|Selector62~0          ; |pattern_gen|Selector62~0          ; out0             ;
+; |pattern_gen|Selector62~1          ; |pattern_gen|Selector62~1          ; out0             ;
+; |pattern_gen|Selector62~2          ; |pattern_gen|Selector62~2          ; out0             ;
+; |pattern_gen|Selector63~0          ; |pattern_gen|Selector63~0          ; out0             ;
+; |pattern_gen|Selector63~1          ; |pattern_gen|Selector63~1          ; out0             ;
+; |pattern_gen|Selector63~2          ; |pattern_gen|Selector63~2          ; out0             ;
+; |pattern_gen|Selector64~0          ; |pattern_gen|Selector64~0          ; out0             ;
+; |pattern_gen|Selector64~1          ; |pattern_gen|Selector64~1          ; out0             ;
+; |pattern_gen|Selector64~2          ; |pattern_gen|Selector64~2          ; out0             ;
+; |pattern_gen|Selector65~0          ; |pattern_gen|Selector65~0          ; out0             ;
+; |pattern_gen|Selector65~1          ; |pattern_gen|Selector65~1          ; out0             ;
+; |pattern_gen|Selector65~2          ; |pattern_gen|Selector65~2          ; out0             ;
+; |pattern_gen|Selector66~0          ; |pattern_gen|Selector66~0          ; out0             ;
+; |pattern_gen|Selector66~1          ; |pattern_gen|Selector66~1          ; out0             ;
+; |pattern_gen|Selector66~2          ; |pattern_gen|Selector66~2          ; out0             ;
+; |pattern_gen|Selector67~0          ; |pattern_gen|Selector67~0          ; out0             ;
+; |pattern_gen|Selector67~1          ; |pattern_gen|Selector67~1          ; out0             ;
+; |pattern_gen|Selector67~2          ; |pattern_gen|Selector67~2          ; out0             ;
+; |pattern_gen|Selector68~0          ; |pattern_gen|Selector68~0          ; out0             ;
+; |pattern_gen|Selector68~1          ; |pattern_gen|Selector68~1          ; out0             ;
+; |pattern_gen|Selector69~0          ; |pattern_gen|Selector69~0          ; out0             ;
+; |pattern_gen|Selector69~1          ; |pattern_gen|Selector69~1          ; out0             ;
+; |pattern_gen|Selector69~2          ; |pattern_gen|Selector69~2          ; out0             ;
+; |pattern_gen|Selector70~3          ; |pattern_gen|Selector70~3          ; out0             ;
+; |pattern_gen|LessThan0~0           ; |pattern_gen|LessThan0~0           ; out0             ;
+; |pattern_gen|LessThan0~1           ; |pattern_gen|LessThan0~1           ; out0             ;
+; |pattern_gen|LessThan0~2           ; |pattern_gen|LessThan0~2           ; out0             ;
+; |pattern_gen|LessThan0~3           ; |pattern_gen|LessThan0~3           ; out0             ;
+; |pattern_gen|LessThan0~4           ; |pattern_gen|LessThan0~4           ; out0             ;
+; |pattern_gen|LessThan0~5           ; |pattern_gen|LessThan0~5           ; out0             ;
+; |pattern_gen|LessThan0~6           ; |pattern_gen|LessThan0~6           ; out0             ;
+; |pattern_gen|LessThan0~7           ; |pattern_gen|LessThan0~7           ; out0             ;
+; |pattern_gen|Add0~0                ; |pattern_gen|Add0~0                ; out0             ;
+; |pattern_gen|Add0~1                ; |pattern_gen|Add0~1                ; out0             ;
+; |pattern_gen|Add0~2                ; |pattern_gen|Add0~2                ; out0             ;
+; |pattern_gen|Add0~3                ; |pattern_gen|Add0~3                ; out0             ;
+; |pattern_gen|Add0~4                ; |pattern_gen|Add0~4                ; out0             ;
+; |pattern_gen|Add0~5                ; |pattern_gen|Add0~5                ; out0             ;
+; |pattern_gen|Add0~6                ; |pattern_gen|Add0~6                ; out0             ;
+; |pattern_gen|Add0~7                ; |pattern_gen|Add0~7                ; out0             ;
+; |pattern_gen|Add0~8                ; |pattern_gen|Add0~8                ; out0             ;
+; |pattern_gen|Add1~0                ; |pattern_gen|Add1~0                ; out0             ;
+; |pattern_gen|Add1~1                ; |pattern_gen|Add1~1                ; out0             ;
+; |pattern_gen|Add1~2                ; |pattern_gen|Add1~2                ; out0             ;
+; |pattern_gen|Add1~3                ; |pattern_gen|Add1~3                ; out0             ;
+; |pattern_gen|Add1~4                ; |pattern_gen|Add1~4                ; out0             ;
+; |pattern_gen|Add1~5                ; |pattern_gen|Add1~5                ; out0             ;
+; |pattern_gen|Add1~6                ; |pattern_gen|Add1~6                ; out0             ;
+; |pattern_gen|Add1~7                ; |pattern_gen|Add1~7                ; out0             ;
+; |pattern_gen|Add1~8                ; |pattern_gen|Add1~8                ; out0             ;
+; |pattern_gen|Add1~9                ; |pattern_gen|Add1~9                ; out0             ;
+; |pattern_gen|Add1~10               ; |pattern_gen|Add1~10               ; out0             ;
+; |pattern_gen|Add1~11               ; |pattern_gen|Add1~11               ; out0             ;
+; |pattern_gen|Add1~12               ; |pattern_gen|Add1~12               ; out0             ;
+; |pattern_gen|Add1~13               ; |pattern_gen|Add1~13               ; out0             ;
+; |pattern_gen|Add1~14               ; |pattern_gen|Add1~14               ; out0             ;
+; |pattern_gen|Equal0~0              ; |pattern_gen|Equal0~0              ; out0             ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                   ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |pattern_gen|clock_count_500Khz~0  ; |pattern_gen|clock_count_500Khz~0  ; out              ;
+; |pattern_gen|clock_count_500Khz~1  ; |pattern_gen|clock_count_500Khz~1  ; out              ;
+; |pattern_gen|clock_count_500Khz~8  ; |pattern_gen|clock_count_500Khz~8  ; out              ;
+; |pattern_gen|clock_count_500Khz~9  ; |pattern_gen|clock_count_500Khz~9  ; out              ;
+; |pattern_gen|address_temp[17]      ; |pattern_gen|address_temp[17]      ; regout           ;
+; |pattern_gen|address_temp[16]      ; |pattern_gen|address_temp[16]      ; regout           ;
+; |pattern_gen|address_temp[15]      ; |pattern_gen|address_temp[15]      ; regout           ;
+; |pattern_gen|address_temp[14]      ; |pattern_gen|address_temp[14]      ; regout           ;
+; |pattern_gen|address_temp[13]      ; |pattern_gen|address_temp[13]      ; regout           ;
+; |pattern_gen|address_temp[12]      ; |pattern_gen|address_temp[12]      ; regout           ;
+; |pattern_gen|address_temp[11]      ; |pattern_gen|address_temp[11]      ; regout           ;
+; |pattern_gen|address_temp[10]      ; |pattern_gen|address_temp[10]      ; regout           ;
+; |pattern_gen|address_temp[9]       ; |pattern_gen|address_temp[9]       ; regout           ;
+; |pattern_gen|address_temp[8]       ; |pattern_gen|address_temp[8]       ; regout           ;
+; |pattern_gen|sram_address[17]~reg0 ; |pattern_gen|sram_address[17]~reg0 ; regout           ;
+; |pattern_gen|sram_address[16]~reg0 ; |pattern_gen|sram_address[16]~reg0 ; regout           ;
+; |pattern_gen|sram_address[15]~reg0 ; |pattern_gen|sram_address[15]~reg0 ; regout           ;
+; |pattern_gen|sram_address[14]~reg0 ; |pattern_gen|sram_address[14]~reg0 ; regout           ;
+; |pattern_gen|sram_address[13]~reg0 ; |pattern_gen|sram_address[13]~reg0 ; regout           ;
+; |pattern_gen|sram_address[12]~reg0 ; |pattern_gen|sram_address[12]~reg0 ; regout           ;
+; |pattern_gen|sram_address[11]~reg0 ; |pattern_gen|sram_address[11]~reg0 ; regout           ;
+; |pattern_gen|sram_address[10]~reg0 ; |pattern_gen|sram_address[10]~reg0 ; regout           ;
+; |pattern_gen|sram_address[9]~reg0  ; |pattern_gen|sram_address[9]~reg0  ; regout           ;
+; |pattern_gen|sram_address[8]~reg0  ; |pattern_gen|sram_address[8]~reg0  ; regout           ;
+; |pattern_gen|clock_count_500Khz[6] ; |pattern_gen|clock_count_500Khz[6] ; regout           ;
+; |pattern_gen|clock_count_500Khz[7] ; |pattern_gen|clock_count_500Khz[7] ; regout           ;
+; |pattern_gen|reset                 ; |pattern_gen|reset                 ; out              ;
+; |pattern_gen|sram_address[8]       ; |pattern_gen|sram_address[8]       ; pin_out          ;
+; |pattern_gen|sram_address[9]       ; |pattern_gen|sram_address[9]       ; pin_out          ;
+; |pattern_gen|sram_address[10]      ; |pattern_gen|sram_address[10]      ; pin_out          ;
+; |pattern_gen|sram_address[11]      ; |pattern_gen|sram_address[11]      ; pin_out          ;
+; |pattern_gen|sram_address[12]      ; |pattern_gen|sram_address[12]      ; pin_out          ;
+; |pattern_gen|sram_address[13]      ; |pattern_gen|sram_address[13]      ; pin_out          ;
+; |pattern_gen|sram_address[14]      ; |pattern_gen|sram_address[14]      ; pin_out          ;
+; |pattern_gen|sram_address[15]      ; |pattern_gen|sram_address[15]      ; pin_out          ;
+; |pattern_gen|sram_address[16]      ; |pattern_gen|sram_address[16]      ; pin_out          ;
+; |pattern_gen|sram_address[17]      ; |pattern_gen|sram_address[17]      ; pin_out          ;
+; |pattern_gen|state~2               ; |pattern_gen|state~2               ; out0             ;
+; |pattern_gen|state~10              ; |pattern_gen|state~10              ; out0             ;
+; |pattern_gen|Selector0~1           ; |pattern_gen|Selector0~1           ; out0             ;
+; |pattern_gen|Selector1~1           ; |pattern_gen|Selector1~1           ; out0             ;
+; |pattern_gen|Selector2~1           ; |pattern_gen|Selector2~1           ; out0             ;
+; |pattern_gen|Selector3~1           ; |pattern_gen|Selector3~1           ; out0             ;
+; |pattern_gen|Selector4~1           ; |pattern_gen|Selector4~1           ; out0             ;
+; |pattern_gen|Selector5~1           ; |pattern_gen|Selector5~1           ; out0             ;
+; |pattern_gen|Selector6~1           ; |pattern_gen|Selector6~1           ; out0             ;
+; |pattern_gen|Selector7~1           ; |pattern_gen|Selector7~1           ; out0             ;
+; |pattern_gen|Selector8~1           ; |pattern_gen|Selector8~1           ; out0             ;
+; |pattern_gen|Selector9~1           ; |pattern_gen|Selector9~1           ; out0             ;
+; |pattern_gen|Selector10~1          ; |pattern_gen|Selector10~1          ; out0             ;
+; |pattern_gen|Selector11~1          ; |pattern_gen|Selector11~1          ; out0             ;
+; |pattern_gen|Selector12~1          ; |pattern_gen|Selector12~1          ; out0             ;
+; |pattern_gen|Selector13~1          ; |pattern_gen|Selector13~1          ; out0             ;
+; |pattern_gen|Selector14~1          ; |pattern_gen|Selector14~1          ; out0             ;
+; |pattern_gen|Selector15~1          ; |pattern_gen|Selector15~1          ; out0             ;
+; |pattern_gen|Selector16~0          ; |pattern_gen|Selector16~0          ; out0             ;
+; |pattern_gen|Selector16~1          ; |pattern_gen|Selector16~1          ; out0             ;
+; |pattern_gen|Selector16~2          ; |pattern_gen|Selector16~2          ; out0             ;
+; |pattern_gen|Selector17~0          ; |pattern_gen|Selector17~0          ; out0             ;
+; |pattern_gen|Selector17~1          ; |pattern_gen|Selector17~1          ; out0             ;
+; |pattern_gen|Selector17~2          ; |pattern_gen|Selector17~2          ; out0             ;
+; |pattern_gen|Selector18~0          ; |pattern_gen|Selector18~0          ; out0             ;
+; |pattern_gen|Selector18~1          ; |pattern_gen|Selector18~1          ; out0             ;
+; |pattern_gen|Selector18~2          ; |pattern_gen|Selector18~2          ; out0             ;
+; |pattern_gen|Selector19~0          ; |pattern_gen|Selector19~0          ; out0             ;
+; |pattern_gen|Selector19~1          ; |pattern_gen|Selector19~1          ; out0             ;
+; |pattern_gen|Selector19~2          ; |pattern_gen|Selector19~2          ; out0             ;
+; |pattern_gen|Selector20~0          ; |pattern_gen|Selector20~0          ; out0             ;
+; |pattern_gen|Selector20~1          ; |pattern_gen|Selector20~1          ; out0             ;
+; |pattern_gen|Selector20~2          ; |pattern_gen|Selector20~2          ; out0             ;
+; |pattern_gen|Selector21~0          ; |pattern_gen|Selector21~0          ; out0             ;
+; |pattern_gen|Selector21~1          ; |pattern_gen|Selector21~1          ; out0             ;
+; |pattern_gen|Selector21~2          ; |pattern_gen|Selector21~2          ; out0             ;
+; |pattern_gen|Selector22~0          ; |pattern_gen|Selector22~0          ; out0             ;
+; |pattern_gen|Selector22~1          ; |pattern_gen|Selector22~1          ; out0             ;
+; |pattern_gen|Selector22~2          ; |pattern_gen|Selector22~2          ; out0             ;
+; |pattern_gen|Selector23~0          ; |pattern_gen|Selector23~0          ; out0             ;
+; |pattern_gen|Selector23~1          ; |pattern_gen|Selector23~1          ; out0             ;
+; |pattern_gen|Selector23~2          ; |pattern_gen|Selector23~2          ; out0             ;
+; |pattern_gen|Selector24~0          ; |pattern_gen|Selector24~0          ; out0             ;
+; |pattern_gen|Selector24~1          ; |pattern_gen|Selector24~1          ; out0             ;
+; |pattern_gen|Selector24~2          ; |pattern_gen|Selector24~2          ; out0             ;
+; |pattern_gen|Selector25~1          ; |pattern_gen|Selector25~1          ; out0             ;
+; |pattern_gen|Selector35~1          ; |pattern_gen|Selector35~1          ; out0             ;
+; |pattern_gen|Selector37~1          ; |pattern_gen|Selector37~1          ; out0             ;
+; |pattern_gen|Selector39~1          ; |pattern_gen|Selector39~1          ; out0             ;
+; |pattern_gen|Selector41~1          ; |pattern_gen|Selector41~1          ; out0             ;
+; |pattern_gen|Selector43~1          ; |pattern_gen|Selector43~1          ; out0             ;
+; |pattern_gen|Selector45~1          ; |pattern_gen|Selector45~1          ; out0             ;
+; |pattern_gen|Selector47~1          ; |pattern_gen|Selector47~1          ; out0             ;
+; |pattern_gen|Selector49~1          ; |pattern_gen|Selector49~1          ; out0             ;
+; |pattern_gen|Selector50~0          ; |pattern_gen|Selector50~0          ; out0             ;
+; |pattern_gen|Selector50~1          ; |pattern_gen|Selector50~1          ; out0             ;
+; |pattern_gen|Selector50~2          ; |pattern_gen|Selector50~2          ; out0             ;
+; |pattern_gen|Selector51~0          ; |pattern_gen|Selector51~0          ; out0             ;
+; |pattern_gen|Selector51~1          ; |pattern_gen|Selector51~1          ; out0             ;
+; |pattern_gen|Selector51~2          ; |pattern_gen|Selector51~2          ; out0             ;
+; |pattern_gen|Selector52~0          ; |pattern_gen|Selector52~0          ; out0             ;
+; |pattern_gen|Selector52~1          ; |pattern_gen|Selector52~1          ; out0             ;
+; |pattern_gen|Selector52~2          ; |pattern_gen|Selector52~2          ; out0             ;
+; |pattern_gen|Selector53~0          ; |pattern_gen|Selector53~0          ; out0             ;
+; |pattern_gen|Selector53~1          ; |pattern_gen|Selector53~1          ; out0             ;
+; |pattern_gen|Selector53~2          ; |pattern_gen|Selector53~2          ; out0             ;
+; |pattern_gen|Selector54~0          ; |pattern_gen|Selector54~0          ; out0             ;
+; |pattern_gen|Selector54~1          ; |pattern_gen|Selector54~1          ; out0             ;
+; |pattern_gen|Selector54~2          ; |pattern_gen|Selector54~2          ; out0             ;
+; |pattern_gen|Selector55~0          ; |pattern_gen|Selector55~0          ; out0             ;
+; |pattern_gen|Selector55~1          ; |pattern_gen|Selector55~1          ; out0             ;
+; |pattern_gen|Selector55~2          ; |pattern_gen|Selector55~2          ; out0             ;
+; |pattern_gen|Selector56~0          ; |pattern_gen|Selector56~0          ; out0             ;
+; |pattern_gen|Selector56~1          ; |pattern_gen|Selector56~1          ; out0             ;
+; |pattern_gen|Selector56~2          ; |pattern_gen|Selector56~2          ; out0             ;
+; |pattern_gen|Selector57~0          ; |pattern_gen|Selector57~0          ; out0             ;
+; |pattern_gen|Selector57~1          ; |pattern_gen|Selector57~1          ; out0             ;
+; |pattern_gen|Selector57~2          ; |pattern_gen|Selector57~2          ; out0             ;
+; |pattern_gen|Selector58~0          ; |pattern_gen|Selector58~0          ; out0             ;
+; |pattern_gen|Selector58~1          ; |pattern_gen|Selector58~1          ; out0             ;
+; |pattern_gen|Selector58~2          ; |pattern_gen|Selector58~2          ; out0             ;
+; |pattern_gen|Selector59~1          ; |pattern_gen|Selector59~1          ; out0             ;
+; |pattern_gen|Selector70~4          ; |pattern_gen|Selector70~4          ; out0             ;
+; |pattern_gen|Add0~9                ; |pattern_gen|Add0~9                ; out0             ;
+; |pattern_gen|Add0~10               ; |pattern_gen|Add0~10               ; out0             ;
+; |pattern_gen|Add0~11               ; |pattern_gen|Add0~11               ; out0             ;
+; |pattern_gen|Add0~12               ; |pattern_gen|Add0~12               ; out0             ;
+; |pattern_gen|Add1~15               ; |pattern_gen|Add1~15               ; out0             ;
+; |pattern_gen|Add1~16               ; |pattern_gen|Add1~16               ; out0             ;
+; |pattern_gen|Add1~17               ; |pattern_gen|Add1~17               ; out0             ;
+; |pattern_gen|Add1~18               ; |pattern_gen|Add1~18               ; out0             ;
+; |pattern_gen|Add1~19               ; |pattern_gen|Add1~19               ; out0             ;
+; |pattern_gen|Add1~20               ; |pattern_gen|Add1~20               ; out0             ;
+; |pattern_gen|Add1~21               ; |pattern_gen|Add1~21               ; out0             ;
+; |pattern_gen|Add1~22               ; |pattern_gen|Add1~22               ; out0             ;
+; |pattern_gen|Add1~23               ; |pattern_gen|Add1~23               ; out0             ;
+; |pattern_gen|Add1~24               ; |pattern_gen|Add1~24               ; out0             ;
+; |pattern_gen|Add1~25               ; |pattern_gen|Add1~25               ; out0             ;
+; |pattern_gen|Add1~26               ; |pattern_gen|Add1~26               ; out0             ;
+; |pattern_gen|Add1~27               ; |pattern_gen|Add1~27               ; out0             ;
+; |pattern_gen|Add1~28               ; |pattern_gen|Add1~28               ; out0             ;
+; |pattern_gen|Add1~29               ; |pattern_gen|Add1~29               ; out0             ;
+; |pattern_gen|Add1~30               ; |pattern_gen|Add1~30               ; out0             ;
+; |pattern_gen|Add1~31               ; |pattern_gen|Add1~31               ; out0             ;
+; |pattern_gen|Add1~32               ; |pattern_gen|Add1~32               ; out0             ;
++------------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                   ;
++------------------------------------+------------------------------------+------------------+
+; Node Name                          ; Output Port Name                   ; Output Port Type ;
++------------------------------------+------------------------------------+------------------+
+; |pattern_gen|clock_count_500Khz~0  ; |pattern_gen|clock_count_500Khz~0  ; out              ;
+; |pattern_gen|clock_count_500Khz~1  ; |pattern_gen|clock_count_500Khz~1  ; out              ;
+; |pattern_gen|clock_count_500Khz~8  ; |pattern_gen|clock_count_500Khz~8  ; out              ;
+; |pattern_gen|clock_count_500Khz~9  ; |pattern_gen|clock_count_500Khz~9  ; out              ;
+; |pattern_gen|pattern_xor~0         ; |pattern_gen|pattern_xor~0         ; out              ;
+; |pattern_gen|pattern_xor~1         ; |pattern_gen|pattern_xor~1         ; out              ;
+; |pattern_gen|pattern_xor~2         ; |pattern_gen|pattern_xor~2         ; out              ;
+; |pattern_gen|pattern_xor~3         ; |pattern_gen|pattern_xor~3         ; out              ;
+; |pattern_gen|pattern_xor~4         ; |pattern_gen|pattern_xor~4         ; out              ;
+; |pattern_gen|pattern_xor~5         ; |pattern_gen|pattern_xor~5         ; out              ;
+; |pattern_gen|pattern_xor~6         ; |pattern_gen|pattern_xor~6         ; out              ;
+; |pattern_gen|pattern_xor~7         ; |pattern_gen|pattern_xor~7         ; out              ;
+; |pattern_gen|pattern_xor~8         ; |pattern_gen|pattern_xor~8         ; out              ;
+; |pattern_gen|pattern_xor~9         ; |pattern_gen|pattern_xor~9         ; out              ;
+; |pattern_gen|pattern_xor~10        ; |pattern_gen|pattern_xor~10        ; out              ;
+; |pattern_gen|pattern_xor~11        ; |pattern_gen|pattern_xor~11        ; out              ;
+; |pattern_gen|pattern_xor~12        ; |pattern_gen|pattern_xor~12        ; out              ;
+; |pattern_gen|pattern_xor~13        ; |pattern_gen|pattern_xor~13        ; out              ;
+; |pattern_gen|pattern_xor~14        ; |pattern_gen|pattern_xor~14        ; out              ;
+; |pattern_gen|pattern_xor~15        ; |pattern_gen|pattern_xor~15        ; out              ;
+; |pattern_gen|address_temp[17]      ; |pattern_gen|address_temp[17]      ; regout           ;
+; |pattern_gen|address_temp[16]      ; |pattern_gen|address_temp[16]      ; regout           ;
+; |pattern_gen|address_temp[15]      ; |pattern_gen|address_temp[15]      ; regout           ;
+; |pattern_gen|address_temp[14]      ; |pattern_gen|address_temp[14]      ; regout           ;
+; |pattern_gen|address_temp[13]      ; |pattern_gen|address_temp[13]      ; regout           ;
+; |pattern_gen|address_temp[12]      ; |pattern_gen|address_temp[12]      ; regout           ;
+; |pattern_gen|address_temp[11]      ; |pattern_gen|address_temp[11]      ; regout           ;
+; |pattern_gen|address_temp[10]      ; |pattern_gen|address_temp[10]      ; regout           ;
+; |pattern_gen|address_temp[9]       ; |pattern_gen|address_temp[9]       ; regout           ;
+; |pattern_gen|address_temp[8]       ; |pattern_gen|address_temp[8]       ; regout           ;
+; |pattern_gen|sram_address[17]~reg0 ; |pattern_gen|sram_address[17]~reg0 ; regout           ;
+; |pattern_gen|sram_address[16]~reg0 ; |pattern_gen|sram_address[16]~reg0 ; regout           ;
+; |pattern_gen|sram_address[15]~reg0 ; |pattern_gen|sram_address[15]~reg0 ; regout           ;
+; |pattern_gen|sram_address[14]~reg0 ; |pattern_gen|sram_address[14]~reg0 ; regout           ;
+; |pattern_gen|sram_address[13]~reg0 ; |pattern_gen|sram_address[13]~reg0 ; regout           ;
+; |pattern_gen|sram_address[12]~reg0 ; |pattern_gen|sram_address[12]~reg0 ; regout           ;
+; |pattern_gen|sram_address[11]~reg0 ; |pattern_gen|sram_address[11]~reg0 ; regout           ;
+; |pattern_gen|sram_address[10]~reg0 ; |pattern_gen|sram_address[10]~reg0 ; regout           ;
+; |pattern_gen|sram_address[9]~reg0  ; |pattern_gen|sram_address[9]~reg0  ; regout           ;
+; |pattern_gen|sram_address[8]~reg0  ; |pattern_gen|sram_address[8]~reg0  ; regout           ;
+; |pattern_gen|pattern_xor[15]       ; |pattern_gen|pattern_xor[15]       ; regout           ;
+; |pattern_gen|pattern_xor[14]       ; |pattern_gen|pattern_xor[14]       ; regout           ;
+; |pattern_gen|pattern_xor[13]       ; |pattern_gen|pattern_xor[13]       ; regout           ;
+; |pattern_gen|pattern_xor[12]       ; |pattern_gen|pattern_xor[12]       ; regout           ;
+; |pattern_gen|pattern_xor[11]       ; |pattern_gen|pattern_xor[11]       ; regout           ;
+; |pattern_gen|pattern_xor[10]       ; |pattern_gen|pattern_xor[10]       ; regout           ;
+; |pattern_gen|pattern_xor[9]        ; |pattern_gen|pattern_xor[9]        ; regout           ;
+; |pattern_gen|pattern_xor[8]        ; |pattern_gen|pattern_xor[8]        ; regout           ;
+; |pattern_gen|pattern_xor[7]        ; |pattern_gen|pattern_xor[7]        ; regout           ;
+; |pattern_gen|pattern_xor[6]        ; |pattern_gen|pattern_xor[6]        ; regout           ;
+; |pattern_gen|pattern_xor[5]        ; |pattern_gen|pattern_xor[5]        ; regout           ;
+; |pattern_gen|pattern_xor[4]        ; |pattern_gen|pattern_xor[4]        ; regout           ;
+; |pattern_gen|pattern_xor[3]        ; |pattern_gen|pattern_xor[3]        ; regout           ;
+; |pattern_gen|pattern_xor[2]        ; |pattern_gen|pattern_xor[2]        ; regout           ;
+; |pattern_gen|pattern_xor[1]        ; |pattern_gen|pattern_xor[1]        ; regout           ;
+; |pattern_gen|pattern_xor[0]        ; |pattern_gen|pattern_xor[0]        ; regout           ;
+; |pattern_gen|clock_count_500Khz[6] ; |pattern_gen|clock_count_500Khz[6] ; regout           ;
+; |pattern_gen|clock_count_500Khz[7] ; |pattern_gen|clock_count_500Khz[7] ; regout           ;
+; |pattern_gen|reset                 ; |pattern_gen|reset                 ; out              ;
+; |pattern_gen|sram_address[8]       ; |pattern_gen|sram_address[8]       ; pin_out          ;
+; |pattern_gen|sram_address[9]       ; |pattern_gen|sram_address[9]       ; pin_out          ;
+; |pattern_gen|sram_address[10]      ; |pattern_gen|sram_address[10]      ; pin_out          ;
+; |pattern_gen|sram_address[11]      ; |pattern_gen|sram_address[11]      ; pin_out          ;
+; |pattern_gen|sram_address[12]      ; |pattern_gen|sram_address[12]      ; pin_out          ;
+; |pattern_gen|sram_address[13]      ; |pattern_gen|sram_address[13]      ; pin_out          ;
+; |pattern_gen|sram_address[14]      ; |pattern_gen|sram_address[14]      ; pin_out          ;
+; |pattern_gen|sram_address[15]      ; |pattern_gen|sram_address[15]      ; pin_out          ;
+; |pattern_gen|sram_address[16]      ; |pattern_gen|sram_address[16]      ; pin_out          ;
+; |pattern_gen|sram_address[17]      ; |pattern_gen|sram_address[17]      ; pin_out          ;
+; |pattern_gen|state~2               ; |pattern_gen|state~2               ; out0             ;
+; |pattern_gen|state~10              ; |pattern_gen|state~10              ; out0             ;
+; |pattern_gen|Selector0~1           ; |pattern_gen|Selector0~1           ; out0             ;
+; |pattern_gen|Selector1~1           ; |pattern_gen|Selector1~1           ; out0             ;
+; |pattern_gen|Selector2~1           ; |pattern_gen|Selector2~1           ; out0             ;
+; |pattern_gen|Selector3~1           ; |pattern_gen|Selector3~1           ; out0             ;
+; |pattern_gen|Selector4~1           ; |pattern_gen|Selector4~1           ; out0             ;
+; |pattern_gen|Selector5~1           ; |pattern_gen|Selector5~1           ; out0             ;
+; |pattern_gen|Selector6~1           ; |pattern_gen|Selector6~1           ; out0             ;
+; |pattern_gen|Selector7~1           ; |pattern_gen|Selector7~1           ; out0             ;
+; |pattern_gen|Selector8~1           ; |pattern_gen|Selector8~1           ; out0             ;
+; |pattern_gen|Selector9~1           ; |pattern_gen|Selector9~1           ; out0             ;
+; |pattern_gen|Selector10~1          ; |pattern_gen|Selector10~1          ; out0             ;
+; |pattern_gen|Selector11~1          ; |pattern_gen|Selector11~1          ; out0             ;
+; |pattern_gen|Selector12~1          ; |pattern_gen|Selector12~1          ; out0             ;
+; |pattern_gen|Selector13~1          ; |pattern_gen|Selector13~1          ; out0             ;
+; |pattern_gen|Selector14~1          ; |pattern_gen|Selector14~1          ; out0             ;
+; |pattern_gen|Selector15~1          ; |pattern_gen|Selector15~1          ; out0             ;
+; |pattern_gen|Selector16~0          ; |pattern_gen|Selector16~0          ; out0             ;
+; |pattern_gen|Selector16~1          ; |pattern_gen|Selector16~1          ; out0             ;
+; |pattern_gen|Selector16~2          ; |pattern_gen|Selector16~2          ; out0             ;
+; |pattern_gen|Selector17~0          ; |pattern_gen|Selector17~0          ; out0             ;
+; |pattern_gen|Selector17~1          ; |pattern_gen|Selector17~1          ; out0             ;
+; |pattern_gen|Selector17~2          ; |pattern_gen|Selector17~2          ; out0             ;
+; |pattern_gen|Selector18~0          ; |pattern_gen|Selector18~0          ; out0             ;
+; |pattern_gen|Selector18~1          ; |pattern_gen|Selector18~1          ; out0             ;
+; |pattern_gen|Selector18~2          ; |pattern_gen|Selector18~2          ; out0             ;
+; |pattern_gen|Selector19~0          ; |pattern_gen|Selector19~0          ; out0             ;
+; |pattern_gen|Selector19~1          ; |pattern_gen|Selector19~1          ; out0             ;
+; |pattern_gen|Selector19~2          ; |pattern_gen|Selector19~2          ; out0             ;
+; |pattern_gen|Selector20~0          ; |pattern_gen|Selector20~0          ; out0             ;
+; |pattern_gen|Selector20~1          ; |pattern_gen|Selector20~1          ; out0             ;
+; |pattern_gen|Selector20~2          ; |pattern_gen|Selector20~2          ; out0             ;
+; |pattern_gen|Selector21~0          ; |pattern_gen|Selector21~0          ; out0             ;
+; |pattern_gen|Selector21~1          ; |pattern_gen|Selector21~1          ; out0             ;
+; |pattern_gen|Selector21~2          ; |pattern_gen|Selector21~2          ; out0             ;
+; |pattern_gen|Selector22~0          ; |pattern_gen|Selector22~0          ; out0             ;
+; |pattern_gen|Selector22~1          ; |pattern_gen|Selector22~1          ; out0             ;
+; |pattern_gen|Selector22~2          ; |pattern_gen|Selector22~2          ; out0             ;
+; |pattern_gen|Selector23~0          ; |pattern_gen|Selector23~0          ; out0             ;
+; |pattern_gen|Selector23~1          ; |pattern_gen|Selector23~1          ; out0             ;
+; |pattern_gen|Selector23~2          ; |pattern_gen|Selector23~2          ; out0             ;
+; |pattern_gen|Selector24~0          ; |pattern_gen|Selector24~0          ; out0             ;
+; |pattern_gen|Selector24~1          ; |pattern_gen|Selector24~1          ; out0             ;
+; |pattern_gen|Selector24~2          ; |pattern_gen|Selector24~2          ; out0             ;
+; |pattern_gen|Selector25~1          ; |pattern_gen|Selector25~1          ; out0             ;
+; |pattern_gen|Selector35~1          ; |pattern_gen|Selector35~1          ; out0             ;
+; |pattern_gen|Selector37~1          ; |pattern_gen|Selector37~1          ; out0             ;
+; |pattern_gen|Selector39~1          ; |pattern_gen|Selector39~1          ; out0             ;
+; |pattern_gen|Selector41~1          ; |pattern_gen|Selector41~1          ; out0             ;
+; |pattern_gen|Selector43~1          ; |pattern_gen|Selector43~1          ; out0             ;
+; |pattern_gen|Selector45~1          ; |pattern_gen|Selector45~1          ; out0             ;
+; |pattern_gen|Selector47~1          ; |pattern_gen|Selector47~1          ; out0             ;
+; |pattern_gen|Selector49~1          ; |pattern_gen|Selector49~1          ; out0             ;
+; |pattern_gen|Selector50~0          ; |pattern_gen|Selector50~0          ; out0             ;
+; |pattern_gen|Selector50~1          ; |pattern_gen|Selector50~1          ; out0             ;
+; |pattern_gen|Selector50~2          ; |pattern_gen|Selector50~2          ; out0             ;
+; |pattern_gen|Selector51~0          ; |pattern_gen|Selector51~0          ; out0             ;
+; |pattern_gen|Selector51~1          ; |pattern_gen|Selector51~1          ; out0             ;
+; |pattern_gen|Selector51~2          ; |pattern_gen|Selector51~2          ; out0             ;
+; |pattern_gen|Selector52~0          ; |pattern_gen|Selector52~0          ; out0             ;
+; |pattern_gen|Selector52~1          ; |pattern_gen|Selector52~1          ; out0             ;
+; |pattern_gen|Selector52~2          ; |pattern_gen|Selector52~2          ; out0             ;
+; |pattern_gen|Selector53~0          ; |pattern_gen|Selector53~0          ; out0             ;
+; |pattern_gen|Selector53~1          ; |pattern_gen|Selector53~1          ; out0             ;
+; |pattern_gen|Selector53~2          ; |pattern_gen|Selector53~2          ; out0             ;
+; |pattern_gen|Selector54~0          ; |pattern_gen|Selector54~0          ; out0             ;
+; |pattern_gen|Selector54~1          ; |pattern_gen|Selector54~1          ; out0             ;
+; |pattern_gen|Selector54~2          ; |pattern_gen|Selector54~2          ; out0             ;
+; |pattern_gen|Selector55~0          ; |pattern_gen|Selector55~0          ; out0             ;
+; |pattern_gen|Selector55~1          ; |pattern_gen|Selector55~1          ; out0             ;
+; |pattern_gen|Selector55~2          ; |pattern_gen|Selector55~2          ; out0             ;
+; |pattern_gen|Selector56~0          ; |pattern_gen|Selector56~0          ; out0             ;
+; |pattern_gen|Selector56~1          ; |pattern_gen|Selector56~1          ; out0             ;
+; |pattern_gen|Selector56~2          ; |pattern_gen|Selector56~2          ; out0             ;
+; |pattern_gen|Selector57~0          ; |pattern_gen|Selector57~0          ; out0             ;
+; |pattern_gen|Selector57~1          ; |pattern_gen|Selector57~1          ; out0             ;
+; |pattern_gen|Selector57~2          ; |pattern_gen|Selector57~2          ; out0             ;
+; |pattern_gen|Selector58~0          ; |pattern_gen|Selector58~0          ; out0             ;
+; |pattern_gen|Selector58~1          ; |pattern_gen|Selector58~1          ; out0             ;
+; |pattern_gen|Selector58~2          ; |pattern_gen|Selector58~2          ; out0             ;
+; |pattern_gen|Selector59~1          ; |pattern_gen|Selector59~1          ; out0             ;
+; |pattern_gen|Selector70~4          ; |pattern_gen|Selector70~4          ; out0             ;
+; |pattern_gen|Add0~9                ; |pattern_gen|Add0~9                ; out0             ;
+; |pattern_gen|Add0~10               ; |pattern_gen|Add0~10               ; out0             ;
+; |pattern_gen|Add0~11               ; |pattern_gen|Add0~11               ; out0             ;
+; |pattern_gen|Add0~12               ; |pattern_gen|Add0~12               ; out0             ;
+; |pattern_gen|Add1~15               ; |pattern_gen|Add1~15               ; out0             ;
+; |pattern_gen|Add1~16               ; |pattern_gen|Add1~16               ; out0             ;
+; |pattern_gen|Add1~17               ; |pattern_gen|Add1~17               ; out0             ;
+; |pattern_gen|Add1~18               ; |pattern_gen|Add1~18               ; out0             ;
+; |pattern_gen|Add1~19               ; |pattern_gen|Add1~19               ; out0             ;
+; |pattern_gen|Add1~20               ; |pattern_gen|Add1~20               ; out0             ;
+; |pattern_gen|Add1~21               ; |pattern_gen|Add1~21               ; out0             ;
+; |pattern_gen|Add1~22               ; |pattern_gen|Add1~22               ; out0             ;
+; |pattern_gen|Add1~23               ; |pattern_gen|Add1~23               ; out0             ;
+; |pattern_gen|Add1~24               ; |pattern_gen|Add1~24               ; out0             ;
+; |pattern_gen|Add1~25               ; |pattern_gen|Add1~25               ; out0             ;
+; |pattern_gen|Add1~26               ; |pattern_gen|Add1~26               ; out0             ;
+; |pattern_gen|Add1~27               ; |pattern_gen|Add1~27               ; out0             ;
+; |pattern_gen|Add1~28               ; |pattern_gen|Add1~28               ; out0             ;
+; |pattern_gen|Add1~29               ; |pattern_gen|Add1~29               ; out0             ;
+; |pattern_gen|Add1~30               ; |pattern_gen|Add1~30               ; out0             ;
+; |pattern_gen|Add1~31               ; |pattern_gen|Add1~31               ; out0             ;
+; |pattern_gen|Add1~32               ; |pattern_gen|Add1~32               ; out0             ;
++------------------------------------+------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Sep 22 11:17:13 2011
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off pattern_gen -c pattern_gen
+Info: Using vector source file "H:/Comp Arch/LABS/Project/PatternGen/pattern_gen.vwf"
+Warning: Wrong node type and/or width for node "|pattern_gen|state" in vector source file. Node in design is of type Enum and of width 1, but node in vector source file is of type 9-Level and of width 1.
+Warning: Signal name "|pattern_gen|state" changed to enum type
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      62.17 %
+Info: Number of transitions in simulation is 748720
+Info: Quartus II Simulator was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 114 megabytes
+    Info: Processing ended: Thu Sep 22 11:17:20 2011
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
+
+
